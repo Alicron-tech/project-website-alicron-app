@@ -1,0 +1,7 @@
+node_modules/
+.next/
+dist/
+.sanity/
+*.log
+.DS_Store
+web/next-env.d.ts
