@@ -5,3 +5,10 @@ dist/
 *.log
 .DS_Store
 web/next-env.d.ts
+
+# generated/ is ignored globally (media); keep the scripts that produce and edit the media under version control
+!generated/*/
+generated/**/*
+!generated/**/*/
+!generated/**/*.py
+!generated/*.py

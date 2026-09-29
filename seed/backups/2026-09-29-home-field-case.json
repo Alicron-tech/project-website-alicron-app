@@ -1,0 +1,36 @@
+{
+ "_key": "k5nqq9",
+ "body": {
+  "en": "A technician drives to the start of the section. A case opens on the tailgate. A 15-inch multirotor with a satellite terminal on its back lifts off and follows the line at a set height, stopping at the valve stations and the river crossings. Two provinces away, the engineer responsible for the section watches the thermal feed and the map, and steps in when something looks wrong.\n\nForty minutes later the aircraft lands beside the vehicle for a battery, and the next leg begins. By evening the flight log, the video and the flagged frames are in the customer's system.",
+  "es": "Un técnico conduce hasta el inicio del tramo. Se abre una maleta en el portón. Un multirrotor de 15 pulgadas con un terminal satelital en el lomo despega y sigue la conducción a una altura fija, deteniéndose en las estaciones de válvulas y en los cruces de ríos. A dos provincias de distancia, el ingeniero responsable del tramo mira la señal térmica y el mapa, e interviene cuando algo no cuadra.\n\nCuarenta minutos después, la aeronave aterriza junto al vehículo para cambiar la batería, y empieza el siguiente tramo. Al anochecer, el registro de vuelo, el vídeo y los fotogramas marcados están en el sistema del cliente."
+ },
+ "ctaHref": "/applications/pipeline-inspection",
+ "ctaLabel": {
+  "en": "Pipeline inspection",
+  "es": "Inspección de tuberías"
+ },
+ "eyebrow": {
+  "en": "Field case",
+  "es": "Caso de campo"
+ },
+ "kind": "split",
+ "media": {
+  "alt": {
+   "en": "A road winding through hills, from the air",
+   "es": "Una carretera serpenteando entre colinas, desde el aire"
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-0ac72c75e15db5b3843971ef59df0063990c27af-1920x1080-jpg",
+    "_type": "reference"
+   }
+  },
+  "isVideoPlaceholder": false,
+  "videoUrl": "https://cdn.sanity.io/files/wividiap/production/bee809598b58a7551e23cf2c0ddfc11b37df4d79.mp4"
+ },
+ "title": {
+  "en": "The engineer stays in the office. The aircraft flies the pipeline.",
+  "es": "El ingeniero se queda en la oficina. La aeronave vuela la tubería."
+ }
+}

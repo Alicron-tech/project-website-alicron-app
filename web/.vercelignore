@@ -1,3 +1,4 @@
 # not uploaded to Vercel: local-only preview media and env
 /public/hero/
 .env.local
+/public/pipeline/

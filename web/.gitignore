@@ -42,3 +42,4 @@ next-env.d.ts
 
 # local-only hero previews (large media, not committed)
 /public/hero/
+/public/pipeline/

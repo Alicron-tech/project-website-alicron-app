@@ -23,3 +23,11 @@ export const t = (v: L, locale: Locale): string => fmt((v?.[locale] ?? v?.en ?? 
 export const paras = (v: L, locale: Locale): string[] => t(v, locale).split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean)
 
 export const fetchOpts = {next: {revalidate: 120}}
+
+/** Local previews only: LOCAL_VIDEO_MAP (JSON in .env.local) swaps a Sanity video URL for a file in public/,
+ *  with its own poster and caption, so a new film can be checked before it goes to Sanity. Unset in production. */
+export type LocalVideo = {src: string; poster?: string; caption?: {en?: string; es?: string}}
+export function localVideo(url?: string): LocalVideo | undefined {
+  if (!url || !process.env.LOCAL_VIDEO_MAP) return undefined
+  try { return (JSON.parse(process.env.LOCAL_VIDEO_MAP) as Record<string, LocalVideo>)[url] } catch { return undefined }
+}

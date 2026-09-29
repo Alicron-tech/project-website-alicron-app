@@ -102,3 +102,13 @@ Every object inside an array (references, gallery images, stats, sections) must 
 
 - The live hero media (Mallorca clip) is backed up in `seed/backups/2026-09-29-home-hero-mallorca.json`; the clip and poster are in `generated/video/`. Restore with `source ~/.config/sanity/alicron.env && node seed/restore-hero.mjs seed/backups/2026-09-29-home-hero-mallorca.json`.
 - Local preview of another film without touching Sanity: `web/.env.local` sets `HERO_VIDEO_OVERRIDE` and `HERO_POSTER_OVERRIDE` (files in `web/public/hero/`, not committed) and `HERO_DIM_DEFAULT` (0 to 4). On the page, `?dim=0..4`, `?rate=0.7` and `?tune` (a small switcher panel) adjust the dark dim and the playback speed live.
+
+## Pipeline films (home field case and the pipeline-inspection page)
+
+Generated with Veo 3.1 and edited by script; plan, frames and every decision in the blueprint's
+`docs/pipeline-videos.md`. Raw clips, frames and masters stay in `generated/pipeline/` (not in git); the scripts
+that edit them are versioned: `switch.py` (visible to gas-camera switch with the heat-map plume),
+`office_strips.py` (office shot into vertical strips), `endcard.py` (ALICRON end card). Web encodes sit in
+`web/public/pipeline/` (not in git) and are uploaded to Sanity with `seed/set-pipeline-films.mjs`, which backs up
+the previous media to `seed/backups/` first. `LOCAL_VIDEO_MAP` in `web/.env.local` previews a film locally in
+place of a Sanity video without touching Sanity (`web/src/lib/sanity.ts`, `localVideo`).

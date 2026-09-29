@@ -1,0 +1,42 @@
+{
+ "homeFieldCase": {
+  "_key": "k5nqq9",
+  "media": {
+   "alt": {
+    "en": "A road winding through hills, from the air",
+    "es": "Una carretera serpenteando entre colinas, desde el aire"
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-0ac72c75e15db5b3843971ef59df0063990c27af-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/bee809598b58a7551e23cf2c0ddfc11b37df4d79.mp4"
+  }
+ },
+ "pipelineApplication": {
+  "_id": "application-pipeline-inspection",
+  "media": {
+   "alt": {
+    "en": "A satellite-linked multirotor lifts off from a vehicle beside a pipeline in the hills",
+    "es": "Un multirrotor con enlace satelital despega desde un vehículo junto a una tubería en las montañas"
+   },
+   "caption": {
+    "en": "Compressor station from the air. Stock film until ALICRON's own footage exists.",
+    "es": "Estación de compresión desde el aire. Metraje de archivo hasta que exista el de ALICRON."
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-9326839ac219ba77e1d544479352a209fe0c5e94-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/99bbd7373fc994fca7f410b36ae2c744c79c0d05.mp4"
+  }
+ }
+}

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {urlFor, t, type Locale} from '@/lib/sanity'
+import {urlFor, t, localVideo, type Locale} from '@/lib/sanity'
 import {InViewVideo} from './InViewVideo'
 
 type MediaDoc = {image?: unknown; alt?: {en?: string; es?: string}; videoUrl?: string; isVideoPlaceholder?: boolean; caption?: {en?: string; es?: string}} | null | undefined
@@ -9,18 +9,20 @@ type MediaDoc = {image?: unknown; alt?: {en?: string; es?: string}; videoUrl?: s
 export function Media({media, locale, radius = 'md', ratio = '169', sizes = '100vw', priority = false, videoLabel, caption}: {media: MediaDoc; locale: Locale; radius?: 'none' | 'md'; ratio?: '169' | '43'; sizes?: string; priority?: boolean; videoLabel?: string; caption?: string}) {
   if (!media?.image && !media?.videoUrl) return null
   const alt = t(media.alt, locale)
-  const poster = media.image ? urlFor(media.image).width(2000).url() : undefined
-  const isVideo = Boolean(media.videoUrl) || Boolean(media.isVideoPlaceholder)
-  const cap = caption ?? t(media.caption, locale)
+  const local = localVideo(media.videoUrl)
+  const videoUrl = local?.src ?? media.videoUrl
+  const poster = local?.poster ?? (media.image ? urlFor(media.image).width(2000).url() : undefined)
+  const isVideo = Boolean(videoUrl) || Boolean(media.isVideoPlaceholder)
+  const cap = caption ?? (local?.caption ? t(local.caption, locale) : t(media.caption, locale))
   return (
     <figure className="frame">
       <div className={`frame__box ${radius === 'md' ? 'frame__box--md' : ''} ${ratio === '43' ? 'frame__box--43' : ''}`}>
-        {media.videoUrl ? (
-          <InViewVideo src={media.videoUrl} poster={poster} label={alt} />
+        {videoUrl ? (
+          <InViewVideo src={videoUrl} poster={poster} label={alt} />
         ) : media.image ? (
           <Image src={poster!} alt={alt} fill sizes={sizes} priority={priority} style={{objectFit: 'cover'}} />
         ) : null}
-        {isVideo && !media.videoUrl && (
+        {isVideo && !videoUrl && (
           <div className="play" aria-hidden="true">
             <span className="play__btn" />
             <span className="play__tag">{videoLabel ?? (locale === 'es' ? 'Vídeo · en producción' : 'Video · in production')}</span>
