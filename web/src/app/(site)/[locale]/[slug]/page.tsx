@@ -1,6 +1,7 @@
 import type {Metadata} from 'next'
+import Link from 'next/link'
 import {notFound} from 'next/navigation'
-import {getPage, getPlatforms, getApplications, getOfferings} from '@/lib/queries'
+import {getPage, getPlatforms, getApplications, getOfferings, getSettings} from '@/lib/queries'
 import {t, paras, type Locale} from '@/lib/sanity'
 import {PageHero} from '@/components/PageHero'
 import {Cards, Prose, SectionView, type Section, type Ref} from '@/components/Sections'
@@ -18,22 +19,22 @@ export async function generateMetadata({params}: {params: Promise<{locale: Local
 
 function Offerings({items, locale}: {items: Record<string, never>[]; locale: Locale}) {
   return (
-    <section className="section"><div className="wrap stack-l">
+    <div className="col"><div className="ruled rule-top">
       {items.map((o, i) => (
-        <div key={o.slug as string} id={o.slug as string} className={`split ${i % 2 ? 'split--reverse' : ''}`} style={{paddingTop: i ? 44 : 0, borderTop: i ? '1px solid var(--line)' : 'none'}}>
-          <div className="stack">
-            <div className="card__meta"><span className="num">{String(i + 1).padStart(2, '0')}</span>{t(o.status, locale) && <span className="chip">{t(o.status, locale)}</span>}</div>
-            <h2 className="t-h2">{t(o.name, locale)}</h2>
-            {t(o.role, locale) && <p className="t-lead">{t(o.role, locale)}</p>}
+        <div key={o.slug as string} id={o.slug as string} className={`offer ${i % 2 ? 'offer--reverse' : ''}`}>
+          <div className="offer__copy">
+            <div className="offer__meta"><span className="feature__n">{String(i + 1).padStart(2, '0')}</span>{t(o.status, locale) && <span className="badge badge--quiet"><span>{t(o.status, locale)}</span></span>}</div>
+            <h2 className="display-3">{t(o.name, locale)}</h2>
+            {t(o.role, locale) && <p className="mono-md muted">{t(o.role, locale)}</p>}
             <Prose v={o.body} locale={locale} />
             {Array.isArray(o.points) && (o.points as never[]).length > 0 && (
-              <ul className="bullets">{(o.points as never[]).map((p, j) => <li key={j}>{t(p, locale)}</li>)}</ul>
+              <ul className="points">{(o.points as never[]).map((p, j) => <li key={j}>{t(p, locale)}</li>)}</ul>
             )}
           </div>
-          <Img image={o.image} alt={t(o.name, locale)} className="media media--square" sizes="(max-width: 960px) 100vw, 50vw" width={1600} />
+          <div className="offer__media"><Img image={o.image} alt={t(o.name, locale)} className="frame__box frame__box--md frame__box--43" sizes="(max-width: 900px) 100vw, 50vw" width={1600} /></div>
         </div>
       ))}
-    </div></section>
+    </div></div>
   )
 }
 
@@ -44,8 +45,8 @@ export default async function Page({params}: {params: Promise<{locale: Locale; s
   if (!page) notFound()
   const sections = (page.sections ?? []) as Section[]
   let listing: React.ReactNode = null
-  if (slug === 'platforms') listing = <section className="section"><div className="wrap"><Cards refs={(await getPlatforms()) as Ref[]} locale={locale} /></div></section>
-  if (slug === 'applications') listing = <section className="section"><div className="wrap"><Cards refs={(await getApplications()) as Ref[]} locale={locale} /></div></section>
+  if (slug === 'platforms') listing = <div className="col"><div className="ruled rule-top"><Cards refs={(await getPlatforms()) as Ref[]} locale={locale} /></div></div>
+  if (slug === 'applications') listing = <div className="col"><div className="ruled rule-top"><Cards refs={(await getApplications()) as Ref[]} locale={locale} /></div></div>
   if (['software', 'training', 'engineering'].includes(slug)) listing = <Offerings items={await getOfferings(slug)} locale={locale} />
   return (
     <>
@@ -53,28 +54,32 @@ export default async function Page({params}: {params: Promise<{locale: Locale; s
       {listing}
       {sections.map((s, i) => <SectionView key={i} s={s} locale={locale} index={i + 1} />)}
       {slug === 'contact' && <ContactBlock locale={locale} />}
+      <div className="spacer" />
     </>
   )
 }
 
 async function ContactBlock({locale}: {locale: Locale}) {
-  const {getSettings} = await import('@/lib/queries')
   const s = await getSettings()
   const es = locale === 'es'
+  const rows: [string, string][] = [
+    [es ? 'Sede' : 'Office', t(s?.address, locale).split('\n').slice(1).join(', ')],
+    [es ? 'Correo' : 'Email', s?.email ?? ''],
+    [es ? 'Horario' : 'Hours', es ? 'Lunes a viernes, 9:00 a 18:00 CET' : 'Monday to Friday, 9:00 to 18:00 CET'],
+    [es ? 'Idiomas' : 'Languages', es ? 'Español, inglés, ucraniano' : 'Spanish, English, Ukrainian'],
+  ]
   return (
-    <section className="section"><div className="wrap split">
-      <div className="stack">
-        <div className="eyebrow">{es ? 'Escríbanos' : 'Write to us'}</div>
-        <h2 className="t-h2">{es ? 'Una conversación primero' : 'A conversation first'}</h2>
-        <p className="t-body">{es ? 'Cuéntenos qué quiere inspeccionar, mapear o automatizar y desde dónde. Respondemos en un día laborable con las preguntas que necesitamos aclarar antes de proponer nada.' : 'Tell us what you want to inspect, map or automate, and where. We reply within a working day with the questions we need answered before we propose anything.'}</p>
-        {s?.email && <a className="btn btn--accent" href={`mailto:${s.email}`}>{s.email}</a>}
+    <div className="col"><div className="ruled rule-top split">
+      <div className="fb">
+        <span className="eyebrow">{es ? 'Escríbenos' : 'Write to us'}</span>
+        <h2 className="display-3">{es ? 'Primero, una conversación.' : 'A conversation first.'}</h2>
+        <p className="body-lg">{es ? 'Cuéntanos qué hay que inspeccionar, cartografiar o automatizar, y desde dónde. Respondemos en un día laborable con las preguntas que necesitamos aclarar antes de proponer nada.' : 'Tell us what needs inspecting, mapping or automating, and from where. We reply within a working day with the questions we need answered before we propose anything.'}</p>
+        {s?.email && <div><a className="btn" href={`mailto:${s.email}`}>{s.email}</a></div>}
       </div>
-      <dl className="rows" style={{alignSelf: 'start'}}>
-        <div className="row"><dt>{es ? 'Sede' : 'Office'}</dt><dd>{paras(s?.address, locale).map((p, i) => <div key={i}>{p}</div>)}</dd></div>
-        {s?.phone && <div className="row"><dt>{es ? 'Teléfono' : 'Phone'}</dt><dd>{s.phone}</dd></div>}
-        <div className="row"><dt>{es ? 'Horario' : 'Hours'}</dt><dd>{es ? 'Lunes a viernes, 9:00 a 18:00 CET' : 'Monday to Friday, 9:00 to 18:00 CET'}</dd></div>
-        <div className="row"><dt>{es ? 'Idiomas' : 'Languages'}</dt><dd>{es ? 'Español, inglés, ucraniano' : 'Spanish, English, Ukrainian'}</dd></div>
-      </dl>
-    </div></section>
+      <div className="media-cell">
+        {rows.filter(([, v]) => v).map(([k, v]) => <div key={k} className="specrow"><span className="specrow__k">{k}</span><span className="specrow__v">{v}</span></div>)}
+        <div style={{marginTop: 24}}><Link href={`/${locale}/company`} className="tlink">{es ? 'Sobre la compañía' : 'About the company'} <span className="arrow">→</span></Link></div>
+      </div>
+    </div></div>
   )
 }

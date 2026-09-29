@@ -1,0 +1,30 @@
+{
+ "saved": "2026-09-29",
+ "what": "Home page hero media before the generated film replaced it (Pexels 31786583, Tramuntana, Mallorca)",
+ "local_file": "generated/video/alicron-hero-mallorca.mp4",
+ "local_poster": "generated/video/alicron-hero-mallorca-poster.jpg",
+ "sanity": {
+  "_id": "page-home",
+  "heroMedia": {
+   "alt": {
+    "en": "A multirotor with a satellite terminal lifts off from a pickup on a mountain road beside a pipeline",
+    "es": "Un multirrotor con terminal satelital despega desde una camioneta en una carretera de monta\u00f1a junto a una tuber\u00eda"
+   },
+   "caption": {
+    "en": "",
+    "es": ""
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-e80d6402502bdf3a926923b4633d881a50b88da7-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/32a28cead25b2e4c439cea19717f857ccb828495.mp4"
+  },
+  "poster": "https://cdn.sanity.io/images/wividiap/production/e80d6402502bdf3a926923b4633d881a50b88da7-1920x1080.jpg"
+ },
+ "restore": "Patch page document _id with heroMedia from this file (seed/restore-hero.mjs), or set heroMedia.videoUrl back to sanity.heroMedia.videoUrl in the Studio."
+}

@@ -8,11 +8,11 @@
     "deploy": "sanity deploy"
   },
   "dependencies": {
-    "@sanity/vision": "^4",
+    "@sanity/vision": "^6.13.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "sanity": "^4",
-    "styled-components": "^6"
+    "sanity": "^6.13.2",
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
     "typescript": "^5"

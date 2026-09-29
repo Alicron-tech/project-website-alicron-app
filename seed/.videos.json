@@ -1,0 +1,26 @@
+{
+ "shore": {
+  "url": "https://cdn.sanity.io/files/wividiap/production/7308ac4241fe2ff34cdcdd5ea065f206247b9135.mp4",
+  "poster": "image-53d3e661cae9245ad0532ff9acb52d6daf6d7d75-1920x1080-jpg"
+ },
+ "station": {
+  "url": "https://cdn.sanity.io/files/wividiap/production/99bbd7373fc994fca7f410b36ae2c744c79c0d05.mp4",
+  "poster": "image-9326839ac219ba77e1d544479352a209fe0c5e94-1920x1080-jpg"
+ },
+ "fields": {
+  "url": "https://cdn.sanity.io/files/wividiap/production/42ad7b56c537af5ee004dc91d7a6198ba2fc1cfe.mp4",
+  "poster": "image-c272099086ef330a4b3d14b5aefd8539a19f8c4f-1920x1080-jpg"
+ },
+ "helipad": {
+  "url": "https://cdn.sanity.io/files/wividiap/production/bb4a233636ce2152c55536ce6dff274e95e8ba8a.mp4",
+  "poster": "image-4ca173b7e2409c39c9796e181c56b082177c861b-1920x1080-jpg"
+ },
+ "corridor": {
+  "url": "https://cdn.sanity.io/files/wividiap/production/bee809598b58a7551e23cf2c0ddfc11b37df4d79.mp4",
+  "poster": "image-0ac72c75e15db5b3843971ef59df0063990c27af-1920x1080-jpg"
+ },
+ "powerlines": {
+  "url": "https://cdn.sanity.io/files/wividiap/production/e975b188b0cfe8f5487ad8cfba7b981a321c7591.mp4",
+  "poster": "image-b2e010cbe0de54441a4d37b88f4b0cc339d101e9-1920x1080-jpg"
+ }
+}

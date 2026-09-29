@@ -14,6 +14,7 @@ export default async function Home({params}: {params: Promise<{locale: Locale}>}
     <>
       <PageHero page={page} locale={locale} full />
       {(page.sections as Section[] | undefined)?.map((s, i) => <SectionView key={i} s={s} locale={locale} index={i + 1} />)}
+      <div className="spacer" />
     </>
   )
 }

@@ -22,7 +22,8 @@ export async function proxy(req: NextRequest) {
   const first = pathname.split('/')[1]
   if (!isLocale(first)) {
     const url = req.nextUrl.clone()
-    const preferred = req.headers.get('accept-language')?.toLowerCase().startsWith('es') ? 'es' : 'en'
+    const al = req.headers.get('accept-language')?.toLowerCase() ?? ''
+    const preferred = al.startsWith('en') ? 'en' : 'es'   // Spanish is the source language
     url.pathname = `/${preferred}${pathname === '/' ? '' : pathname}`
     return noindex(NextResponse.redirect(url))
   }

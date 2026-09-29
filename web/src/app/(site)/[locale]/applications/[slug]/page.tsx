@@ -5,6 +5,7 @@ import {getApplication, getSlugs} from '@/lib/queries'
 import {t, paras, type Locale} from '@/lib/sanity'
 import {Cards, Prose, StatStrip, type Ref} from '@/components/Sections'
 import {Media} from '@/components/Media'
+import {Sketch} from '@/components/Sketch'
 
 export const revalidate = 120
 export async function generateStaticParams() { return (await getSlugs('application')).map((slug) => ({slug})) }
@@ -20,26 +21,38 @@ export default async function ApplicationPage({params}: {params: Promise<{locale
   const es = locale === 'es'
   return (
     <>
-      <section className="hero--page"><div className="wrap">
-        <div className="head" style={{maxWidth: 900}}>
-          <Link href={`/${locale}/applications`} className="eyebrow">{es ? 'Aplicaciones' : 'Applications'} /</Link>
-          <h1 className="t-h1">{t(a.name, locale)}</h1>
-          <p className="t-lead">{t(a.role, locale)}</p>
+      <div className="col"><div className="ruled hero-wrap">
+        {!a.media?.videoUrl && <Sketch seed={slug} />}
+        <section className="hero hero--media">
+          <div className="hero__copy">
+            <div className="kicker"><span className="badge badge--quiet"><span>{es ? 'Aplicación' : 'Application'}</span></span><Link href={`/${locale}/applications`}>{es ? 'Todas las aplicaciones →' : 'All applications →'}</Link></div>
+            <h1 className="display-1">{t(a.name, locale)}</h1>
+            <p className="mono-md hero__sub muted">{t(a.role, locale)}</p>
+          </div>
+        </section>
+        <div style={{padding: '0 var(--cell-pad) var(--cell-pad)'}}>
+          <Media media={a.media ?? {image: a.image, isVideoPlaceholder: false}} locale={locale} priority sizes="(max-width: 1444px) 100vw, 1320px" videoLabel={es ? 'Vídeo del escenario · en producción' : 'Scenario video · in production'} />
         </div>
-        <Media media={a.media ?? {image: a.image, isVideoPlaceholder: false}} locale={locale} priority sizes="(max-width: 1400px) 100vw, 1360px" videoLabel={es ? 'Vídeo del escenario · próximamente' : 'Scenario video · coming soon'} />
-      </div></section>
-      <section className="section"><div className="wrap stack-l">
+      </div></div>
+      <div className="col"><div className="ruled rule-top">
         <StatStrip stats={a.stats} locale={locale} />
-        <div className="split" style={{alignItems: 'start'}}>
-          <Prose v={a.body} locale={locale} />
-          {a.outcomes?.length ? (
-            <div className="stack"><div className="eyebrow">{es ? 'Qué recibe el cliente' : 'What the customer gets'}</div><ul className="bullets">{a.outcomes.map((o: never, i: number) => <li key={i}>{t(o, locale)}</li>)}</ul></div>
-          ) : null}
+        <div className="split rule-top">
+          <div className="fb"><span className="eyebrow">{es ? 'Cómo se trabaja' : 'How the job runs'}</span><Prose v={a.body} locale={locale} /></div>
+          <div className="media-cell">
+            {a.outcomes?.length ? (<><span className="eyebrow">{es ? 'Qué recibe el cliente' : 'What the client receives'}</span><ul className="points" style={{marginTop: 16}}>{a.outcomes.map((o: never, i: number) => <li key={i}>{t(o, locale)}</li>)}</ul></>) : null}
+          </div>
         </div>
-      </div></section>
+      </div></div>
       {a.platforms?.length ? (
-        <section className="section"><div className="wrap"><div className="head"><div className="eyebrow">{es ? 'Con qué se vuela' : 'What flies it'}</div><h2 className="t-h2">{es ? 'Plataformas adecuadas' : 'Platforms that fit'}</h2></div><Cards refs={a.platforms as Ref[]} locale={locale} /></div></section>
+        <div className="col"><div className="ruled rule-top">
+          <div className="cell rule-bottom"><div className="sh"><div className="sh__copy"><span className="eyebrow">{es ? 'Con qué se vuela' : 'What flies it'}</span><h2 className="display-3">{es ? 'Plataformas adecuadas' : 'Platforms that fit'}</h2></div></div></div>
+          <Cards refs={a.platforms as Ref[]} locale={locale} />
+        </div></div>
       ) : null}
+      <section className="cta-band" style={{marginTop: 'clamp(48px, 5.5vw, 80px)'}}>
+        <h2 className="display-2">{es ? 'Cuéntanos qué hay que inspeccionar.' : 'Tell us what needs inspecting.'}</h2>
+        <Link href={`/${locale}/contact`} className="tbtn tbtn--light">{es ? 'Contactar' : 'Get in touch'}</Link>
+      </section>
     </>
   )
 }

@@ -3,12 +3,12 @@ export default async function Gate({searchParams}: {searchParams: Promise<{next?
   return (
     <div className="gate">
       <form className="gate__box" method="post" action="/api/gate">
-        <div className="brand" style={{color: '#fff'}}><span className="brand__mark" style={{background: '#fff'}} /> ALICRON</div>
-        <p style={{color: '#B7BAC1', fontSize: 14, lineHeight: 1.5}}>Private preview. Enter the access password to continue. / Vista previa privada. Introduzca la contraseña de acceso.</p>
+        <span className="wordmark" style={{color: '#fff'}}>ALICRON</span>
+        <p>Vista previa privada. Introduce la contraseña de acceso. / Private preview. Enter the access password.</p>
         <input type="hidden" name="next" value={next} />
-        <input type="password" name="password" placeholder="Password / Contraseña" autoFocus required />
-        {error && <div className="err">That password did not match. / La contraseña no coincide.</div>}
-        <button className="btn btn--accent" type="submit">Enter →</button>
+        <input type="password" name="password" placeholder="Contraseña / Password" autoFocus required />
+        {error && <div className="err">La contraseña no coincide. / That password did not match.</div>}
+        <button className="tbtn tbtn--accent" type="submit">Entrar / Enter</button>
       </form>
     </div>
   )

@@ -22,7 +22,8 @@ async function asset(key) {
 let k = 0
 const key = () => 'k' + (++k).toString(36) + Date.now().toString(36).slice(-3)
 async function resolve(v) {
-  if (Array.isArray(v)) return Promise.all(v.map(async (x) => (x && typeof x === 'object' && !x._key && !x._ref ? {_key: key(), ...(await resolve(x))} : resolve(x))))
+  // Every object inside an array needs a unique _key (Sanity requirement), references included; without it the Studio cannot edit the list.
+  if (Array.isArray(v)) return Promise.all(v.map(async (x) => (x && typeof x === 'object' && !x._key ? {_key: key(), ...(await resolve(x))} : resolve(x))))
   if (v && typeof v === 'object') {
     if (v.$img) return asset(v.$img)
     const out = {}

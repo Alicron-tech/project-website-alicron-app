@@ -4,7 +4,7 @@ export const IMAGES = {
   'case-powerline': 'img/case-powerline.jpg', 'case-emergency': 'img/case-emergency.jpg', 'case-mapping': 'img/case-mapping.jpg', 'software-gcs': 'img/software-gcs.jpg',
   'software-ugv': 'img/software-ugv.jpg', 'software-vision': 'img/software-vision.jpg', 'training-field': 'img/training-field.jpg', 'training-class': 'img/training-class.jpg',
   'engineering-lab': 'img/engineering-lab.jpg', 'engineering-test': 'img/engineering-test.jpg', 'company-alicante': 'img/company-alicante.jpg', 'dark-carbon': 'img/dark-carbon.jpg',
-  'dark-antenna': 'img/dark-antenna.jpg', 'platform-multirotor': 'img/platform-multirotor.jpg', 'platform-fixedwing': 'img/platform-fixedwing.jpg',
+  'dark-antenna': 'img/dark-antenna.jpg', 'platform-multirotor': 'img/platform-multirotor.jpg', 'platform-fixedwing': 'img/platform-fixedwing.jpg', 'hero-poster': 'video/alicron-hero-mallorca-poster.jpg', 'poster-corridor': 'video/alicron-field-corridor-hills-poster.jpg', 'poster-powerlines': 'video/alicron-app-powerlines-corridor-poster.jpg', 'team-hangar': 'img/team-hangar-2.jpg', 'poster-station': 'video/alicron-app-pipeline-station-poster.jpg', 'poster-fields': 'video/alicron-app-agriculture-fields-poster.jpg', 'poster-helipad': 'video/alicron-training-helipad-poster.jpg',
   'p-15sat': 'photos/multirotor-15-satellite.jpg', 'p-15sat-2': 'photos/multirotor-15-satellite-2.jpg', 'p-13': 'photos/multirotor-13.jpg', 'p-13fibre': 'photos/multirotor-13-fibre.jpg',
   'p-10': 'photos/multirotor-10.jpg', 'p-17': 'photos/multirotor-17.jpg', 'p-x8': 'photos/multirotor-coaxial.jpg', 'p-fwlong': 'photos/fixedwing-long.jpg', 'p-fwlong-2': 'photos/fixedwing-long-2.jpg',
   'p-fwfast': 'photos/fixedwing-fast.jpg', 'p-fwfast-2': 'photos/fixedwing-fast-2.jpg', 'p-gcs': 'photos/ground-station.jpg', 'p-gcs-case': 'photos/ground-station-case.jpg', 'p-7': 'photos/multirotor-7.jpg',
@@ -187,7 +187,7 @@ La aeronave sigue el corredor a una altura y velocidad fijadas, se detiene donde
 Cuando la batería baja, la aeronave aterriza junto al vehículo, el técnico cambia el pack y empieza el siguiente tramo. Al final del día, el registro de vuelo, el vídeo y los fotogramas marcados están en el sistema del cliente.`),
       outcomes: [L('A flown record of every kilometre, dated and georeferenced', 'Un registro volado de cada kilómetro, con fecha y georreferenciado'), L('Thermal and visual video with flagged frames', 'Vídeo térmico y visual con fotogramas marcados'), L('One engineer supervising several crews from one screen', 'Un ingeniero supervisando varios equipos desde una pantalla'), L('Fewer vehicle kilometres on the right of way', 'Menos kilómetros de vehículo sobre la servidumbre')],
       stats: [stat('35 km', 'per flight leg', 'por tramo de vuelo'), stat('40 min', 'per battery', 'por batería'), stat('2', 'people in the field', 'personas en campo'), stat('SAT', 'no radio horizon', 'sin horizonte de radio')],
-      image: img('case-pipeline'), media: media('hero-pipeline', {isVideoPlaceholder: true, alt: L('A satellite-linked multirotor lifts off from a vehicle beside a pipeline in the hills', 'Un multirrotor con enlace satelital despega desde un vehículo junto a una tubería en las montañas'), caption: L('Scenario film: office to valley to pipeline. In production.', 'Película del escenario: de la oficina al valle y a la tubería. En producción.')}),
+      image: img('case-pipeline'), media: media('poster-station', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/99bbd7373fc994fca7f410b36ae2c744c79c0d05.mp4', alt: L('Compressor station from the air', 'Estación de compresión desde el aire'), caption: L('Compressor station from the air. Stock film until ALICRON\'s own footage exists.', 'Estación de compresión desde el aire. Metraje de archivo hasta que exista el de ALICRON.')}),   // Pexels 12043107
       platforms: [ref('platform-multirotor-15-satellite'), ref('platform-multirotor-17'), ref('platform-multirotor-13')]},
 
     {_id: 'application-agriculture', _type: 'application', slug: {current: 'agriculture'}, order: 2,
@@ -207,7 +207,7 @@ Volamos la aeronave de levantamiento en líneas paralelas a altura fija, normalm
 El resultado no es una foto bonita. Es un conjunto de zonas, cada una con una recomendación: a esta esquina le falta agua, a esta franja le falta nitrógeno, este rodal hay que recorrerlo a pie porque algo pasa y la cámara no sabe qué. A lo largo de una campaña, los mapas muestran si los cambios funcionaron.`),
       outcomes: [L('Vegetation index maps per plot, same-day', 'Mapas de índice de vegetación por parcela, el mismo día'), L('Zoned recommendations for irrigation and fertiliser', 'Recomendaciones por zonas para riego y abonado'), L('Season-over-season comparison of the same fields', 'Comparación campaña a campaña de los mismos campos'), L('Flight planning that repeats exactly, every time', 'Planificación de vuelo que se repite exactamente igual cada vez')],
       stats: [stat('70 km', 'of survey line per flight', 'de línea por vuelo'), stat('5 kg', 'sensor bay', 'bahía de sensores'), stat('5', 'spectral bands', 'bandas espectrales'), stat('1 day', 'to processed maps', 'hasta los mapas procesados')],
-      image: img('case-agri'), media: media('hero-fixedwing', {isVideoPlaceholder: true, alt: L('A fixed-wing aircraft over olive groves at golden hour', 'Una aeronave de ala fija sobre olivares al atardecer'), caption: L('Scenario film: a morning survey over the farm. In production.', 'Película del escenario: un levantamiento matinal sobre la finca. En producción.')}),
+      image: img('case-agri'), media: media('poster-fields', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/42ad7b56c537af5ee004dc91d7a6198ba2fc1cfe.mp4', alt: L('Crop rows from the air', 'Hileras de cultivo desde el aire'), caption: L('Crop rows from the survey aircraft\'s height. Stock film until ALICRON\'s own footage exists.', 'Hileras de cultivo desde la altura de la aeronave de levantamiento. Metraje de archivo hasta que exista el de ALICRON.')}),   // Pexels 4934480
       platforms: [ref('platform-fixed-wing-endurance'), ref('platform-multirotor-15-coaxial')]},
 
     {_id: 'application-power-lines', _type: 'application', slug: {current: 'power-lines'}, order: 3,
@@ -227,7 +227,8 @@ El vídeo térmico encuentra la grapa caliente antes de que falle. El vídeo con
 Donde la línea atraviesa terreno sin cobertura de radio, la versión de fibra óptica de 13 pulgadas o la de 15 pulgadas con enlace satelital mantienen la imagen estable.`),
       outcomes: [L('Photo set per tower, in a fixed order, year after year', 'Juego de fotos por torre, en orden fijo, año tras año'), L('Thermal anomalies with temperature readings', 'Anomalías térmicas con lecturas de temperatura'), L('No outage, no bucket truck, no climbing', 'Sin corte, sin cesta, sin escalada'), L('Vegetation encroachment flagged on the map', 'Vegetación invasora marcada en el mapa')],
       stats: [stat('3 m', 'standoff distance', 'distancia de trabajo'), stat('0', 'outages', 'cortes'), stat('50 min', 'per flight', 'por vuelo'), stat('4K', 'zoom video', 'vídeo con zoom')],
-      image: img('case-powerline'), platforms: [ref('platform-multirotor-13'), ref('platform-multirotor-10')]},
+      image: img('case-powerline'), media: media('poster-powerlines', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/e975b188b0cfe8f5487ad8cfba7b981a321c7591.mp4', alt: L('A transmission line corridor through wooded mountains, from the air', 'Un corredor de línea de alta tensión entre montañas boscosas, desde el aire'), caption: L('Transmission line corridor from the air. Stock film until ALICRON\'s own footage exists.', 'Corredor de línea de alta tensión desde el aire. Metraje de archivo hasta que exista el de ALICRON.')}),   // Pexels 5061305
+      platforms: [ref('platform-multirotor-13'), ref('platform-multirotor-10')]},
 
     {_id: 'application-emergency', _type: 'application', slug: {current: 'emergency'}, order: 4,
       name: L('Emergency response', 'Emergencias'),
@@ -403,7 +404,7 @@ Recibimos visitas con cita previa. Traiga el problema y, si el tiempo lo permite
       heroTitle: L('Aircraft that work where people should not have to.', 'Aeronaves que trabajan donde las personas no deberían tener que hacerlo.'),
       heroLead: L('ALICRON designs, builds and flies unmanned aircraft and the software around them. Pipelines, fields, power lines, coastlines. Engineered and tested in Spain.',
         'ALICRON diseña, fabrica y opera aeronaves no tripuladas y el software que las rodea. Tuberías, campos, líneas eléctricas, costas. Diseñado y probado en España.'),
-      heroMedia: media('hero-pipeline', {isVideoPlaceholder: true, alt: L('A multirotor with a satellite terminal lifts off from a pickup on a mountain road beside a pipeline', 'Un multirrotor con terminal satelital despega desde una camioneta en una carretera de montaña junto a una tubería')}),
+      heroMedia: media('hero-poster', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/32a28cead25b2e4c439cea19717f857ccb828495.mp4', alt: L('Aerial film over the Tramuntana mountains, Mallorca', 'Película aérea sobre la sierra de Tramuntana, Mallorca')}),   // Pexels 31786583 by Oskar Gross (Pexels licence); poster stays the pipeline still
       heroCtaLabel: L('Talk to us', 'Hablemos'), heroCtaHref: '/contact',
       sections: [
         {kind: 'features', eyebrow: L('What we do', 'Qué hacemos'), title: L('Four things, done properly.', 'Cuatro cosas, bien hechas.'),
@@ -420,7 +421,7 @@ Forty minutes later the aircraft lands beside the vehicle for a battery, and the
             `Un técnico conduce hasta el inicio del tramo. Se abre una maleta en el portón. Un multirrotor de 15 pulgadas con un terminal satelital en el lomo despega y sigue la conducción a una altura fija, deteniéndose en las estaciones de válvulas y en los cruces de ríos. A dos provincias de distancia, el ingeniero responsable del tramo mira la señal térmica y el mapa, e interviene cuando algo no cuadra.
 
 Cuarenta minutos después, la aeronave aterriza junto al vehículo para cambiar la batería, y empieza el siguiente tramo. Al anochecer, el registro de vuelo, el vídeo y los fotogramas marcados están en el sistema del cliente.`),
-          media: media('case-pipeline', {isVideoPlaceholder: true, alt: L('Satellite-linked multirotor over a pipeline', 'Multirrotor con enlace satelital sobre una tubería')}),
+          media: media('poster-corridor', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/bee809598b58a7551e23cf2c0ddfc11b37df4d79.mp4', alt: L('A road winding through hills, from the air', 'Una carretera serpenteando entre colinas, desde el aire')}),   // Pexels 38603541
           ctaLabel: L('Pipeline inspection', 'Inspección de tuberías'), ctaHref: '/applications/pipeline-inspection'},
         {kind: 'cards', eyebrow: L('Platforms', 'Plataformas'), title: L('Named by what they are, not by a brand.', 'Nombradas por lo que son, no por una marca.'),
           lead: L('Each class is a size and a link type. Pick by the job: how far, how long, how heavy, and whether radio is allowed to exist where you fly.', 'Cada clase es un tamaño y un tipo de enlace. Se elige por el trabajo: cuánto de lejos, cuánto tiempo, cuánto peso y si la radio puede existir donde se vuela.'),
@@ -443,7 +444,7 @@ The workshop has printers, a small machine shop, an electronics bench and a flig
             `ALICRON es la empresa de ingeniería de un grupo europeo de sistemas no tripulados. Los diseños se dibujan, se prototipan, se vuelan y se enseñan aquí, en la costa de Alicante. La producción en serie se hace en la planta del grupo en los Países Bajos. Los clientes tienen un equipo de ingeniería al que pueden visitar y una fábrica que entrega a tiempo.
 
 El taller tiene impresoras, un pequeño taller mecánico, un banco de electrónica y un campo de vuelo a diez minutos. Casi todo lo que hay en esta web empezó como algo que pidió un cliente.`),
-          media: media('engineering-lab', {alt: L('Engineer at a workbench with a drone frame', 'Ingeniero en un banco de trabajo con el chasis de un dron')}),
+          media: media('team-hangar', {alt: L('The team in front of the hangar with a fixed-wing and two multirotors', 'El equipo delante del hangar con un ala fija y dos multirrotores')}),   // generated placeholder until a real team photo exists
           ctaLabel: L('About the company', 'Sobre la empresa'), ctaHref: '/company'},
         {kind: 'cta', title: L('Tell us what you need to see, and from where.', 'Cuéntenos qué necesita ver, y desde dónde.'),
           lead: L('We reply within a working day, in Spanish or English, with the questions we need answered before proposing anything.', 'Respondemos en un día laborable, en español o en inglés, con las preguntas que necesitamos aclarar antes de proponer nada.'),
@@ -459,7 +460,7 @@ El taller tiene impresoras, un pequeño taller mecánico, un banco de electróni
       heroMedia: media('p-15sat', {alt: L('15-inch multirotor with a satellite terminal', 'Multirrotor de 15 pulgadas con terminal satelital')}),
       sections: [
         {kind: 'stats', eyebrow: L('Across the line', 'En toda la línea'), title: L('Where the numbers sit.', 'Dónde están los números.'),
-          stats: [stat('40 to 55 min', 'rotary endurance', 'autonomía en rotor'), stat('90 min', 'fixed-wing endurance', 'autonomía en ala fija'), stat('1 to 5 kg', 'payload', 'carga útil'), stat('30 to 60 km', 'operating range', 'alcance')]},
+          stats: [stat('40–55 min', 'rotary endurance', 'autonomía en rotor'), stat('90 min', 'fixed-wing endurance', 'autonomía en ala fija'), stat('1–5 kg', 'payload', 'carga útil'), stat('30–60 km', 'operating range', 'alcance')]},
         {kind: 'prose', eyebrow: L('How to choose', 'Cómo elegir'), title: L('Start with the link, then the endurance, then the weight.', 'Empiece por el enlace, luego la autonomía y después el peso.'),
           body: L(`If radio can exist where you fly and the horizon is clear, any airframe works and you choose by endurance and payload. If nothing may radiate, or the picture must stay clean inside a plant or a tunnel, the 13-inch on fibre is the answer. If the operator is far from the aircraft, or one person must cover several sites in a day, the satellite-linked 15 and 17-inch take the ground station out of the equation.
 
@@ -502,7 +503,7 @@ Cada plataforma se entrega con número de serie, ficha de pruebas y registro de 
       heroEyebrow: L('Training', 'Formación'),
       heroTitle: L('Nobody flies our aircraft without flying with us first.', 'Nadie vuela nuestras aeronaves sin volar antes con nosotros.'),
       heroLead: L('Four courses, small groups, real airframes, and the same checklists we use on paid work. In Spanish or English, at the airfield near Alicante or at your site.', 'Cuatro cursos, grupos pequeños, aeronaves reales y las mismas listas de comprobación que usamos en trabajos de pago. En español o en inglés, en el campo de vuelo cerca de Alicante o en sus instalaciones.'),
-      heroMedia: media('training-field', {isVideoPlaceholder: true, alt: L('Instructor and trainees with controllers on an airfield', 'Instructor y alumnos con mandos en un campo de vuelo'), caption: L('A morning of first flights. Film in production.', 'Una mañana de primeros vuelos. Película en producción.')}),
+      heroMedia: media('poster-helipad', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/bb4a233636ce2152c55536ce6dff274e95e8ba8a.mp4', alt: L('An operator on the pad, seen from the aircraft', 'Un operador en la plataforma, visto desde la aeronave'), caption: L('An operator on the pad, seen from the aircraft. Stock film until ALICRON\'s own footage exists.', 'Un operador en la plataforma, visto desde la aeronave. Metraje de archivo hasta que exista el de ALICRON.')}),   // Pexels 31410462, trimmed to start at 5 s
       sections: [
         {kind: 'stats', eyebrow: L('How a course runs', 'Cómo funciona un curso'), title: L('Small on purpose.', 'Pequeño a propósito.'),
           stats: [stat('4', 'trainees per instructor', 'alumnos por instructor'), stat('2', 'languages', 'idiomas'), stat('7', 'airframes to fly', 'aeronaves para volar'), stat('1', 'checklist, the real one', 'lista de comprobación, la de verdad')]},
