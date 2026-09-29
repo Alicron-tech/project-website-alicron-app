@@ -3,7 +3,7 @@
 Next.js front end, Sanity Studio, content seed and generated media for the ALICRON website.
 The brief, structure, media inventory and decision log live in the SV Holding repository at
 `/Users/alecbedzir/vaimo_and_work/project-SV-holding/website-alicron-blueprint/` (start with its README).
-This folder is not under version control.
+Git: branch `master`, remote `nomicore/project-website-alicron-app`. Everything under `generated/` stays out of git (global ignore); so does `web/public/hero/`.
 
 ## Where things run
 
@@ -97,3 +97,8 @@ Every object inside an array (references, gallery images, stats, sections) must 
 - Figures are class figures from the current configurations, with the configuration stated.
 - Spanish is written as native copy, not translated word for word.
 - Brand-free photography: no insignia, no third-party logos, no uniforms.
+
+## Home hero film: backup and local preview
+
+- The live hero media (Mallorca clip) is backed up in `seed/backups/2026-09-29-home-hero-mallorca.json`; the clip and poster are in `generated/video/`. Restore with `source ~/.config/sanity/alicron.env && node seed/restore-hero.mjs seed/backups/2026-09-29-home-hero-mallorca.json`.
+- Local preview of another film without touching Sanity: `web/.env.local` sets `HERO_VIDEO_OVERRIDE` and `HERO_POSTER_OVERRIDE` (files in `web/public/hero/`, not committed) and `HERO_DIM_DEFAULT` (0 to 4). On the page, `?dim=0..4`, `?rate=0.7` and `?tune` (a small switcher panel) adjust the dark dim and the playback speed live.

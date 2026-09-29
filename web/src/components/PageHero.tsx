@@ -2,6 +2,7 @@ import Link from 'next/link'
 import {t, paras, urlFor, type Locale} from '@/lib/sanity'
 import {Media} from './Media'
 import {Sketch} from './Sketch'
+import {HeroFilm} from './HeroFilm'
 
 /** Light hero from the design system: badge + mono kicker, Geist Bold display title, mono standfirst, actions.
  *  The hero media (photo or video placeholder) sits below in the ruled column at 10px radius. */
@@ -11,13 +12,15 @@ export function PageHero({page, locale, full = false}: {page: Record<string, nev
   const cta = t(p.heroCtaLabel, locale)
   const es = locale === 'es'
   const hm = p.heroMedia as {videoUrl?: string; image?: unknown; alt?: never} | undefined
-  if (full && hm?.videoUrl) {
-    // Full-bleed video hero (first screen): the film plays behind the copy, the copy sits on a photo scrim.
-    const poster = hm.image ? urlFor(hm.image).width(2000).url() : undefined
+  // HERO_VIDEO_OVERRIDE lets a local build preview another film without touching the Sanity document.
+  const override = full ? process.env.HERO_VIDEO_OVERRIDE : undefined
+  if (full && (override || hm?.videoUrl)) {
+    // Full-bleed video hero (first screen): the film plays behind the copy, the copy sits on a dark dim and scrim.
+    const src = override || hm!.videoUrl!
+    const poster = override ? process.env.HERO_POSTER_OVERRIDE : hm?.image ? urlFor(hm.image).width(2000).url() : undefined
     return (
       <section className="vhero al-dark">
-        <video className="vhero__video" src={hm.videoUrl} poster={poster} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
-        <div className="vhero__scrim" />
+        <HeroFilm src={src} poster={poster} dim={Number(process.env.HERO_DIM_DEFAULT ?? 2)} />
         <div className="col vhero__copy">
           {eyebrow && <div className="kicker" style={{color: 'var(--surface-grey)'}}><span className="badge"><span>{es ? 'Ingeniería' : 'Engineering'}</span></span><span>{eyebrow}</span></div>}
           <h1 className="display-1">{title}</h1>

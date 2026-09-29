@@ -30,4 +30,4 @@ export async function proxy(req: NextRequest) {
   return noindex(NextResponse.next())
 }
 
-export const config = {matcher: ['/((?!_next/static|_next/image|.*\\.(?:png|jpg|jpeg|svg|webp|ico|txt|xml)$).*)']}
+export const config = {matcher: ['/((?!_next/static|_next/image|.*\\.(?:png|jpg|jpeg|svg|webp|ico|txt|xml|mp4|webm|mov)$).*)']}
