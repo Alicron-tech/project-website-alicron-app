@@ -1,0 +1,22 @@
+{
+ "_id": "application-agriculture",
+ "media": {
+  "alt": {
+   "en": "A fixed-wing aircraft over olive groves at golden hour",
+   "es": "Una aeronave de ala fija sobre olivares al atardecer"
+  },
+  "caption": {
+   "en": "Crop rows from the survey aircraft's height. Stock film until ALICRON's own footage exists.",
+   "es": "Hileras de cultivo desde la altura de la aeronave de levantamiento. Metraje de archivo hasta que exista el de ALICRON."
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-c272099086ef330a4b3d14b5aefd8539a19f8c4f-1920x1080-jpg",
+    "_type": "reference"
+   }
+  },
+  "isVideoPlaceholder": false,
+  "videoUrl": "https://cdn.sanity.io/files/wividiap/production/42ad7b56c537af5ee004dc91d7a6198ba2fc1cfe.mp4"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "application-pipeline-inspection": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-18f2248ebef61d99bd2a70fd2fecf2e0096c0631-1536x864-jpg",
+   "_type": "reference"
+  }
+ },
+ "application-agriculture": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-dfd3e8f8ee51aef9d91ea10614213f17549ac78b-1536x864-jpg",
+   "_type": "reference"
+  }
+ }
+}
