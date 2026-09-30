@@ -1,0 +1,26 @@
+{
+ "saved": "2026-09-30",
+ "what": "Home hero media, film version 4 (before the gate shot was fixed)",
+ "sanity": {
+  "_id": "page-home",
+  "heroMedia": {
+   "alt": {
+    "en": "A test day on the Costa Blanca: a quadcopter lifts off, first-person flights over a ridge and along a power line, a gate run, a flight-test crew on a clifftop and a white fixed-wing along the cliffs",
+    "es": "Un d\u00eda de pruebas en la Costa Blanca: un cuadric\u00f3ptero despega, vuelos en primera persona sobre una cresta y a lo largo de una l\u00ednea el\u00e9ctrica, un circuito de puertas, un equipo de ensayos en un acantilado y un ala fija blanca junto a los acantilados"
+   },
+   "caption": {
+    "en": "",
+    "es": ""
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-b80b94a49949beae851ee15ce66e60f30b88ea46-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/42ec61d9dbcb7e2cf28d53686a8e18bed9dfda59.mp4"
+  }
+ }
+}
