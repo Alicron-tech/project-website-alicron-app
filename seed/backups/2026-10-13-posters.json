@@ -1,0 +1,51 @@
+{
+ "page-training heroMedia": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-1a692c62d2d39bfa0692119ac0c875b898c564c7-1600x900-jpg",
+   "_type": "reference"
+  }
+ },
+ "application-pipeline-inspection media": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-7d7c0dd6e63f52f8966cb4747dcc9a97d1fb585b-1920x1080-jpg",
+   "_type": "reference"
+  }
+ },
+ "application-agriculture media": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-dc691bad9bbaa0d26a142c777bd8933cb5666bcb-1600x900-jpg",
+   "_type": "reference"
+  }
+ },
+ "application-power-lines media": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-3f51b515b436b044775193eca1cb813fcaf41966-1600x900-jpg",
+   "_type": "reference"
+  }
+ },
+ "application-emergency media": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-a91fcf5b11391dbded85e42b0ef63f6f57db0b6d-1600x900-jpg",
+   "_type": "reference"
+  }
+ },
+ "application-mapping media": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-05eee4a104cc1133d083c0ef62a37b41ae06cfc9-1600x900-jpg",
+   "_type": "reference"
+  }
+ },
+ "page-home sections[_key==\"k5nqq9\"].media": {
+  "_type": "image",
+  "asset": {
+   "_ref": "image-d820da49d6256443f40f03362d430d097331f217-1280x720-jpg",
+   "_type": "reference"
+  }
+ }
+}
