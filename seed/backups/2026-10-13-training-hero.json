@@ -1,0 +1,22 @@
+{
+ "_id": "page-training",
+ "heroMedia": {
+  "alt": {
+   "en": "Instructor and trainees with controllers on an airfield",
+   "es": "Instructor y alumnos con mandos en un campo de vuelo"
+  },
+  "caption": {
+   "en": "An operator on the pad, seen from the aircraft. Stock film until ALICRON's own footage exists.",
+   "es": "Un operador en la plataforma, visto desde la aeronave. Metraje de archivo hasta que exista el de ALICRON."
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-4ca173b7e2409c39c9796e181c56b082177c861b-1920x1080-jpg",
+    "_type": "reference"
+   }
+  },
+  "isVideoPlaceholder": false,
+  "videoUrl": "https://cdn.sanity.io/files/wividiap/production/bb4a233636ce2152c55536ce6dff274e95e8ba8a.mp4"
+ }
+}
