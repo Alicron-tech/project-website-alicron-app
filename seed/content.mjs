@@ -254,16 +254,16 @@ Las normas para volar cerca de emergencias son estrictas, y con razón. Formamos
       role: L('Orthophotos, elevation models and volumes, flown on a schedule and delivered in the customer\'s coordinate system.', 'Ortofotos, modelos de elevación y volúmenes, volados según calendario y entregados en el sistema de coordenadas del cliente.'),
       summary: L('Quarries, construction sites, coastlines and municipalities all need the same thing: an accurate, recent map. We fly it, process it and hand over files that open in the tools the customer already uses.',
         'Canteras, obras, costas y municipios necesitan lo mismo: un mapa preciso y reciente. Lo volamos, lo procesamos y entregamos archivos que se abren en las herramientas que el cliente ya usa.'),
-      body: L(`Photogrammetry is mostly discipline. Fly the lines with the right overlap, at the right height, with control points measured on the ground. Do that and the orthophoto lands within a few centimetres. Skip it and nothing lines up.
+      body: L(`Photogrammetry is mostly discipline: the right overlap, the right height, control points measured on the ground. Then the orthophoto lands within centimetres.
 
-We fly small sites with a multirotor and large ones with the fixed-wing. The heavy lifter carries a lidar head where vegetation hides the ground. Processing runs the same night. Deliverables are an orthomosaic, a digital surface model, a digital terrain model, contour lines and, for stockpiles and earthworks, volumes against the previous flight.
+Small sites fly with a multirotor, large ones with the fixed-wing, with lidar where vegetation hides the ground. Processing runs the same night: orthomosaic, surface and terrain models, contours and stockpile volumes against the last flight.
 
-For a site that changes every month, we set the flight up once and repeat it. The comparison between flights is where the value is: what moved, what grew, what was removed.`,
-        `La fotogrametría es sobre todo disciplina. Volar las líneas con el solape correcto, a la altura correcta, con puntos de control medidos en tierra. Si se hace así, la ortofoto cae dentro de unos pocos centímetros. Si se salta, nada encaja.
+For a site that changes every month, we fly the same plan again. The comparison is the value: what moved, what grew, what was removed.`,
+        `La fotogrametría es sobre todo disciplina: el solape correcto, la altura correcta y puntos de control medidos en tierra. Así, la ortofoto cae en pocos centímetros.
 
-Volamos los emplazamientos pequeños con un multirrotor y los grandes con el ala fija. El multirrotor pesado lleva un cabezal lidar donde la vegetación oculta el suelo. El procesado se ejecuta esa misma noche. Los entregables son una ortomosaico, un modelo digital de superficie, un modelo digital del terreno, curvas de nivel y, para acopios y movimientos de tierra, volúmenes respecto al vuelo anterior.
+Los sitios pequeños se vuelan con multirrotor y los grandes con el ala fija, con lidar donde la vegetación oculta el suelo. El procesado se hace esa noche: ortomosaico, modelos de superficie y terreno, curvas de nivel y volúmenes de acopio frente al vuelo anterior.
 
-Para un emplazamiento que cambia cada mes, configuramos el vuelo una vez y lo repetimos. La comparación entre vuelos es donde está el valor: qué se movió, qué creció, qué se retiró.`),
+Si el sitio cambia cada mes, volamos el mismo plan otra vez. El valor está en la comparación: qué se movió, qué creció, qué se retiró.`),
       outcomes: [L('Orthomosaic and elevation models in the customer\'s coordinate system', 'Ortomosaico y modelos de elevación en el sistema de coordenadas del cliente'), L('Volumes against the previous flight', 'Volúmenes respecto al vuelo anterior'), L('Ground control points measured and reported', 'Puntos de control medidos y documentados'), L('Repeatable flight plans for monthly comparison', 'Planes de vuelo repetibles para comparación mensual')],
       stats: [stat('3 cm', 'ground sample distance', 'resolución en el suelo'), stat('500 ha', 'per fixed-wing flight', 'por vuelo de ala fija'), stat('4 kg', 'lidar on the heavy lifter', 'lidar en el multirrotor pesado'), stat('1 night', 'processing', 'de procesado')],
       image: img('case-mapping'), platforms: [ref('platform-fixed-wing-endurance'), ref('platform-multirotor-15-coaxial'), ref('platform-multirotor-10')]},
@@ -401,29 +401,29 @@ Recibimos visitas con cita previa. Traiga el problema y, si el tiempo lo permite
     {_id: 'page-home', _type: 'page', slug: {current: 'home'},
       title: L('Home', 'Inicio'), metaDescription: settings.description,
       heroEyebrow: L('Alicante, Spain', 'Alicante, España'),
-      heroTitle: L('Aircraft that work where people should not have to.', 'Aeronaves que trabajan donde las personas no deberían tener que hacerlo.'),
+      heroTitle: L('Aircraft that work where people should not have to', 'Aeronaves que trabajan donde las personas no deberían tener que hacerlo'),
       heroLead: L('ALICRON designs, builds and flies unmanned aircraft and the software around them. Pipelines, fields, power lines, coastlines. Engineered and tested in Spain.',
         'ALICRON diseña, fabrica y opera aeronaves no tripuladas y el software que las rodea. Tuberías, campos, líneas eléctricas, costas. Diseñado y probado en España.'),
       heroMedia: media('hero-poster', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/b54dbe373147a32d14462be237f5b0af3c4cfbba.mp4', alt: L('A test day on the Costa Blanca: lift-off, first-person flights, a gate run, a flight-test crew and a white fixed-wing along the cliffs', 'Un día de pruebas en la Costa Blanca: despegue, vuelos en primera persona, un circuito de puertas, un equipo de ensayos y un ala fija blanca junto a los acantilados')}),   // generated film (v5, 2026-09-30: gate run fixed, blueprint docs/hero-video.md); set with set-hero.mjs, which also sets its own poster. Previous: Pexels 31786583 Mallorca, backup in backups/
       heroCtaLabel: L('Talk to us', 'Hablemos'), heroCtaHref: '/contact',
       sections: [
-        {kind: 'features', eyebrow: L('What we do', 'Qué hacemos'), title: L('Four things, done properly.', 'Cuatro cosas, bien hechas.'),
+        {kind: 'features', eyebrow: L('What we do', 'Qué hacemos'), title: L('Four things, done properly', 'Cuatro cosas, bien hechas'),
           features: [
             {title: L('Aerial platforms', 'Plataformas aéreas'), text: L('Multirotors from ten to seventeen inches and two fixed-wing aircraft. Radio, fibre-optic or satellite links. Built to be flown every day, not shown once.', 'Multirrotores de diez a diecisiete pulgadas y dos aeronaves de ala fija. Enlaces por radio, fibra óptica o satélite. Hechas para volar a diario, no para enseñarse una vez.'), href: '/platforms'},
             {title: L('Software and robotics', 'Software y robótica'), text: L('Our own mission software on the ground station, on-board vision next to the camera, and a control suite for ground robots in development.', 'Nuestro propio software de misión en la estación de tierra, visión a bordo junto a la cámara y un sistema de control para robots terrestres en desarrollo.'), href: '/software'},
             {title: L('Training', 'Formación'), text: L('First flights in two days, operators in two weeks, technicians in one, instructors for customers who will train their own people.', 'Primeros vuelos en dos días, operadores en dos semanas, técnicos en una, e instructores para clientes que formarán a su propia gente.'), href: '/training'},
             {title: L('Engineering', 'Ingeniería'), text: L('Design, prototyping, testing and integration at the centre in Alicante. Bring a sensor or a problem; we will fly something at it.', 'Diseño, prototipado, pruebas e integración en el centro de Alicante. Traiga un sensor o un problema; volaremos algo sobre él.'), href: '/engineering'},
           ]},
-        {kind: 'split', eyebrow: L('Field case', 'Caso de campo'), title: L('The pipeline, flown from the office.', 'La tubería, volada desde la oficina.'),
+        {kind: 'split', eyebrow: L('Field case', 'Caso de campo'), title: L('The pipeline, flown from the office', 'La tubería, volada desde la oficina'),
           body: L(`A technician opens a case on the tailgate. A 15-inch multirotor with a satellite terminal lifts off and follows the line at a set height, pausing at valve stations and river crossings. Two provinces away, an engineer watches the thermal feed and the map. By evening the flight log, the video and the flagged frames are in the customer\'s system.`,
             `Un técnico abre una maleta en el portón. Un multirrotor de 15 pulgadas con terminal satelital despega y sigue la conducción a una altura fija, con paradas en las estaciones de válvulas y los cruces de ríos. A dos provincias, un ingeniero sigue la señal térmica y el mapa. Al anochecer, el registro de vuelo, el vídeo y los fotogramas marcados están en el sistema del cliente.`),
           media: media('poster-corridor', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/ec6dfc71feb24187131f6bf587016126f39e8606.mp4', alt: L('A pickup on a pipeline track, a drone lifted from its case and flying the line, and the live feed on an office screen', 'Una camioneta en la pista de una tubería, un dron que sale de su maleta y vuela la línea, y la señal en directo en una pantalla de oficina')}),   // generated film (blueprint docs/pipeline-videos.md), set with set-pipeline-films.mjs, which also sets its poster; was Pexels 38603541
           ctaLabel: L('Pipeline inspection', 'Inspección de tuberías'), ctaHref: '/applications/pipeline-inspection'},
-        {kind: 'cards', eyebrow: L('Platforms', 'Plataformas'), title: L('Named by what they are, not by a brand.', 'Nombradas por lo que son, no por una marca.'),
+        {kind: 'cards', eyebrow: L('Platforms', 'Plataformas'), title: L('Named by what they are, not by a brand', 'Nombradas por lo que son, no por una marca'),
           lead: L('Each class is a size and a link type. Pick by the job: how far, how long, how heavy, and whether radio is allowed to exist where you fly.', 'Cada clase es un tamaño y un tipo de enlace. Se elige por el trabajo: cuánto de lejos, cuánto tiempo, cuánto peso y si la radio puede existir donde se vuela.'),
           refs: [ref('platform-multirotor-15-satellite'), ref('platform-multirotor-13'), ref('platform-fixed-wing-endurance')],
           ctaLabel: L('All platform types', 'Todas las plataformas'), ctaHref: '/platforms'},
-        {kind: 'dark', eyebrow: L('Links', 'Enlaces'), title: L('Radio when it works. Fibre or satellite when it must.', 'Radio cuando funciona. Fibra o satélite cuando hace falta.'),
+        {kind: 'dark', eyebrow: L('Links', 'Enlaces'), title: L('Radio when it works. Fibre or satellite when it must', 'Radio cuando funciona. Fibra o satélite cuando hace falta'),
           lead: L('Most drone problems are link problems. We build three answers into the same airframes.', 'La mayoría de problemas con drones son problemas de enlace. Montamos tres respuestas en las mismas aeronaves.'),
           body: L(`Encrypted radio is the default: cheap, light, and good for thirty to forty-five kilometres with a clear horizon. Where the horizon is not clear, or where nothing may radiate, the 13-inch flies on a spooled optical fibre. Where the operator is far away, the 15 and 17-inch carry a satellite terminal and the ground station stops being a place.
 
@@ -433,7 +433,7 @@ The same operator training covers all three. The same cases carry all three.`,
 La misma formación de operador cubre los tres. Las mismas maletas transportan los tres.`),
           media: media('dark-antenna', {alt: L('Satellite terminal on a drone frame', 'Terminal satelital sobre el chasis de un dron')}),
           stats: [stat('45 km', 'radio, clear horizon', 'radio, horizonte despejado'), stat('30 km', 'on optical fibre', 'por fibra óptica'), stat('∞', 'over satellite', 'por satélite'), stat('55 min', 'longest rotary endurance', 'mayor autonomía en rotor')]},
-        {kind: 'split', reverse: true, eyebrow: L('Engineering', 'Ingeniería'), title: L('Worked out in Alicante, built in series in the Netherlands.', 'Resuelto en Alicante, fabricado en serie en los Países Bajos.'),
+        {kind: 'split', reverse: true, eyebrow: L('Engineering', 'Ingeniería'), title: L('Worked out in Alicante, built in series in the Netherlands', 'Resuelto en Alicante, fabricado en serie en los Países Bajos'),
           body: L(`ALICRON is the engineering company of a European unmanned-systems group. Designs are drawn, prototyped, flown and taught here, on the coast of Alicante. Serial production runs at the group\'s plant in the Netherlands. Customers get an engineering team they can visit and a factory that ships on schedule.
 
 The workshop has printers, a small machine shop, an electronics bench and a flight field ten minutes away. Most of what is on this site started as something a customer asked for.`,
@@ -442,7 +442,7 @@ The workshop has printers, a small machine shop, an electronics bench and a flig
 El taller tiene impresoras, un pequeño taller mecánico, un banco de electrónica y un campo de vuelo a diez minutos. Casi todo lo que hay en esta web empezó como algo que pidió un cliente.`),
           media: media('team-hangar', {alt: L('The team in front of the hangar with a fixed-wing and two multirotors', 'El equipo delante del hangar con un ala fija y dos multirrotores')}),   // generated placeholder until a real team photo exists
           ctaLabel: L('About the company', 'Sobre la empresa'), ctaHref: '/company'},
-        {kind: 'cta', title: L('Tell us what you need to see, and from where.', 'Cuéntenos qué necesita ver, y desde dónde.'),
+        {kind: 'cta', title: L('Tell us what you need to see, and from where', 'Cuéntenos qué necesita ver, y desde dónde'),
           lead: L('We reply within a working day, in Spanish or English, with the questions we need answered before proposing anything.', 'Respondemos en un día laborable, en español o en inglés, con las preguntas que necesitamos aclarar antes de proponer nada.'),
           ctaLabel: L('Contact', 'Contacto'), ctaHref: '/contact'},
       ]},
@@ -450,14 +450,14 @@ El taller tiene impresoras, un pequeño taller mecánico, un banco de electróni
     {_id: 'page-platforms', _type: 'page', slug: {current: 'platforms'},
       title: L('Platforms', 'Plataformas'), metaDescription: L('Multirotor and fixed-wing unmanned aircraft by class: size, endurance, payload and link type.', 'Aeronaves no tripuladas multirrotor y de ala fija por clase: tamaño, autonomía, carga útil y tipo de enlace.'),
       heroEyebrow: L('Platforms', 'Plataformas'),
-      heroTitle: L('Seven airframes. Three kinds of link. One set of cases, batteries and training.', 'Siete aeronaves. Tres tipos de enlace. Un solo juego de maletas, baterías y formación.'),
+      heroTitle: L('Seven airframes. Three kinds of link. One set of cases, batteries and training', 'Siete aeronaves. Tres tipos de enlace. Un solo juego de maletas, baterías y formación'),
       heroLead: L('We name platforms by what they are: the propeller size for multirotors, the role for fixed-wings. The figures below are class figures from the current configurations; the detail pages say what each was measured with.',
         'Nombramos las plataformas por lo que son: el tamaño de hélice en los multirrotores, la función en las alas fijas. Las cifras son de clase, de las configuraciones actuales; las páginas de detalle dicen con qué se midió cada una.'),
       heroMedia: media('p-15sat', {alt: L('15-inch multirotor with a satellite terminal', 'Multirrotor de 15 pulgadas con terminal satelital')}),
       sections: [
-        {kind: 'stats', eyebrow: L('Across the line', 'En toda la línea'), title: L('Where the numbers sit.', 'Dónde están los números.'),
+        {kind: 'stats', eyebrow: L('Across the line', 'En toda la línea'), title: L('Where the numbers sit', 'Dónde están los números'),
           stats: [stat('40–55 min', 'rotary endurance', 'autonomía en rotor'), stat('90 min', 'fixed-wing endurance', 'autonomía en ala fija'), stat('1–5 kg', 'payload', 'carga útil'), stat('30–60 km', 'operating range', 'alcance')]},
-        {kind: 'prose', eyebrow: L('How to choose', 'Cómo elegir'), title: L('Start with the link, then the endurance, then the weight.', 'Empiece por el enlace, luego la autonomía y después el peso.'),
+        {kind: 'prose', eyebrow: L('How to choose', 'Cómo elegir'), title: L('Start with the link, then the endurance, then the weight', 'Empiece por el enlace, luego la autonomía y después el peso'),
           body: L(`If radio can exist where you fly and the horizon is clear, any airframe works and you choose by endurance and payload. If nothing may radiate, or the picture must stay clean inside a plant or a tunnel, the 13-inch on fibre is the answer. If the operator is far from the aircraft, or one person must cover several sites in a day, the satellite-linked 15 and 17-inch take the ground station out of the equation.
 
 Fixed-wings cover distance. The survey aircraft is for lines and areas; the high-speed aircraft, still in development, is for getting somewhere fast and looking.
@@ -473,7 +473,7 @@ Cada plataforma se entrega con número de serie, ficha de pruebas y registro de 
     {_id: 'page-applications', _type: 'page', slug: {current: 'applications'},
       title: L('Applications', 'Aplicaciones'), metaDescription: L('Pipeline inspection, crop monitoring, power lines, emergency response and mapping with unmanned aircraft.', 'Inspección de tuberías, seguimiento de cultivos, líneas eléctricas, emergencias y cartografía con aeronaves no tripuladas.'),
       heroEyebrow: L('Applications', 'Aplicaciones'),
-      heroTitle: L('Five jobs we do every week.', 'Cinco trabajos que hacemos cada semana.'),
+      heroTitle: L('Five jobs we do every week', 'Cinco trabajos que hacemos cada semana'),
       heroLead: L('Each page describes the job the way we would describe it to a new operator: what happens, who is where, and what the customer has at the end of the day.', 'Cada página describe el trabajo como se lo contaríamos a un operador nuevo: qué pasa, quién está dónde y qué tiene el cliente al final del día.'),
       sections: [
         {kind: 'cta', title: L('A job that is not on this list?', '¿Un trabajo que no está en la lista?'),
@@ -484,10 +484,10 @@ Cada plataforma se entrega con número de serie, ficha de pruebas y registro de 
     {_id: 'page-software', _type: 'page', slug: {current: 'software'},
       title: L('Software and robotics', 'Software y robótica'), metaDescription: L('Mission software for the ground station, on-board vision and a control suite for ground robots.', 'Software de misión para la estación de tierra, visión a bordo y un sistema de control para robots terrestres.'),
       heroEyebrow: L('Software and robotics', 'Software y robótica'),
-      heroTitle: L('The aircraft is half the product. The other half runs on the ground station.', 'La aeronave es la mitad del producto. La otra mitad se ejecuta en la estación de tierra.'),
+      heroTitle: L('The aircraft is half the product. The other half runs on the ground station', 'La aeronave es la mitad del producto. La otra mitad se ejecuta en la estación de tierra'),
       heroLead: L('We write the software that plans the route, keeps the link alive, reads the video and, increasingly, drives things that do not fly.', 'Escribimos el software que planifica la ruta, mantiene vivo el enlace, lee el vídeo y, cada vez más, conduce cosas que no vuelan.'),
       sections: [
-        {kind: 'dark', eyebrow: L('Robotics', 'Robótica'), title: L('One operator, one map, air and ground.', 'Un operador, un mapa, aire y tierra.'),
+        {kind: 'dark', eyebrow: L('Robotics', 'Robótica'), title: L('One operator, one map, air and ground', 'Un operador, un mapa, aire y tierra'),
           lead: L('The ground robot control suite reuses the mission software, so the skill transfers.', 'El sistema de control de robots terrestres reutiliza el software de misión, así que la habilidad se transfiere.'),
           body: L('An operator who can plan and fly a route on the ground station can drive a wheeled robot along one with the same tools. Teleoperation, waypoints, payload control. The suite is in development at the R&D centre with a partner platform and will be released after a season of real work.',
             'Un operador que sabe planificar y volar una ruta en la estación de tierra puede conducir un robot con ruedas por una con las mismas herramientas. Teleoperación, puntos de ruta, control de carga útil. El sistema está en desarrollo en el centro de I+D con la plataforma de un socio y se publicará tras una temporada de trabajo real.'),
@@ -497,18 +497,18 @@ Cada plataforma se entrega con número de serie, ficha de pruebas y registro de 
     {_id: 'page-training', _type: 'page', slug: {current: 'training'},
       title: L('Training', 'Formación'), metaDescription: L('First flights, operator, technical and instructor courses at the Alicante centre or on site.', 'Primeros vuelos y cursos de operador, técnico e instructor en el centro de Alicante o en las instalaciones del cliente.'),
       heroEyebrow: L('Training', 'Formación'),
-      heroTitle: L('Nobody flies our aircraft without flying with us first.', 'Nadie vuela nuestras aeronaves sin volar antes con nosotros.'),
+      heroTitle: L('Nobody flies our aircraft without flying with us first', 'Nadie vuela nuestras aeronaves sin volar antes con nosotros'),
       heroLead: L('Four courses, small groups, real airframes, and the same checklists we use on paid work. In Spanish or English, at the airfield near Alicante or at your site.', 'Cuatro cursos, grupos pequeños, aeronaves reales y las mismas listas de comprobación que usamos en trabajos de pago. En español o en inglés, en el campo de vuelo cerca de Alicante o en sus instalaciones.'),
       heroMedia: media('poster-helipad', {videoUrl: 'https://cdn.sanity.io/files/wividiap/production/bb4a233636ce2152c55536ce6dff274e95e8ba8a.mp4', alt: L('An operator on the pad, seen from the aircraft', 'Un operador en la plataforma, visto desde la aeronave'), caption: L('An operator on the pad, seen from the aircraft. Stock film until ALICRON\'s own footage exists.', 'Un operador en la plataforma, visto desde la aeronave. Metraje de archivo hasta que exista el de ALICRON.')}),   // Pexels 31410462, trimmed to start at 5 s
       sections: [
-        {kind: 'stats', eyebrow: L('How a course runs', 'Cómo funciona un curso'), title: L('Small on purpose.', 'Pequeño a propósito.'),
+        {kind: 'stats', eyebrow: L('How a course runs', 'Cómo funciona un curso'), title: L('Small on purpose', 'Pequeño a propósito'),
           stats: [stat('4', 'trainees per instructor', 'alumnos por instructor'), stat('2', 'languages', 'idiomas'), stat('7', 'airframes to fly', 'aeronaves para volar'), stat('1', 'checklist, the real one', 'lista de comprobación, la de verdad')]},
       ]},
 
     {_id: 'page-engineering', _type: 'page', slug: {current: 'engineering'},
       title: L('Engineering', 'Ingeniería'), metaDescription: L('Design, prototyping, testing and integration of unmanned aircraft at the Alicante centre.', 'Diseño, prototipado, pruebas e integración de aeronaves no tripuladas en el centro de Alicante.'),
       heroEyebrow: L('Engineering', 'Ingeniería'),
-      heroTitle: L('Bring a sensor or a problem. We will fly something at it.', 'Traiga un sensor o un problema. Volaremos algo sobre él.'),
+      heroTitle: L('Bring a sensor or a problem. We will fly something at it', 'Traiga un sensor o un problema. Volaremos algo sobre él'),
       heroLead: L('The centre in Alicante designs, builds, tests and integrates. Serial production is at the group plant in the Netherlands. Here is where things get worked out first.', 'El centro de Alicante diseña, construye, prueba e integra. La producción en serie está en la planta del grupo en los Países Bajos. Aquí es donde las cosas se resuelven primero.'),
       heroMedia: media('engineering-test', {alt: L('Fixed-wing aircraft on a launch rail at sunrise', 'Aeronave de ala fija en un raíl de lanzamiento al amanecer')}),
       sections: []},
@@ -516,11 +516,11 @@ Cada plataforma se entrega con número de serie, ficha de pruebas y registro de 
     {_id: 'page-company', _type: 'page', slug: {current: 'company'},
       title: L('Company', 'Empresa'), metaDescription: L('ALICRON is the Spanish engineering company of a European unmanned-systems group, based in Alicante.', 'ALICRON es la empresa de ingeniería española de un grupo europeo de sistemas no tripulados, con sede en Alicante.'),
       heroEyebrow: L('Company', 'Empresa'),
-      heroTitle: L('A small engineering company on the coast of Alicante, inside a European group.', 'Una pequeña empresa de ingeniería en la costa de Alicante, dentro de un grupo europeo.'),
+      heroTitle: L('A small engineering company on the coast of Alicante, inside a European group', 'Una pequeña empresa de ingeniería en la costa de Alicante, dentro de un grupo europeo'),
       heroLead: L('We build unmanned aircraft and the software around them for people who inspect, measure, farm and respond. Everything we sell, we fly ourselves first.', 'Construimos aeronaves no tripuladas y el software que las rodea para quienes inspeccionan, miden, cultivan y responden a emergencias. Todo lo que vendemos lo volamos antes nosotros.'),
       heroMedia: media('company-alicante', {alt: L('The ALICRON building near Alicante', 'El edificio de ALICRON cerca de Alicante')}),
       sections: [
-        {kind: 'prose', eyebrow: L('Who we are', 'Quiénes somos'), title: L('Engineers who fly.', 'Ingenieros que vuelan.'),
+        {kind: 'prose', eyebrow: L('Who we are', 'Quiénes somos'), title: L('Engineers who fly', 'Ingenieros que vuelan'),
           body: L(`ALICRON was set up in Spain as the engineering company of a European unmanned-systems group. The group manufactures in series in the Netherlands; ALICRON is where designs are drawn, prototyped, tested and taught. The team is aeronautical and electronics engineers, software developers and instructors, several of whom came to drones from designing full-size aircraft.
 
 We work in Spanish and English, and in Ukrainian, because a good part of the group\'s engineering experience comes from there. We are a comfortable partner for Spanish-speaking customers in Europe and Latin America who want a European company they can visit, call and hold to account.
@@ -531,20 +531,20 @@ We are small and we intend to stay useful rather than large. If you need a hundr
 Trabajamos en español y en inglés, y en ucraniano, porque buena parte de la experiencia de ingeniería del grupo viene de allí. Somos un socio cómodo para clientes hispanohablantes de Europa y América Latina que quieren una empresa europea a la que poder visitar, llamar y pedir cuentas.
 
 Somos pequeños y pretendemos seguir siendo útiles antes que grandes. Si necesita cien aeronaves el mes que viene, la planta del grupo puede hacerlo. Si necesita la aeronave adecuada para un trabajo que nadie ha hecho antes, esos somos nosotros.`)},
-        {kind: 'features', eyebrow: L('How we work', 'Cómo trabajamos'), title: L('Four habits.', 'Cuatro costumbres.'),
+        {kind: 'features', eyebrow: L('How we work', 'Cómo trabajamos'), title: L('Four habits', 'Cuatro costumbres'),
           features: [
             {title: L('Measured, not hoped', 'Medido, no esperado'), text: L('Every figure we publish was measured in a stated configuration. When a number changes, the page changes.', 'Cada cifra que publicamos se midió en una configuración declarada. Cuando un número cambia, la página cambia.')},
             {title: L('Flown before shipped', 'Volado antes de entregado'), text: L('Every airframe has a serial number and a flight test card. Every design flies for months before it is a product.', 'Cada aeronave tiene número de serie y ficha de prueba de vuelo. Cada diseño vuela meses antes de ser producto.')},
             {title: L('One set of everything', 'Un solo juego de todo'), text: L('Cases, batteries, spares and training are shared across the line. A fleet with three classes is one fleet.', 'Maletas, baterías, repuestos y formación se comparten en toda la línea. Una flota con tres clases es una sola flota.')},
             {title: L('Reachable', 'Localizables'), text: L('A named engineer for every customer, a phone that is answered, a workshop you can visit.', 'Un ingeniero con nombre para cada cliente, un teléfono que se contesta, un taller que se puede visitar.')},
           ]},
-        {kind: 'dark', eyebrow: L('The group', 'El grupo'), title: L('Engineering in Spain. Manufacturing in the Netherlands.', 'Ingeniería en España. Fabricación en los Países Bajos.'),
+        {kind: 'dark', eyebrow: L('The group', 'El grupo'), title: L('Engineering in Spain. Manufacturing in the Netherlands', 'Ingeniería en España. Fabricación en los Países Bajos'),
           lead: L('Two sites, one product line, one quality system.', 'Dos sedes, una línea de producto, un sistema de calidad.'),
           body: L('The group was set up to bring a proven line of unmanned aircraft to European and Latin American customers under European engineering, manufacturing and quality control. ALICRON is its Spanish engineering company. The Netherlands plant handles serial production, quality control and logistics.',
             'El grupo se creó para llevar una línea probada de aeronaves no tripuladas a clientes europeos y latinoamericanos bajo ingeniería, fabricación y control de calidad europeos. ALICRON es su empresa de ingeniería en España. La planta de los Países Bajos se ocupa de la producción en serie, el control de calidad y la logística.'),
           media: media('dark-carbon', {alt: L('Carbon fibre drone arm and motor', 'Brazo de fibra de carbono y motor de un dron')}),
           stats: [stat('2', 'sites', 'sedes'), stat('7', 'airframe classes', 'clases de aeronave'), stat('3', 'working languages', 'idiomas de trabajo'), stat('1', 'quality system', 'sistema de calidad')]},
-        {kind: 'cta', title: L('Come and see the workshop.', 'Venga a ver el taller.'),
+        {kind: 'cta', title: L('Come and see the workshop', 'Venga a ver el taller'),
           lead: L('Visits by appointment. Alicante airport is a short drive away.', 'Visitas con cita previa. El aeropuerto de Alicante está a poca distancia.'),
           ctaLabel: L('Contact', 'Contacto'), ctaHref: '/contact'},
       ]},
@@ -552,7 +552,7 @@ Somos pequeños y pretendemos seguir siendo útiles antes que grandes. Si necesi
     {_id: 'page-contact', _type: 'page', slug: {current: 'contact'},
       title: L('Contact', 'Contacto'), metaDescription: L('Write to ALICRON in Alicante, Spain.', 'Escriba a ALICRON en Alicante, España.'),
       heroEyebrow: L('Contact', 'Contacto'),
-      heroTitle: L('Say what you need to see, and from where.', 'Diga qué necesita ver, y desde dónde.'),
+      heroTitle: L('Say what you need to see, and from where', 'Diga qué necesita ver, y desde dónde'),
       heroLead: L('One email is enough to start. We answer within a working day.', 'Con un correo basta para empezar. Respondemos en un día laborable.'),
       sections: []},
 

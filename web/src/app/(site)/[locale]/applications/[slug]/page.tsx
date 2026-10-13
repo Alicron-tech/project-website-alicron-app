@@ -50,7 +50,7 @@ export default async function ApplicationPage({params}: {params: Promise<{locale
         </div></div>
       ) : null}
       <section className="cta-band" style={{marginTop: 'clamp(48px, 5.5vw, 80px)'}}>
-        <h2 className="display-2">{es ? 'Cuéntanos qué hay que inspeccionar.' : 'Tell us what needs inspecting.'}</h2>
+        <h2 className="display-2">{es ? 'Cuéntanos qué hay que inspeccionar' : 'Tell us what needs inspecting'}</h2>
         <Link href={`/${locale}/contact`} className="tbtn tbtn--light">{es ? 'Contactar' : 'Get in touch'}</Link>
       </section>
     </>

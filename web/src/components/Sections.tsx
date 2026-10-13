@@ -5,7 +5,7 @@ import {Media, Img} from './Media'
 type LS = {en?: string; es?: string}
 export type Stat = {value: string; label?: LS}
 export type Ref = {_type: string; slug: string; name?: LS; role?: LS; summary?: LS; image?: unknown; category?: string; family?: string; status?: LS; stats?: Stat[]}
-export type Section = {kind: string; eyebrow?: LS; title?: LS; lead?: LS; body?: LS; reverse?: boolean; ctaLabel?: LS; ctaHref?: string; media?: never; stats?: Stat[]; features?: {title?: LS; text?: LS; href?: string; image?: unknown}[]; refs?: Ref[]}
+export type Section = {kind: string; eyebrow?: LS; title?: LS; lead?: LS; body?: LS; reverse?: boolean; large?: boolean; ctaLabel?: LS; ctaHref?: string; media?: never; stats?: Stat[]; features?: {title?: LS; text?: LS; href?: string; image?: unknown}[]; refs?: Ref[]}
 
 export const refPath = (r: Ref) => (r._type === 'platform' ? `/platforms/${r.slug}` : r._type === 'application' ? `/applications/${r.slug}` : `/${r.category ?? 'software'}#${r.slug}`)
 const familyLabel = (f: string | undefined, locale: Locale) => (f === 'Multirotor' ? (locale === 'es' ? 'Multirrotor' : 'Multirotor') : f === 'Fixed-wing' ? (locale === 'es' ? 'Ala fija' : 'Fixed-wing') : f ?? '')
@@ -35,7 +35,10 @@ export function Cards({refs, locale}: {refs?: Ref[]; locale: Locale}) {
       {refs.map((r) => (
         <Link key={r.slug} href={`/${locale}${refPath(r)}`} className="cell case" style={{padding: 0}}>
           <div style={{padding: 'var(--cell-pad)', display: 'flex', flexDirection: 'column', flex: 1}}>
-            <Img image={r.image} alt={t(r.name, locale)} sizes="(max-width: 900px) 100vw, 40vw" />
+            <div className="case__media">
+              <Img image={r.image} alt={t(r.name, locale)} sizes="(max-width: 900px) 100vw, 40vw" />
+              {r._type === 'application' ? <span className="case__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg></span> : null}
+            </div>
             <span className="case__client">{r.family ? familyLabel(r.family, locale) : t(r.status, locale) || (r.category ?? '')}</span>
             <h3 className="display-4">{t(r.name, locale)}</h3>
             <p className="body-lg">{t(r.role, locale) || paras(r.summary, locale)[0]}</p>
@@ -127,7 +130,7 @@ export function SectionView({s, locale, index}: {s: Section; locale: Locale; ind
       )
     case 'split':
       return (
-        <div className="col"><div className={`ruled rule-top split ${s.reverse ? 'split--reverse' : ''}`}>
+        <div className="col"><div className={`ruled rule-top split ${s.reverse ? 'split--reverse' : ''} ${s.large ? 'split--lg' : ''}`}>
           <div className="fb">
             {t(s.eyebrow, locale) && <span className="eyebrow">{t(s.eyebrow, locale)}</span>}
             <h2 className="display-3">{t(s.title, locale)}</h2>
@@ -135,7 +138,7 @@ export function SectionView({s, locale, index}: {s: Section; locale: Locale; ind
             <Prose v={s.body} locale={locale} />
             <div><Cta s={s} locale={locale} /></div>
           </div>
-          <div className="media-cell"><Media media={s.media} locale={locale} sizes="(max-width: 900px) 100vw, 60vw" /></div>
+          <div className="media-cell"><Media media={s.media} locale={locale} ratio={s.large ? '43' : '169'} sizes="(max-width: 900px) 100vw, 60vw" /></div>
         </div></div>
       )
     case 'cta':

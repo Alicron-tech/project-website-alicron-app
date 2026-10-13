@@ -72,7 +72,7 @@ async function ContactBlock({locale}: {locale: Locale}) {
     <div className="col"><div className="ruled rule-top split">
       <div className="fb">
         <span className="eyebrow">{es ? 'Escríbenos' : 'Write to us'}</span>
-        <h2 className="display-3">{es ? 'Primero, una conversación.' : 'A conversation first.'}</h2>
+        <h2 className="display-3">{es ? 'Primero, una conversación' : 'A conversation first'}</h2>
         <p className="body-lg">{es ? 'Cuéntanos qué hay que inspeccionar, cartografiar o automatizar, y desde dónde. Respondemos en un día laborable con las preguntas que necesitamos aclarar antes de proponer nada.' : 'Tell us what needs inspecting, mapping or automating, and from where. We reply within a working day with the questions we need answered before we propose anything.'}</p>
         {s?.email && <div><a className="btn" href={`mailto:${s.email}`}>{s.email}</a></div>}
       </div>

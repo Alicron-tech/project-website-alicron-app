@@ -1,0 +1,35 @@
+{
+ "_key": "k5qqq9",
+ "body": {
+  "en": "ALICRON is the engineering company of a European unmanned-systems group. Designs are drawn, prototyped, flown and taught here, on the coast of Alicante. Serial production runs at the group's plant in the Netherlands. Customers get an engineering team they can visit and a factory that ships on schedule.\n\nThe workshop has printers, a small machine shop, an electronics bench and a flight field ten minutes away. Most of what is on this site started as something a customer asked for.",
+  "es": "ALICRON es la empresa de ingeniería de un grupo europeo de sistemas no tripulados. Los diseños se dibujan, se prototipan, se vuelan y se enseñan aquí, en la costa de Alicante. La producción en serie se hace en la planta del grupo en los Países Bajos. Los clientes tienen un equipo de ingeniería al que pueden visitar y una fábrica que entrega a tiempo.\n\nEl taller tiene impresoras, un pequeño taller mecánico, un banco de electrónica y un campo de vuelo a diez minutos. Casi todo lo que hay en esta web empezó como algo que pidió un cliente."
+ },
+ "ctaHref": "/company",
+ "ctaLabel": {
+  "en": "About the company",
+  "es": "Sobre la empresa"
+ },
+ "eyebrow": {
+  "en": "Engineering",
+  "es": "Ingeniería"
+ },
+ "kind": "split",
+ "media": {
+  "alt": {
+   "en": "The team in front of the hangar with a fixed-wing and two multirotors",
+   "es": "El equipo delante del hangar con un ala fija y dos multirrotores"
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-d185295063b8fdf2718e513134741bb8274d8e59-1536x1024-jpg",
+    "_type": "reference"
+   }
+  }
+ },
+ "reverse": true,
+ "title": {
+  "en": "Worked out in Alicante, built in series in the Netherlands",
+  "es": "Resuelto en Alicante, fabricado en serie en los Países Bajos"
+ }
+}

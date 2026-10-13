@@ -3,3 +3,7 @@
 .env.local
 /public/pipeline/
 /public/agriculture/
+/public/power-lines/
+/public/emergency/
+/public/mapping/
+/public/cards/

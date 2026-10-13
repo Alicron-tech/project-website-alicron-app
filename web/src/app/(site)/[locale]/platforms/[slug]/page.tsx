@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
 import {getPlatform, getSlugs} from '@/lib/queries'
-import {t, paras, urlFor, type Locale} from '@/lib/sanity'
+import {t, paras, urlFor, type Locale, localImage} from '@/lib/sanity'
 import {Cards, Prose, StatBlock, type Ref, type Stat} from '@/components/Sections'
 import {Img} from '@/components/Media'
 
@@ -57,7 +57,7 @@ export default async function PlatformPage({params}: {params: Promise<{locale: L
           <div className="tiles">
             {p.gallery.map((g: unknown, i: number) => (
               <figure key={i} className="tile" style={{margin: 0}}>
-                <Image src={urlFor(g).width(1600).url()} alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
+                <Image src={localImage(g) ?? urlFor(g).width(1600).url()} alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
                 <figcaption className="tile__cap"><span className="tile__meta">{t(p.name, locale)} · {String(i + 1).padStart(2, '0')}</span></figcaption>
               </figure>
             ))}
@@ -73,7 +73,7 @@ export default async function PlatformPage({params}: {params: Promise<{locale: L
       ) : null}
 
       <section className="cta-band" style={{marginTop: 'var(--gutter-dark)'}}>
-        <h2 className="display-2">{es ? 'Solicita una demostración de vuelo.' : 'Request a flight demonstration.'}</h2>
+        <h2 className="display-2">{es ? 'Solicita una demostración de vuelo' : 'Request a flight demonstration'}</h2>
         <Link href={`/${locale}/contact`} className="tbtn tbtn--light">{es ? 'Contactar' : 'Get in touch'}</Link>
       </section>
     </div>

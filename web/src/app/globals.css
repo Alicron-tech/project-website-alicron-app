@@ -189,6 +189,10 @@ button, input { font: inherit; }
 .split > .media-cell { padding: var(--cell-pad); }
 .split--reverse { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }   /* media takes columns 1 and 2, text column 3 */
 .split--reverse > .fb { order: 2; border-right: none; border-left: 1px dashed var(--rule-dashed); }
+/* larger text variant: wider text column, headline and body about 25 % bigger */
+.split--lg { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.split--lg > .fb h2 { max-width: 620px; font-size: clamp(35px, 3.1vw, 45px); }
+.split--lg > .fb .body-lg { max-width: 600px; font-size: 1.25em; line-height: 1.55; }
 @media (max-width: 900px) { .split { grid-template-columns: 1fr; } .split > .fb, .split--reverse > .fb { border: none; border-bottom: 1px dashed var(--rule-dashed); order: 0; } }
 
 /* blockquote */
@@ -288,3 +292,16 @@ button, input { font: inherit; }
 .hero-wrap { position: relative; overflow: hidden; }
 .hero-wrap > .hero, .hero-wrap > .hero + div { position: relative; z-index: 1; }
 @media (max-width: 700px) { .sketch { width: 130%; right: -40%; top: -2%; opacity: 0.09; } }
+
+/* card hover: the whole card lifts a little and, on application cards (each has a film), a play mark appears */
+.case { transition: background-color .25s ease; }
+.case:hover { background-color: color-mix(in srgb, var(--ink, #050506) 4%, transparent); }
+.case__media { position: relative; }
+.case__media .case__img { transition: filter .3s ease; }
+.case:hover .case__media .case__img { filter: brightness(.82); }
+.case__play { position: absolute; left: 20px; bottom: 20px; width: 64px; height: 64px; border-radius: 8px; display: grid; place-items: center;
+  background: rgba(5,5,6,.45); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.85); backdrop-filter: blur(4px);
+  opacity: 0; transform: scale(.9); transition: opacity .25s ease, transform .25s ease; pointer-events: none; }
+.case__play svg { width: 26px; height: 26px; fill: #fff; margin-left: 3px; }
+.case:hover .case__play { opacity: 1; transform: scale(1); }
+@media (prefers-reduced-motion: reduce) { .case__play, .case, .case__media .case__img { transition: none; } }

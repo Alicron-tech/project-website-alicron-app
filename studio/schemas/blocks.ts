@@ -72,6 +72,7 @@ export const section = defineType({
     defineField({name: 'ctaLabel', type: 'localeString'}),
     defineField({name: 'ctaHref', title: 'CTA link (path without locale)', type: 'string'}),
     defineField({name: 'reverse', title: 'Swap columns', type: 'boolean', initialValue: false}),
+    defineField({name: 'large', title: 'Larger text (two columns only)', type: 'boolean', initialValue: false}),
   ],
   preview: {select: {title: 'title.en', subtitle: 'kind'}},
 })

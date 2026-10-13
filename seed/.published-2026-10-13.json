@@ -1,0 +1,16 @@
+{
+ "application-power-lines": {
+  "video": "https://cdn.sanity.io/files/wividiap/production/921bf976be87db2ace6d469189dfdb0ada026c7e.mp4",
+  "card": "https://cdn.sanity.io/images/wividiap/production/46eafeb70c8f6897747c2ec6589906afddc8af84-1920x1080.jpg"
+ },
+ "application-emergency": {
+  "video": "https://cdn.sanity.io/files/wividiap/production/230d4e442f9c2c81f732a14d45f2fbc2732f079c.mp4",
+  "card": "https://cdn.sanity.io/images/wividiap/production/bcf9a648dc0c27a9d01d8d89b57f3da2ba0f8afe-1920x1080.jpg"
+ },
+ "application-mapping": {
+  "video": "https://cdn.sanity.io/files/wividiap/production/03f2fe70218b6348bc4b9d9547e97ca48496459b.mp4",
+  "card": "https://cdn.sanity.io/images/wividiap/production/12db7c939929b692cf3d91bb1cc131e05119c711-1920x1080.jpg"
+ },
+ "platform-fixed-wing-endurance gallery 02": "https://cdn.sanity.io/images/wividiap/production/93b159493b6383c92cb89b6d21f362a3f00d86cc-2528x1696.jpg",
+ "page-home engineering": "https://cdn.sanity.io/images/wividiap/production/70309764430f9060c0b15788d21204f04e966e94-2400x1792.jpg"
+}

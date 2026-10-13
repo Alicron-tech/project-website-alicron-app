@@ -1,0 +1,826 @@
+{
+ "application-power-lines": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "application-power-lines",
+  "_rev": "PZ8Kai1VvEL468NS2J8Sa5",
+  "_type": "application",
+  "_updatedAt": "2026-09-16T17:11:09Z",
+  "body": {
+   "en": "The old way is a lineman in a bucket truck, or a helicopter, or a person with binoculars. The aircraft does the same job from a standoff distance, and it does it in the same order every time, so the photos from this year line up with the photos from last year.\n\nThermal video finds the hot clamp before it fails. Zoom video finds the cracked insulator, the bird nest and the tree that has grown into the clearance. At a substation the aircraft flies a fixed pattern over the yard and the operator reviews the thermal image transformer by transformer.\n\nWhere the line runs through terrain with no radio coverage, the 13-inch fibre-optic version or the satellite-linked 15-inch keeps the picture steady.",
+   "es": "La forma antigua es un liniero en una cesta, o un helicóptero, o una persona con prismáticos. La aeronave hace el mismo trabajo desde una distancia de seguridad, y lo hace en el mismo orden cada vez, así que las fotos de este año encajan con las del año pasado.\n\nEl vídeo térmico encuentra la grapa caliente antes de que falle. El vídeo con zoom encuentra el aislador agrietado, el nido y el árbol que ha crecido dentro de la distancia de seguridad. En una subestación, la aeronave vuela un patrón fijo sobre el parque y el operador revisa la imagen térmica transformador a transformador.\n\nDonde la línea atraviesa terreno sin cobertura de radio, la versión de fibra óptica de 13 pulgadas o la de 15 pulgadas con enlace satelital mantienen la imagen estable."
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-235a8553a221c41db4e1fc465388615016a427b8-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "media": {
+   "_type": "media",
+   "alt": {
+    "en": "A transmission line corridor through wooded mountains, from the air",
+    "es": "Un corredor de línea de alta tensión entre montañas boscosas, desde el aire"
+   },
+   "caption": {
+    "en": "Transmission line corridor from the air. Stock film until ALICRON's own footage exists.",
+    "es": "Corredor de línea de alta tensión desde el aire. Metraje de archivo hasta que exista el de ALICRON."
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-b2e010cbe0de54441a4d37b88f4b0cc339d101e9-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/e975b188b0cfe8f5487ad8cfba7b981a321c7591.mp4"
+  },
+  "name": {
+   "en": "Power lines and substations",
+   "es": "Líneas eléctricas y subestaciones"
+  },
+  "order": 3,
+  "outcomes": [
+   {
+    "_key": "k3hqq8",
+    "en": "Photo set per tower, in a fixed order, year after year",
+    "es": "Juego de fotos por torre, en orden fijo, año tras año"
+   },
+   {
+    "_key": "k3iqq8",
+    "en": "Thermal anomalies with temperature readings",
+    "es": "Anomalías térmicas con lecturas de temperatura"
+   },
+   {
+    "_key": "k3jqq8",
+    "en": "No outage, no bucket truck, no climbing",
+    "es": "Sin corte, sin cesta, sin escalada"
+   },
+   {
+    "_key": "k3kqq8",
+    "en": "Vegetation encroachment flagged on the map",
+    "es": "Vegetación invasora marcada en el mapa"
+   }
+  ],
+  "platforms": [
+   {
+    "_key": "k3pqq8",
+    "_ref": "platform-multirotor-13",
+    "_type": "reference"
+   },
+   {
+    "_key": "k3qqq8",
+    "_ref": "platform-multirotor-10",
+    "_type": "reference"
+   }
+  ],
+  "role": {
+   "en": "Insulators, clamps and hot spots, photographed from three metres without switching anything off.",
+   "es": "Aisladores, grapas y puntos calientes, fotografiados a tres metros sin desconectar nada."
+  },
+  "slug": {
+   "current": "power-lines"
+  },
+  "stats": [
+   {
+    "_key": "k3lqq8",
+    "label": {
+     "en": "standoff distance",
+     "es": "distancia de trabajo"
+    },
+    "value": "3 m"
+   },
+   {
+    "_key": "k3mqq8",
+    "label": {
+     "en": "outages",
+     "es": "cortes"
+    },
+    "value": "0"
+   },
+   {
+    "_key": "k3nqq8",
+    "label": {
+     "en": "per flight",
+     "es": "por vuelo"
+    },
+    "value": "50 min"
+   },
+   {
+    "_key": "k3oqq8",
+    "label": {
+     "en": "zoom video",
+     "es": "vídeo con zoom"
+    },
+    "value": "4K"
+   }
+  ],
+  "summary": {
+   "en": "A multirotor with a zoom camera and a thermal sensor works its way along a line tower by tower. The line stays live. The pictures go straight into the maintenance system.",
+   "es": "Un multirrotor con cámara de zoom y sensor térmico recorre una línea torre a torre. La línea sigue en tensión. Las fotos van directas al sistema de mantenimiento."
+  }
+ },
+ "application-emergency": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "application-emergency",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "application",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "The aircraft lives in a case in the response vehicle. It launches from the roadside and gives the incident commander a live thermal and visual picture within minutes. For a fire, that is the front line and the spot fires behind it. For a flood, the water's edge and the roads that still work. For a search, a thermal signature in a ravine that nobody could see from the path.\n\nFor long distances we use the fixed-wing: sixty kilometres out and back in under an hour, faster than any vehicle on a mountain road. For hovering over one spot and reading detail, the multirotor. The satellite-linked aircraft lets a coordination centre in the city see the same feed as the crew on the ground.\n\nThe rules for flying near emergencies are strict, for good reasons. We train crews to work inside them and we help customers set up the standing authorisations before the first incident, not after.",
+   "es": "La aeronave vive en una maleta en el vehículo de intervención. Despega desde el arcén y da al jefe de la emergencia una imagen térmica y visual en directo en cuestión de minutos. En un incendio, es el frente y los focos secundarios detrás. En una inundación, el borde del agua y las carreteras que aún funcionan. En una búsqueda, una firma térmica en un barranco que nadie veía desde el sendero.\n\nPara largas distancias usamos el ala fija: sesenta kilómetros de ida y vuelta en menos de una hora, más rápido que cualquier vehículo por una carretera de montaña. Para quedarse sobre un punto y leer detalle, el multirrotor. La aeronave con enlace satelital permite que un centro de coordinación en la ciudad vea la misma señal que el equipo sobre el terreno.\n\nLas normas para volar cerca de emergencias son estrictas, y con razón. Formamos a los equipos para trabajar dentro de ellas y ayudamos a los clientes a tramitar las autorizaciones permanentes antes del primer incidente, no después."
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-e6af26760241558df2ae78e23e7ce686cba161d9-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Emergency response",
+   "es": "Emergencias"
+  },
+  "order": 4,
+  "outcomes": [
+   {
+    "_key": "k3rqq8",
+    "en": "Live thermal and visual feed to the command post",
+    "es": "Señal térmica y visual en directo al puesto de mando"
+   },
+   {
+    "_key": "k3sqq8",
+    "en": "The same feed at the coordination centre over satellite",
+    "es": "La misma señal en el centro de coordinación por satélite"
+   },
+   {
+    "_key": "k3tqq8",
+    "en": "Crews trained on the flight rules for emergencies",
+    "es": "Equipos formados en las normas de vuelo en emergencias"
+   },
+   {
+    "_key": "k3uqq8",
+    "en": "A recorded timeline of the incident from above",
+    "es": "Una cronología grabada del incidente desde el aire"
+   }
+  ],
+  "platforms": [
+   {
+    "_key": "k3zqq8",
+    "_ref": "platform-fixed-wing-fast",
+    "_type": "reference"
+   },
+   {
+    "_key": "k40qq8",
+    "_ref": "platform-multirotor-15-satellite",
+    "_type": "reference"
+   },
+   {
+    "_key": "k41qq8",
+    "_ref": "platform-multirotor-13",
+    "_type": "reference"
+   }
+  ],
+  "role": {
+   "en": "A picture of the situation in the first twenty minutes, from an aircraft that was already in the truck.",
+   "es": "Una imagen de la situación en los primeros veinte minutos, desde una aeronave que ya iba en el camión."
+  },
+  "slug": {
+   "current": "emergency"
+  },
+  "stats": [
+   {
+    "_key": "k3vqq8",
+    "label": {
+     "en": "to first picture",
+     "es": "hasta la primera imagen"
+    },
+    "value": "< 20 min"
+   },
+   {
+    "_key": "k3wqq8",
+    "label": {
+     "en": "fixed-wing reach",
+     "es": "alcance del ala fija"
+    },
+    "value": "60 km"
+   },
+   {
+    "_key": "k3xqq8",
+    "label": {
+     "en": "fixed-wing endurance",
+     "es": "autonomía del ala fija"
+    },
+    "value": "90 min"
+   },
+   {
+    "_key": "k3yqq8",
+    "label": {
+     "en": "feed to the centre",
+     "es": "señal al centro"
+    },
+    "value": "SAT"
+   }
+  ],
+  "summary": {
+   "en": "Wildfire, flood, a search in the hills, a road cut off. The first question is always the same: what does it look like right now? The answer should not depend on a helicopter being available.",
+   "es": "Incendio, inundación, una búsqueda en la sierra, una carretera cortada. La primera pregunta es siempre la misma: ¿qué aspecto tiene ahora mismo? La respuesta no debería depender de que haya un helicóptero disponible."
+  }
+ },
+ "application-mapping": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "application-mapping",
+  "_rev": "mhRxJqLniiUj6NzxPwevPT",
+  "_type": "application",
+  "_updatedAt": "2026-10-01T17:23:05Z",
+  "body": {
+   "en": "Photogrammetry is mostly discipline: the right overlap, the right height, control points measured on the ground. Then the orthophoto lands within centimetres.\n\nSmall sites fly with a multirotor, large ones with the fixed-wing, with lidar where vegetation hides the ground. Processing runs the same night: orthomosaic, surface and terrain models, contours and stockpile volumes against the last flight.\n\nFor a site that changes every month, we fly the same plan again. The comparison is the value: what moved, what grew, what was removed.",
+   "es": "La fotogrametría es sobre todo disciplina: el solape correcto, la altura correcta y puntos de control medidos en tierra. Así, la ortofoto cae en pocos centímetros.\n\nLos sitios pequeños se vuelan con multirrotor y los grandes con el ala fija, con lidar donde la vegetación oculta el suelo. El procesado se hace esa noche: ortomosaico, modelos de superficie y terreno, curvas de nivel y volúmenes de acopio frente al vuelo anterior.\n\nSi el sitio cambia cada mes, volamos el mismo plan otra vez. El valor está en la comparación: qué se movió, qué creció, qué se retiró."
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-f8a965ccaa4e80376342bf6f30556580e4fd18a4-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Mapping and surveying",
+   "es": "Cartografía y topografía"
+  },
+  "order": 5,
+  "outcomes": [
+   {
+    "_key": "k42qq8",
+    "en": "Orthomosaic and elevation models in the customer's coordinate system",
+    "es": "Ortomosaico y modelos de elevación en el sistema de coordenadas del cliente"
+   },
+   {
+    "_key": "k43qq8",
+    "en": "Volumes against the previous flight",
+    "es": "Volúmenes respecto al vuelo anterior"
+   },
+   {
+    "_key": "k44qq8",
+    "en": "Ground control points measured and reported",
+    "es": "Puntos de control medidos y documentados"
+   },
+   {
+    "_key": "k45qq8",
+    "en": "Repeatable flight plans for monthly comparison",
+    "es": "Planes de vuelo repetibles para comparación mensual"
+   }
+  ],
+  "platforms": [
+   {
+    "_key": "k4aqq8",
+    "_ref": "platform-fixed-wing-endurance",
+    "_type": "reference"
+   },
+   {
+    "_key": "k4bqq8",
+    "_ref": "platform-multirotor-15-coaxial",
+    "_type": "reference"
+   },
+   {
+    "_key": "k4cqq8",
+    "_ref": "platform-multirotor-10",
+    "_type": "reference"
+   }
+  ],
+  "role": {
+   "en": "Orthophotos, elevation models and volumes, flown on a schedule and delivered in the customer's coordinate system.",
+   "es": "Ortofotos, modelos de elevación y volúmenes, volados según calendario y entregados en el sistema de coordenadas del cliente."
+  },
+  "slug": {
+   "current": "mapping"
+  },
+  "stats": [
+   {
+    "_key": "k46qq8",
+    "label": {
+     "en": "ground sample distance",
+     "es": "resolución en el suelo"
+    },
+    "value": "3 cm"
+   },
+   {
+    "_key": "k47qq8",
+    "label": {
+     "en": "per fixed-wing flight",
+     "es": "por vuelo de ala fija"
+    },
+    "value": "500 ha"
+   },
+   {
+    "_key": "k48qq8",
+    "label": {
+     "en": "lidar on the heavy lifter",
+     "es": "lidar en el multirrotor pesado"
+    },
+    "value": "4 kg"
+   },
+   {
+    "_key": "k49qq8",
+    "label": {
+     "en": "processing",
+     "es": "de procesado"
+    },
+    "value": "1 night"
+   }
+  ],
+  "summary": {
+   "en": "Quarries, construction sites, coastlines and municipalities all need the same thing: an accurate, recent map. We fly it, process it and hand over files that open in the tools the customer already uses.",
+   "es": "Canteras, obras, costas y municipios necesitan lo mismo: un mapa preciso y reciente. Lo volamos, lo procesamos y entregamos archivos que se abren en las herramientas que el cliente ya usa."
+  }
+ },
+ "platform-fixed-wing-endurance": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "platform-fixed-wing-endurance",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "platform",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "applications": [
+   {
+    "_key": "k2fqq8",
+    "_ref": "application-agriculture",
+    "_type": "reference"
+   },
+   {
+    "_key": "k2gqq8",
+    "_ref": "application-mapping",
+    "_type": "reference"
+   },
+   {
+    "_key": "k2hqq8",
+    "_ref": "application-emergency",
+    "_type": "reference"
+   }
+  ],
+  "body": {
+   "en": "A wing is the efficient way to cover distance. This aircraft cruises at ninety kilometres per hour for fifty minutes, which is roughly seventy kilometres of survey line per flight with a mapping camera or a multispectral head in the bay.\n\nFive kilograms of payload is unusual for an electric aircraft of this size. It means the sensor does not have to be the smallest one on the market, and it means there is room for a second instrument.\n\nLaunch is from a rail that packs into the vehicle. Recovery is a belly landing on grass or a field, with the sensor protected inside the fuselage. Two people run the whole cycle.",
+   "es": "Un ala es la forma eficiente de cubrir distancia. Esta aeronave cruza a noventa kilómetros por hora durante cincuenta minutos, que son unos setenta kilómetros de línea de levantamiento por vuelo con una cámara de cartografía o un cabezal multiespectral en la bahía.\n\nCinco kilos de carga útil es poco habitual en una aeronave eléctrica de este tamaño. Significa que el sensor no tiene que ser el más pequeño del mercado, y que hay sitio para un segundo instrumento.\n\nEl lanzamiento se hace desde un raíl que se guarda en el vehículo. La recuperación es un aterrizaje sobre el vientre en hierba o campo, con el sensor protegido dentro del fuselaje. Dos personas gestionan el ciclo completo."
+  },
+  "family": "Fixed-wing",
+  "gallery": [
+   {
+    "_key": "k2dqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-a15789686dfb4b1a157f4dd27bed0df059195198-2000x1400-jpg",
+     "_type": "reference"
+    }
+   },
+   {
+    "_key": "k2eqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-449c440057a23a1fc9ddc6c95b87a3f043c0d289-1536x864-jpg",
+     "_type": "reference"
+    }
+   }
+  ],
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-40b4d46023379af86f94386c2f5081acafefdaef-2000x1331-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Fixed-wing survey aircraft",
+   "es": "Aeronave de ala fija para levantamientos"
+  },
+  "order": 6,
+  "role": {
+   "en": "A 1.8-metre wing that carries five kilograms at ninety kilometres per hour, for fields and coastlines that a multirotor cannot finish.",
+   "es": "Un ala de 1,8 metros que lleva cinco kilos a noventa kilómetros por hora, para campos y costas que un multirrotor no termina."
+  },
+  "slug": {
+   "current": "fixed-wing-endurance"
+  },
+  "specs": [
+   {
+    "_key": "k27qq8",
+    "label": {
+     "en": "Wingspan / length",
+     "es": "Envergadura / longitud"
+    },
+    "value": {
+     "en": "1 800 mm / 1 600 mm",
+     "es": "1 800 mm / 1 600 mm"
+    }
+   },
+   {
+    "_key": "k28qq8",
+    "label": {
+     "en": "Cruise / max speed",
+     "es": "Crucero / máx."
+    },
+    "value": {
+     "en": "90 / 140 km/h",
+     "es": "90 / 140 km/h"
+    }
+   },
+   {
+    "_key": "k29qq8",
+    "label": {
+     "en": "Ceiling",
+     "es": "Techo"
+    },
+    "value": {
+     "en": "2 000 m",
+     "es": "2 000 m"
+    }
+   },
+   {
+    "_key": "k2aqq8",
+    "label": {
+     "en": "Propulsion",
+     "es": "Propulsión"
+    },
+    "value": {
+     "en": "Electric",
+     "es": "Eléctrica"
+    }
+   },
+   {
+    "_key": "k2bqq8",
+    "label": {
+     "en": "Launch / recovery",
+     "es": "Lanzamiento / recuperación"
+    },
+    "value": {
+     "en": "Rail / belly landing",
+     "es": "Raíl / aterrizaje sobre el vientre"
+    }
+   },
+   {
+    "_key": "k2cqq8",
+    "label": {
+     "en": "Links",
+     "es": "Enlaces"
+    },
+    "value": {
+     "en": "Encrypted control, 8 W analogue video",
+     "es": "Control cifrado, vídeo analógico de 8 W"
+    }
+   }
+  ],
+  "stats": [
+   {
+    "_key": "k23qq8",
+    "label": {
+     "en": "wingspan",
+     "es": "envergadura"
+    },
+    "value": "1.8 m"
+   },
+   {
+    "_key": "k24qq8",
+    "label": {
+     "en": "payload",
+     "es": "carga útil"
+    },
+    "value": "5 kg"
+   },
+   {
+    "_key": "k25qq8",
+    "label": {
+     "en": "flight time",
+     "es": "autonomía"
+    },
+    "value": "50 min"
+   },
+   {
+    "_key": "k26qq8",
+    "label": {
+     "en": "operating range",
+     "es": "alcance"
+    },
+    "value": "45 km"
+   }
+  ],
+  "status": {
+   "en": "In service",
+   "es": "En servicio"
+  },
+  "summary": {
+   "en": "Electric, launched from a rail, landed on its belly in a field. The fixed-wing covers ground the way a multirotor never will, and it does it with a real sensor bay.",
+   "es": "Eléctrica, lanzada desde un raíl, aterriza sobre el vientre en un campo. El ala fija cubre terreno como un multirrotor nunca podrá, y lo hace con una bahía de sensores de verdad."
+  }
+ },
+ "page-home": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "page-home",
+  "_rev": "mhRxJqLniiUj6NzxPwfxpX",
+  "_type": "page",
+  "_updatedAt": "2026-10-01T17:40:53Z",
+  "heroCtaHref": "/contact",
+  "heroCtaLabel": {
+   "en": "Talk to us",
+   "es": "Hablemos"
+  },
+  "heroEyebrow": {
+   "en": "Alicante, Spain",
+   "es": "Alicante, España"
+  },
+  "heroLead": {
+   "en": "ALICRON designs, builds and flies unmanned aircraft and the software around them. Pipelines, fields, power lines, coastlines. Engineered and tested in Spain.",
+   "es": "ALICRON diseña, fabrica y opera aeronaves no tripuladas y el software que las rodea. Tuberías, campos, líneas eléctricas, costas. Diseñado y probado en España."
+  },
+  "heroMedia": {
+   "alt": {
+    "en": "A test day on the Costa Blanca: a quadcopter lifts off, first-person flights over a ridge and along a power line, a gate run, a flight-test crew on a clifftop and a white fixed-wing along the cliffs",
+    "es": "Un día de pruebas en la Costa Blanca: un cuadricóptero despega, vuelos en primera persona sobre una cresta y a lo largo de una línea eléctrica, un circuito de puertas, un equipo de ensayos en un acantilado y un ala fija blanca junto a los acantilados"
+   },
+   "caption": {
+    "en": "",
+    "es": ""
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-b80b94a49949beae851ee15ce66e60f30b88ea46-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/b54dbe373147a32d14462be237f5b0af3c4cfbba.mp4"
+  },
+  "heroTitle": {
+   "en": "Aircraft that work where people should not have to",
+   "es": "Aeronaves que trabajan donde las personas no deberían tener que hacerlo"
+  },
+  "metaDescription": {
+   "en": "ALICRON designs, builds and flies unmanned aircraft and the software around them from Alicante, Spain. Inspection, agriculture, mapping, training and engineering services.",
+   "es": "ALICRON diseña, fabrica y opera aeronaves no tripuladas y el software que las rodea desde Alicante, España. Inspección, agricultura, cartografía, formación e ingeniería."
+  },
+  "sections": [
+   {
+    "_key": "k5mqq9",
+    "eyebrow": {
+     "en": "What we do",
+     "es": "Qué hacemos"
+    },
+    "features": [
+     {
+      "_key": "k5sqq9",
+      "href": "/platforms",
+      "text": {
+       "en": "Multirotors from ten to seventeen inches and two fixed-wing aircraft. Radio, fibre-optic or satellite links. Built to be flown every day, not shown once.",
+       "es": "Multirrotores de diez a diecisiete pulgadas y dos aeronaves de ala fija. Enlaces por radio, fibra óptica o satélite. Hechas para volar a diario, no para enseñarse una vez."
+      },
+      "title": {
+       "en": "Aerial platforms",
+       "es": "Plataformas aéreas"
+      }
+     },
+     {
+      "_key": "k5tqq9",
+      "href": "/software",
+      "text": {
+       "en": "Our own mission software on the ground station, on-board vision next to the camera, and a control suite for ground robots in development.",
+       "es": "Nuestro propio software de misión en la estación de tierra, visión a bordo junto a la cámara y un sistema de control para robots terrestres en desarrollo."
+      },
+      "title": {
+       "en": "Software and robotics",
+       "es": "Software y robótica"
+      }
+     },
+     {
+      "_key": "k5uqq9",
+      "href": "/training",
+      "text": {
+       "en": "First flights in two days, operators in two weeks, technicians in one, instructors for customers who will train their own people.",
+       "es": "Primeros vuelos en dos días, operadores en dos semanas, técnicos en una, e instructores para clientes que formarán a su propia gente."
+      },
+      "title": {
+       "en": "Training",
+       "es": "Formación"
+      }
+     },
+     {
+      "_key": "k5vqq9",
+      "href": "/engineering",
+      "text": {
+       "en": "Design, prototyping, testing and integration at the centre in Alicante. Bring a sensor or a problem; we will fly something at it.",
+       "es": "Diseño, prototipado, pruebas e integración en el centro de Alicante. Traiga un sensor o un problema; volaremos algo sobre él."
+      },
+      "title": {
+       "en": "Engineering",
+       "es": "Ingeniería"
+      }
+     }
+    ],
+    "kind": "features",
+    "title": {
+     "en": "Four things, done properly",
+     "es": "Cuatro cosas, bien hechas"
+    }
+   },
+   {
+    "_key": "k5nqq9",
+    "body": {
+     "en": "A technician opens a case on the tailgate. A 15-inch multirotor with a satellite terminal lifts off and follows the line at a set height, pausing at valve stations and river crossings. Two provinces away, an engineer watches the thermal feed and the map. By evening the flight log, the video and the flagged frames are in the customer's system.",
+     "es": "Un técnico abre una maleta en el portón. Un multirrotor de 15 pulgadas con terminal satelital despega y sigue la conducción a una altura fija, con paradas en las estaciones de válvulas y los cruces de ríos. A dos provincias, un ingeniero sigue la señal térmica y el mapa. Al anochecer, el registro de vuelo, el vídeo y los fotogramas marcados están en el sistema del cliente."
+    },
+    "ctaHref": "/applications/pipeline-inspection",
+    "ctaLabel": {
+     "en": "Pipeline inspection",
+     "es": "Inspección de tuberías"
+    },
+    "eyebrow": {
+     "en": "Field case",
+     "es": "Caso de campo"
+    },
+    "kind": "split",
+    "media": {
+     "alt": {
+      "en": "A pickup on a pipeline track, a drone lifted from its case and flying the line, and the live feed on an office screen",
+      "es": "Una camioneta en la pista de una tubería, un dron que sale de su maleta y vuela la línea, y la señal en directo en una pantalla de oficina"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-d820da49d6256443f40f03362d430d097331f217-1280x720-jpg",
+       "_type": "reference"
+      }
+     },
+     "isVideoPlaceholder": false,
+     "videoUrl": "https://cdn.sanity.io/files/wividiap/production/ec6dfc71feb24187131f6bf587016126f39e8606.mp4"
+    },
+    "title": {
+     "en": "The pipeline, flown from the office",
+     "es": "La tubería, volada desde la oficina"
+    }
+   },
+   {
+    "_key": "k5oqq9",
+    "ctaHref": "/platforms",
+    "ctaLabel": {
+     "en": "All platform types",
+     "es": "Todas las plataformas"
+    },
+    "eyebrow": {
+     "en": "Platforms",
+     "es": "Plataformas"
+    },
+    "kind": "cards",
+    "lead": {
+     "en": "Each class is a size and a link type. Pick by the job: how far, how long, how heavy, and whether radio is allowed to exist where you fly.",
+     "es": "Cada clase es un tamaño y un tipo de enlace. Se elige por el trabajo: cuánto de lejos, cuánto tiempo, cuánto peso y si la radio puede existir donde se vuela."
+    },
+    "refs": [
+     {
+      "_key": "k5wqq9",
+      "_ref": "platform-multirotor-15-satellite",
+      "_type": "reference"
+     },
+     {
+      "_key": "k5xqq9",
+      "_ref": "platform-multirotor-13",
+      "_type": "reference"
+     },
+     {
+      "_key": "k5yqq9",
+      "_ref": "platform-fixed-wing-endurance",
+      "_type": "reference"
+     }
+    ],
+    "title": {
+     "en": "Named by what they are, not by a brand",
+     "es": "Nombradas por lo que son, no por una marca"
+    }
+   },
+   {
+    "_key": "k5pqq9",
+    "body": {
+     "en": "Encrypted radio is the default: cheap, light, and good for thirty to forty-five kilometres with a clear horizon. Where the horizon is not clear, or where nothing may radiate, the 13-inch flies on a spooled optical fibre. Where the operator is far away, the 15 and 17-inch carry a satellite terminal and the ground station stops being a place.\n\nThe same operator training covers all three. The same cases carry all three.",
+     "es": "La radio cifrada es lo habitual: barata, ligera y válida para treinta a cuarenta y cinco kilómetros con horizonte despejado. Donde el horizonte no está despejado, o donde nada puede emitir, el de 13 pulgadas vuela con una bobina de fibra óptica. Donde el operador está lejos, el de 15 y el de 17 pulgadas llevan un terminal satelital y la estación de tierra deja de ser un lugar.\n\nLa misma formación de operador cubre los tres. Las mismas maletas transportan los tres."
+    },
+    "eyebrow": {
+     "en": "Links",
+     "es": "Enlaces"
+    },
+    "kind": "dark",
+    "lead": {
+     "en": "Most drone problems are link problems. We build three answers into the same airframes.",
+     "es": "La mayoría de problemas con drones son problemas de enlace. Montamos tres respuestas en las mismas aeronaves."
+    },
+    "media": {
+     "alt": {
+      "en": "Satellite terminal on a drone frame",
+      "es": "Terminal satelital sobre el chasis de un dron"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-5fc1017520555d8eb090a5ad8c426c71b3572bb0-1536x864-jpg",
+       "_type": "reference"
+      }
+     }
+    },
+    "stats": [
+     {
+      "_key": "k5zqq9",
+      "label": {
+       "en": "radio, clear horizon",
+       "es": "radio, horizonte despejado"
+      },
+      "value": "45 km"
+     },
+     {
+      "_key": "k60qq9",
+      "label": {
+       "en": "on optical fibre",
+       "es": "por fibra óptica"
+      },
+      "value": "30 km"
+     },
+     {
+      "_key": "k61qq9",
+      "label": {
+       "en": "over satellite",
+       "es": "por satélite"
+      },
+      "value": "∞"
+     },
+     {
+      "_key": "k62qq9",
+      "label": {
+       "en": "longest rotary endurance",
+       "es": "mayor autonomía en rotor"
+      },
+      "value": "55 min"
+     }
+    ],
+    "title": {
+     "en": "Radio when it works. Fibre or satellite when it must",
+     "es": "Radio cuando funciona. Fibra o satélite cuando hace falta"
+    }
+   },
+   {
+    "_key": "k5qqq9",
+    "body": {
+     "en": "ALICRON is the engineering company of a European unmanned-systems group. Designs are drawn, prototyped, flown and taught here, on the coast of Alicante. Serial production runs at the group's plant in the Netherlands. Customers get an engineering team they can visit and a factory that ships on schedule.\n\nThe workshop has printers, a small machine shop, an electronics bench and a flight field ten minutes away. Most of what is on this site started as something a customer asked for.",
+     "es": "ALICRON es la empresa de ingeniería de un grupo europeo de sistemas no tripulados. Los diseños se dibujan, se prototipan, se vuelan y se enseñan aquí, en la costa de Alicante. La producción en serie se hace en la planta del grupo en los Países Bajos. Los clientes tienen un equipo de ingeniería al que pueden visitar y una fábrica que entrega a tiempo.\n\nEl taller tiene impresoras, un pequeño taller mecánico, un banco de electrónica y un campo de vuelo a diez minutos. Casi todo lo que hay en esta web empezó como algo que pidió un cliente."
+    },
+    "ctaHref": "/company",
+    "ctaLabel": {
+     "en": "About the company",
+     "es": "Sobre la empresa"
+    },
+    "eyebrow": {
+     "en": "Engineering",
+     "es": "Ingeniería"
+    },
+    "kind": "split",
+    "large": true,
+    "media": {
+     "alt": {
+      "en": "The team in front of the hangar with a fixed-wing and two multirotors",
+      "es": "El equipo delante del hangar con un ala fija y dos multirrotores"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-d185295063b8fdf2718e513134741bb8274d8e59-1536x1024-jpg",
+       "_type": "reference"
+      }
+     }
+    },
+    "reverse": false,
+    "title": {
+     "en": "From the drawing to the flight test",
+     "es": "Del plano a la prueba de vuelo"
+    }
+   },
+   {
+    "_key": "k5rqq9",
+    "ctaHref": "/contact",
+    "ctaLabel": {
+     "en": "Contact",
+     "es": "Contacto"
+    },
+    "kind": "cta",
+    "lead": {
+     "en": "We reply within a working day, in Spanish or English, with the questions we need answered before proposing anything.",
+     "es": "Respondemos en un día laborable, en español o en inglés, con las preguntas que necesitamos aclarar antes de proponer nada."
+    },
+    "title": {
+     "en": "Tell us what you need to see, and from where",
+     "es": "Cuéntenos qué necesita ver, y desde dónde"
+    }
+   }
+  ],
+  "slug": {
+   "current": "home"
+  },
+  "title": {
+   "en": "Home",
+   "es": "Inicio"
+  }
+ }
+}

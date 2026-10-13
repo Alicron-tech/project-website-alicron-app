@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {urlFor, t, localVideo, type Locale} from '@/lib/sanity'
+import {urlFor, t, localVideo, localImage, type Locale} from '@/lib/sanity'
 import {InViewVideo} from './InViewVideo'
 
 type MediaDoc = {image?: unknown; alt?: {en?: string; es?: string}; videoUrl?: string; isVideoPlaceholder?: boolean; caption?: {en?: string; es?: string}} | null | undefined
@@ -9,9 +9,10 @@ type MediaDoc = {image?: unknown; alt?: {en?: string; es?: string}; videoUrl?: s
 export function Media({media, locale, radius = 'md', ratio = '169', sizes = '100vw', priority = false, videoLabel, caption}: {media: MediaDoc; locale: Locale; radius?: 'none' | 'md'; ratio?: '169' | '43'; sizes?: string; priority?: boolean; videoLabel?: string; caption?: string}) {
   if (!media?.image && !media?.videoUrl) return null
   const alt = t(media.alt, locale)
-  const local = localVideo(media.videoUrl)
+  // a local film can replace a Sanity video (keyed by its URL) or a still (keyed by 'image:' + its asset id)
+  const local = localVideo(media.videoUrl) ?? localVideo(`image:${(media.image as {asset?: {_ref?: string}} | undefined)?.asset?._ref ?? ''}`)
   const videoUrl = local?.src ?? media.videoUrl
-  const poster = local?.poster ?? (media.image ? urlFor(media.image).width(2000).url() : undefined)
+  const poster = local?.poster ?? (media.image ? localImage(media.image) ?? urlFor(media.image).width(2000).url() : undefined)
   const isVideo = Boolean(videoUrl) || Boolean(media.isVideoPlaceholder)
   const cap = caption ?? (local?.caption ? t(local.caption, locale) : t(media.caption, locale))
   return (
@@ -38,7 +39,7 @@ export function Img({image, alt = '', className = 'case__img', sizes = '(max-wid
   if (!image) return <div className={className} />
   return (
     <div className={className} style={{position: 'relative'}}>
-      <Image src={urlFor(image).width(width).url()} alt={alt} fill sizes={sizes} priority={priority} style={{objectFit: 'cover'}} />
+      <Image src={localImage(image) ?? urlFor(image).width(width).url()} alt={alt} fill sizes={sizes} priority={priority} style={{objectFit: 'cover'}} />
     </div>
   )
 }

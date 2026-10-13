@@ -1,0 +1,222 @@
+[
+ {
+  "_id": "page-applications",
+  "path": "heroTitle.en",
+  "before": "Five jobs we do every week."
+ },
+ {
+  "_id": "page-applications",
+  "path": "heroTitle.es",
+  "before": "Cinco trabajos que hacemos cada semana."
+ },
+ {
+  "_id": "page-company",
+  "path": "heroTitle.en",
+  "before": "A small engineering company on the coast of Alicante, inside a European group."
+ },
+ {
+  "_id": "page-company",
+  "path": "heroTitle.es",
+  "before": "Una pequeña empresa de ingeniería en la costa de Alicante, dentro de un grupo europeo."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6gqq9\"].title.en",
+  "before": "Engineers who fly."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6gqq9\"].title.es",
+  "before": "Ingenieros que vuelan."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6hqq9\"].title.en",
+  "before": "Four habits."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6hqq9\"].title.es",
+  "before": "Cuatro costumbres."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6iqq9\"].title.en",
+  "before": "Engineering in Spain. Manufacturing in the Netherlands."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6iqq9\"].title.es",
+  "before": "Ingeniería en España. Fabricación en los Países Bajos."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6jqq9\"].title.en",
+  "before": "Come and see the workshop."
+ },
+ {
+  "_id": "page-company",
+  "path": "sections[_key==\"k6jqq9\"].title.es",
+  "before": "Venga a ver el taller."
+ },
+ {
+  "_id": "page-contact",
+  "path": "heroTitle.en",
+  "before": "Say what you need to see, and from where."
+ },
+ {
+  "_id": "page-contact",
+  "path": "heroTitle.es",
+  "before": "Diga qué necesita ver, y desde dónde."
+ },
+ {
+  "_id": "page-engineering",
+  "path": "heroTitle.en",
+  "before": "Bring a sensor or a problem. We will fly something at it."
+ },
+ {
+  "_id": "page-engineering",
+  "path": "heroTitle.es",
+  "before": "Traiga un sensor o un problema. Volaremos algo sobre él."
+ },
+ {
+  "_id": "page-home",
+  "path": "heroTitle.en",
+  "before": "Aircraft that work where people should not have to."
+ },
+ {
+  "_id": "page-home",
+  "path": "heroTitle.es",
+  "before": "Aeronaves que trabajan donde las personas no deberían tener que hacerlo."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5mqq9\"].title.en",
+  "before": "Four things, done properly."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5mqq9\"].title.es",
+  "before": "Cuatro cosas, bien hechas."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5nqq9\"].title.en",
+  "before": "The pipeline, flown from the office."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5nqq9\"].title.es",
+  "before": "La tubería, volada desde la oficina."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5oqq9\"].title.en",
+  "before": "Named by what they are, not by a brand."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5oqq9\"].title.es",
+  "before": "Nombradas por lo que son, no por una marca."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5pqq9\"].title.en",
+  "before": "Radio when it works. Fibre or satellite when it must."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5pqq9\"].title.es",
+  "before": "Radio cuando funciona. Fibra o satélite cuando hace falta."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5qqq9\"].title.en",
+  "before": "Worked out in Alicante, built in series in the Netherlands."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5qqq9\"].title.es",
+  "before": "Resuelto en Alicante, fabricado en serie en los Países Bajos."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5rqq9\"].title.en",
+  "before": "Tell us what you need to see, and from where."
+ },
+ {
+  "_id": "page-home",
+  "path": "sections[_key==\"k5rqq9\"].title.es",
+  "before": "Cuéntenos qué necesita ver, y desde dónde."
+ },
+ {
+  "_id": "page-platforms",
+  "path": "heroTitle.en",
+  "before": "Seven airframes. Three kinds of link. One set of cases, batteries and training."
+ },
+ {
+  "_id": "page-platforms",
+  "path": "heroTitle.es",
+  "before": "Siete aeronaves. Tres tipos de enlace. Un solo juego de maletas, baterías y formación."
+ },
+ {
+  "_id": "page-platforms",
+  "path": "sections[_key==\"k63qq9\"].title.en",
+  "before": "Where the numbers sit."
+ },
+ {
+  "_id": "page-platforms",
+  "path": "sections[_key==\"k63qq9\"].title.es",
+  "before": "Dónde están los números."
+ },
+ {
+  "_id": "page-platforms",
+  "path": "sections[_key==\"k64qq9\"].title.en",
+  "before": "Start with the link, then the endurance, then the weight."
+ },
+ {
+  "_id": "page-platforms",
+  "path": "sections[_key==\"k64qq9\"].title.es",
+  "before": "Empiece por el enlace, luego la autonomía y después el peso."
+ },
+ {
+  "_id": "page-software",
+  "path": "heroTitle.en",
+  "before": "The aircraft is half the product. The other half runs on the ground station."
+ },
+ {
+  "_id": "page-software",
+  "path": "heroTitle.es",
+  "before": "La aeronave es la mitad del producto. La otra mitad se ejecuta en la estación de tierra."
+ },
+ {
+  "_id": "page-software",
+  "path": "sections[_key==\"k6aqq9\"].title.en",
+  "before": "One operator, one map, air and ground."
+ },
+ {
+  "_id": "page-software",
+  "path": "sections[_key==\"k6aqq9\"].title.es",
+  "before": "Un operador, un mapa, aire y tierra."
+ },
+ {
+  "_id": "page-training",
+  "path": "heroTitle.en",
+  "before": "Nobody flies our aircraft without flying with us first."
+ },
+ {
+  "_id": "page-training",
+  "path": "heroTitle.es",
+  "before": "Nadie vuela nuestras aeronaves sin volar antes con nosotros."
+ },
+ {
+  "_id": "page-training",
+  "path": "sections[_key==\"k6bqq9\"].title.en",
+  "before": "Small on purpose."
+ },
+ {
+  "_id": "page-training",
+  "path": "sections[_key==\"k6bqq9\"].title.es",
+  "before": "Pequeño a propósito."
+ }
+]
