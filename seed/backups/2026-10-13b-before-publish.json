@@ -1,0 +1,1662 @@
+{
+ "offering-mission-software": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-mission-software",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "The ground station runs our own mission software. It plans routes on the map, flies them, and hands control to the operator where the route says so. The on-screen display shows the numbers that matter and hides the ones that do not.\n\nTwo things we are proud of. The video channel can be switched in flight, synchronised between the aircraft and the operator's receiver, so a noisy channel costs seconds rather than a landing. And the station monitors two receivers at once and shows the link quality of each, so the operator knows which one is carrying the picture and how much margin is left.",
+   "es": "La estación de tierra ejecuta nuestro propio software de misión. Planifica rutas sobre el mapa, las vuela y cede el control al operador donde la ruta lo indica. La información en pantalla muestra los números que importan y esconde los que no.\n\nDos cosas de las que estamos orgullosos. El canal de vídeo se puede cambiar en vuelo, sincronizado entre la aeronave y el receptor del operador, de modo que un canal con ruido cuesta segundos y no un aterrizaje. Y la estación vigila dos receptores a la vez y muestra la calidad de enlace de cada uno, así que el operador sabe cuál lleva la imagen y cuánto margen queda."
+  },
+  "category": "software",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-f189ae7c40dff87f2f989bb726148fcaa7dbb615-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Mission software for the ground station",
+   "es": "Software de misión para la estación de tierra"
+  },
+  "order": 1,
+  "points": [
+   {
+    "_key": "k4dqq8",
+    "en": "Route planning and automatic flight with operator hand-over points",
+    "es": "Planificación de rutas y vuelo automático con puntos de cesión al operador"
+   },
+   {
+    "_key": "k4eqq8",
+    "en": "In-flight video channel switching",
+    "es": "Cambio de canal de vídeo en vuelo"
+   },
+   {
+    "_key": "k4fqq8",
+    "en": "Dual-receiver monitoring with link quality per channel",
+    "es": "Vigilancia de dos receptores con calidad de enlace por canal"
+   },
+   {
+    "_key": "k4gqq8",
+    "en": "Extended on-screen display",
+    "es": "Información en pantalla ampliada"
+   },
+   {
+    "_key": "k4hqq8",
+    "en": "Flight logs exported to the customer's systems",
+    "es": "Registros de vuelo exportados a los sistemas del cliente"
+   }
+  ],
+  "role": {
+   "en": "What the operator sees, and what the aircraft does when the operator is not looking.",
+   "es": "Lo que ve el operador, y lo que hace la aeronave cuando el operador no mira."
+  },
+  "slug": {
+   "current": "mission-software"
+  },
+  "status": {
+   "en": "In service",
+   "es": "En servicio"
+  }
+ },
+ "offering-ground-robotics": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-ground-robotics",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "Wheeled robots are useful in the places aircraft are not: inside a plant, along a row of trees, across a site where something heavy has to be carried. We are building the control layer for them on the same software the ground station already runs, so an operator who can fly a route can drive one.\n\nThe suite handles teleoperation with front and rear cameras, waypoint driving, and a payload interface for whatever the vehicle carries. It is in development at the R&D centre with a partner's platform and will be released when it has done a season of real work.",
+   "es": "Los robots con ruedas son útiles donde las aeronaves no lo son: dentro de una planta, a lo largo de una hilera de árboles, en una obra donde hay que mover algo pesado. Estamos construyendo su capa de control sobre el mismo software que ya ejecuta la estación de tierra, para que un operador capaz de volar una ruta pueda conducir una.\n\nEl sistema gestiona la teleoperación con cámaras delantera y trasera, la conducción por puntos de ruta y una interfaz de carga útil para lo que lleve el vehículo. Está en desarrollo en el centro de I+D con la plataforma de un socio y se publicará cuando haya hecho una temporada de trabajo real."
+  },
+  "category": "software",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-933d20fd4abcb32dc3666ded33b868712011b683-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Control suite for ground robots",
+   "es": "Sistema de control para robots terrestres"
+  },
+  "order": 2,
+  "points": [
+   {
+    "_key": "k4iqq8",
+    "en": "Teleoperation with front and rear cameras",
+    "es": "Teleoperación con cámaras delantera y trasera"
+   },
+   {
+    "_key": "k4jqq8",
+    "en": "Waypoint driving on the same map as the aircraft",
+    "es": "Conducción por puntos de ruta sobre el mismo mapa que las aeronaves"
+   },
+   {
+    "_key": "k4kqq8",
+    "en": "Payload interface for carriers, sprayers and sensors",
+    "es": "Interfaz de carga útil para portadores, pulverizadores y sensores"
+   },
+   {
+    "_key": "k4lqq8",
+    "en": "Shared operator training with the air side",
+    "es": "Formación de operador compartida con la parte aérea"
+   }
+  ],
+  "role": {
+   "en": "The same map, the same operator, a vehicle instead of an aircraft.",
+   "es": "El mismo mapa, el mismo operador, un vehículo en vez de una aeronave."
+  },
+  "slug": {
+   "current": "ground-robotics"
+  },
+  "status": {
+   "en": "In development",
+   "es": "En desarrollo"
+  }
+ },
+ "offering-onboard-vision": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-onboard-vision",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "A camera on an aircraft produces far more video than anyone will ever watch. On-board vision reads it as it is recorded. It finds the things the mission is about, marks them in the frame, and tells the operator when a decision is needed: a person in a search area, a vehicle on a right of way, a hot spot on a line.\n\nThe same module can hold the aircraft on a target when the link is poor or the operator is busy. It runs on a credit-card-sized computer next to the camera and it is trained on our own flight footage. The research team in Alicante works on it together with the visual recognition group of the wider company.",
+   "es": "Una cámara en una aeronave produce mucho más vídeo del que nadie verá jamás. La visión a bordo lo lee según se graba. Encuentra las cosas de las que trata la misión, las marca en la imagen y avisa al operador cuando hace falta una decisión: una persona en una zona de búsqueda, un vehículo sobre una servidumbre, un punto caliente en una línea.\n\nEl mismo módulo puede mantener la aeronave sobre un objetivo cuando el enlace es pobre o el operador está ocupado. Funciona en un ordenador del tamaño de una tarjeta junto a la cámara y se entrena con nuestras propias grabaciones de vuelo. El equipo de investigación de Alicante trabaja en él junto con el grupo de reconocimiento visual del conjunto de la empresa."
+  },
+  "category": "software",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-6be8507ea42f3557706b895c4048bfbb47b406fc-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "On-board vision",
+   "es": "Visión a bordo"
+  },
+  "order": 3,
+  "points": [
+   {
+    "_key": "k4mqq9",
+    "en": "Detection and marking of people, vehicles and thermal anomalies",
+    "es": "Detección y marcado de personas, vehículos y anomalías térmicas"
+   },
+   {
+    "_key": "k4nqq9",
+    "en": "Target hold when the link degrades",
+    "es": "Mantenimiento de objetivo cuando el enlace se degrada"
+   },
+   {
+    "_key": "k4oqq9",
+    "en": "Runs on the aircraft, not in the cloud",
+    "es": "Se ejecuta en la aeronave, no en la nube"
+   },
+   {
+    "_key": "k4pqq9",
+    "en": "Trained on our own flight footage",
+    "es": "Entrenado con nuestras propias grabaciones"
+   }
+  ],
+  "role": {
+   "en": "A small computer next to the camera that recognises what it is looking at.",
+   "es": "Un pequeño ordenador junto a la cámara que reconoce lo que está viendo."
+  },
+  "slug": {
+   "current": "onboard-vision"
+  },
+  "status": {
+   "en": "Research",
+   "es": "Investigación"
+  }
+ },
+ "offering-design": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-design",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "We design airframes, payload mounts and the electronics between them. The workshop in Alicante has the tools to go from CAD to a flying prototype in weeks: printers for structural parts, a small machine shop, a bench for electronics, and a field ten minutes away to fly the result.\n\nMost of our own line started as a customer asking for something that did not exist. A camera that needed a different mount. A fibre spool that had to survive a landing. We would rather build it than tell you it cannot be done.",
+   "es": "Diseñamos aeronaves, soportes de carga útil y la electrónica que hay entre ellos. El taller de Alicante tiene las herramientas para pasar del CAD a un prototipo volando en semanas: impresoras para piezas estructurales, un pequeño taller mecánico, un banco de electrónica y un campo a diez minutos para volar el resultado.\n\nBuena parte de nuestra propia línea empezó con un cliente pidiendo algo que no existía. Una cámara que necesitaba otro soporte. Una bobina de fibra que tenía que sobrevivir a un aterrizaje. Preferimos construirlo antes que decirte que no se puede."
+  },
+  "category": "engineering",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-723d9ed4ac4db45fa34dbecac65a0cf47d799b47-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Design and prototyping",
+   "es": "Diseño y prototipado"
+  },
+  "order": 1,
+  "points": [
+   {
+    "_key": "k56qq9",
+    "en": "Airframe and payload design in CAD",
+    "es": "Diseño de aeronave y carga útil en CAD"
+   },
+   {
+    "_key": "k57qq9",
+    "en": "Printed and machined prototypes in-house",
+    "es": "Prototipos impresos y mecanizados en casa"
+   },
+   {
+    "_key": "k58qq9",
+    "en": "Custom flight electronics and links",
+    "es": "Electrónica de vuelo y enlaces a medida"
+   },
+   {
+    "_key": "k59qq9",
+    "en": "First flight within weeks of the brief",
+    "es": "Primer vuelo pocas semanas después del encargo"
+   }
+  ],
+  "role": {
+   "en": "From a sketch on a whiteboard to an airframe on the bench, with the people who will fly it in the room.",
+   "es": "De un boceto en la pizarra a una aeronave en el banco, con la gente que la volará en la sala."
+  },
+  "slug": {
+   "current": "design"
+  },
+  "status": {
+   "en": "Alicante",
+   "es": "Alicante"
+  }
+ },
+ "offering-testing": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-testing",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "A serial number is assigned to every airframe and every one of them goes through a flight test before it leaves. Batteries are cycled and graded. Links are checked against a spectrum analyser. The test card is kept with the aircraft for its whole life.\n\nFor new designs the programme is longer: endurance flights, wind limits, link range, drop tests of the cases, temperature cycles. We publish the figures we measured, not the figures we hoped for, and we say which configuration they were measured in.",
+   "es": "Cada aeronave recibe un número de serie y todas pasan una prueba de vuelo antes de salir. Las baterías se ciclan y se clasifican. Los enlaces se comprueban con un analizador de espectro. La ficha de pruebas acompaña a la aeronave toda su vida.\n\nPara diseños nuevos el programa es más largo: vuelos de autonomía, límites de viento, alcance de enlace, pruebas de caída de las maletas, ciclos de temperatura. Publicamos las cifras que medimos, no las que esperábamos, y decimos en qué configuración se midieron."
+  },
+  "category": "engineering",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-449c440057a23a1fc9ddc6c95b87a3f043c0d289-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Test and validation",
+   "es": "Pruebas y validación"
+  },
+  "order": 2,
+  "points": [
+   {
+    "_key": "k5aqq9",
+    "en": "Flight test and serial number for every airframe",
+    "es": "Prueba de vuelo y número de serie para cada aeronave"
+   },
+   {
+    "_key": "k5bqq9",
+    "en": "Battery grading and link verification",
+    "es": "Clasificación de baterías y verificación de enlaces"
+   },
+   {
+    "_key": "k5cqq9",
+    "en": "Endurance, wind and range programmes for new designs",
+    "es": "Programas de autonomía, viento y alcance para diseños nuevos"
+   },
+   {
+    "_key": "k5dqq9",
+    "en": "Measured figures, stated configuration",
+    "es": "Cifras medidas, configuración declarada"
+   }
+  ],
+  "role": {
+   "en": "Every aircraft flies before it ships. Every design flies a lot before it is a product.",
+   "es": "Cada aeronave vuela antes de entregarse. Cada diseño vuela mucho antes de ser producto."
+  },
+  "slug": {
+   "current": "testing"
+  },
+  "status": {
+   "en": "Alicante",
+   "es": "Alicante"
+  }
+ },
+ "offering-integration": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-integration",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "Customers arrive with a sensor they already trust, a mapping pipeline they already run or a control room that already exists. We fit the aircraft to that, not the other way round. Mounts, power, data links, the format the files come out in, the screen the feed lands on.\n\nThe same applies to ground infrastructure. A mast and a relay for a valley with no coverage, a satellite terminal for a site with no valley at all, a case that fits the vehicle you have.",
+   "es": "Los clientes llegan con un sensor en el que ya confían, un flujo de cartografía que ya ejecutan o una sala de control que ya existe. Adaptamos la aeronave a eso, no al revés. Soportes, alimentación, enlaces de datos, el formato en que salen los archivos, la pantalla en la que aterriza la señal.\n\nLo mismo vale para la infraestructura de tierra. Un mástil y un repetidor para un valle sin cobertura, un terminal satelital para un emplazamiento donde no hay valle, una maleta que quepa en el vehículo que ya tienes."
+  },
+  "category": "engineering",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-9d43d1efbcf95fb90a0ad5e93c7ee3d493308e80-2000x1331-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "Integration",
+   "es": "Integración"
+  },
+  "order": 3,
+  "points": [
+   {
+    "_key": "k5eqq9",
+    "en": "Sensor mounts, power and data",
+    "es": "Soportes de sensor, alimentación y datos"
+   },
+   {
+    "_key": "k5fqq9",
+    "en": "Output formats for the customer's tools",
+    "es": "Formatos de salida para las herramientas del cliente"
+   },
+   {
+    "_key": "k5gqq9",
+    "en": "Ground stations, masts, relays and satellite terminals",
+    "es": "Estaciones de tierra, mástiles, repetidores y terminales satelitales"
+   },
+   {
+    "_key": "k5hqq9",
+    "en": "Transport cases fitted to the customer's vehicles",
+    "es": "Maletas de transporte adaptadas a los vehículos del cliente"
+   }
+  ],
+  "role": {
+   "en": "Your sensor, our aircraft, one system that the operator does not have to think about.",
+   "es": "Tu sensor, nuestra aeronave, un sistema en el que el operador no tiene que pensar."
+  },
+  "slug": {
+   "current": "integration"
+  },
+  "status": {
+   "en": "Alicante",
+   "es": "Alicante"
+  }
+ },
+ "offering-centre": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "offering-centre",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "offering",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "body": {
+   "en": "ALICRON's research and development centre is in the province of Alicante. It is where designs are drawn, prototypes are built, aircraft are tested and operators are trained. The wider group's serial manufacturing is in the Netherlands; Alicante is where things are worked out first.\n\nVisitors are welcome by appointment. Bring the problem, and if the weather allows we will fly something at it the same afternoon.",
+   "es": "El centro de investigación y desarrollo de ALICRON está en la provincia de Alicante. Es donde se dibujan los diseños, se construyen los prototipos, se prueban las aeronaves y se forman los operadores. La fabricación en serie del grupo está en los Países Bajos; en Alicante es donde las cosas se resuelven primero.\n\nRecibimos visitas con cita previa. Traiga el problema y, si el tiempo lo permite, volaremos algo sobre él esa misma tarde."
+  },
+  "category": "engineering",
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-43d416415ee54efed930e5b85694f7d436aedf0f-1536x864-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "The Alicante centre",
+   "es": "El centro de Alicante"
+  },
+  "order": 4,
+  "points": [
+   {
+    "_key": "k5iqq9",
+    "en": "Design office and electronics bench",
+    "es": "Oficina de diseño y banco de electrónica"
+   },
+   {
+    "_key": "k5jqq9",
+    "en": "Prototype workshop with printing and machining",
+    "es": "Taller de prototipos con impresión y mecanizado"
+   },
+   {
+    "_key": "k5kqq9",
+    "en": "Flight test field ten minutes away",
+    "es": "Campo de pruebas de vuelo a diez minutos"
+   },
+   {
+    "_key": "k5lqq9",
+    "en": "Classroom and simulator room",
+    "es": "Aula y sala de simulador"
+   }
+  ],
+  "role": {
+   "en": "Workshop, electronics bench, flight test field and a classroom, in one place, a short drive from the airport.",
+   "es": "Taller, banco de electrónica, campo de pruebas de vuelo y un aula, en un mismo lugar, a poca distancia del aeropuerto."
+  },
+  "slug": {
+   "current": "centre"
+  },
+  "status": {
+   "en": "Alicante",
+   "es": "Alicante"
+  }
+ },
+ "page-company": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "page-company",
+  "_rev": "FShviDYV4x5sjN0LtTTufI",
+  "_type": "page",
+  "_updatedAt": "2026-10-13T11:23:21Z",
+  "heroEyebrow": {
+   "en": "Company",
+   "es": "Empresa"
+  },
+  "heroLead": {
+   "en": "We build unmanned aircraft and the software around them for people who inspect, measure, farm and respond. Everything we sell, we fly ourselves first.",
+   "es": "Construimos aeronaves no tripuladas y el software que las rodea para quienes inspeccionan, miden, cultivan y responden a emergencias. Todo lo que vendemos lo volamos antes nosotros."
+  },
+  "heroMedia": {
+   "alt": {
+    "en": "The ALICRON building near Alicante",
+    "es": "El edificio de ALICRON cerca de Alicante"
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-43d416415ee54efed930e5b85694f7d436aedf0f-1536x864-jpg",
+     "_type": "reference"
+    }
+   }
+  },
+  "heroTitle": {
+   "en": "A small engineering company on the coast of Alicante, inside a European group",
+   "es": "Una pequeña empresa de ingeniería en la costa de Alicante, dentro de un grupo europeo"
+  },
+  "heroWide": true,
+  "metaDescription": {
+   "en": "ALICRON is the Spanish engineering company of a European unmanned-systems group, based in Alicante.",
+   "es": "ALICRON es la empresa de ingeniería española de un grupo europeo de sistemas no tripulados, con sede en Alicante."
+  },
+  "sections": [
+   {
+    "_key": "k6gqq9",
+    "body": {
+     "en": "ALICRON was set up in Spain as the engineering company of a European unmanned-systems group. The group manufactures in series in the Netherlands; ALICRON is where designs are drawn, prototyped, tested and taught. The team is aeronautical and electronics engineers, software developers and instructors, several of whom came to drones from designing full-size aircraft.\n\nWe work in Spanish and English, and in Ukrainian, because a good part of the group's engineering experience comes from there. We are a comfortable partner for Spanish-speaking customers in Europe and Latin America who want a European company they can visit, call and hold to account.\n\nWe are small and we intend to stay useful rather than large. If you need a hundred aircraft next month, the group's plant can do that. If you need the right aircraft for a job nobody has done before, that is us.",
+     "es": "ALICRON se constituyó en España como la empresa de ingeniería de un grupo europeo de sistemas no tripulados. El grupo fabrica en serie en los Países Bajos; ALICRON es donde los diseños se dibujan, se prototipan, se prueban y se enseñan. El equipo lo forman ingenieros aeronáuticos y de electrónica, desarrolladores de software e instructores, varios de los cuales llegaron a los drones desde el diseño de aeronaves de tamaño real.\n\nTrabajamos en español y en inglés, y en ucraniano, porque buena parte de la experiencia de ingeniería del grupo viene de allí. Somos un socio cómodo para clientes hispanohablantes de Europa y América Latina que quieren una empresa europea a la que poder visitar, llamar y pedir cuentas.\n\nSomos pequeños y pretendemos seguir siendo útiles antes que grandes. Si necesita cien aeronaves el mes que viene, la planta del grupo puede hacerlo. Si necesita la aeronave adecuada para un trabajo que nadie ha hecho antes, esos somos nosotros."
+    },
+    "eyebrow": {
+     "en": "Who we are",
+     "es": "Quiénes somos"
+    },
+    "kind": "prose",
+    "title": {
+     "en": "Engineers who fly",
+     "es": "Ingenieros que vuelan"
+    }
+   },
+   {
+    "_key": "k6hqq9",
+    "eyebrow": {
+     "en": "How we work",
+     "es": "Cómo trabajamos"
+    },
+    "features": [
+     {
+      "_key": "k6kqq9",
+      "text": {
+       "en": "Every figure we publish was measured in a stated configuration. When a number changes, the page changes.",
+       "es": "Cada cifra que publicamos se midió en una configuración declarada. Cuando un número cambia, la página cambia."
+      },
+      "title": {
+       "en": "Measured, not hoped",
+       "es": "Medido, no esperado"
+      }
+     },
+     {
+      "_key": "k6lqq9",
+      "text": {
+       "en": "Every airframe has a serial number and a flight test card. Every design flies for months before it is a product.",
+       "es": "Cada aeronave tiene número de serie y ficha de prueba de vuelo. Cada diseño vuela meses antes de ser producto."
+      },
+      "title": {
+       "en": "Flown before shipped",
+       "es": "Volado antes de entregado"
+      }
+     },
+     {
+      "_key": "k6mqq9",
+      "text": {
+       "en": "Cases, batteries, spares and training are shared across the line. A fleet with three classes is one fleet.",
+       "es": "Maletas, baterías, repuestos y formación se comparten en toda la línea. Una flota con tres clases es una sola flota."
+      },
+      "title": {
+       "en": "One set of everything",
+       "es": "Un solo juego de todo"
+      }
+     },
+     {
+      "_key": "k6nqq9",
+      "text": {
+       "en": "A named engineer for every customer, a phone that is answered, a workshop you can visit.",
+       "es": "Un ingeniero con nombre para cada cliente, un teléfono que se contesta, un taller que se puede visitar."
+      },
+      "title": {
+       "en": "Reachable",
+       "es": "Localizables"
+      }
+     }
+    ],
+    "kind": "features",
+    "title": {
+     "en": "Four habits",
+     "es": "Cuatro costumbres"
+    }
+   },
+   {
+    "_key": "k6iqq9",
+    "body": {
+     "en": "The group was set up to bring a proven line of unmanned aircraft to European and Latin American customers under European engineering, manufacturing and quality control. ALICRON is its Spanish engineering company. The Netherlands plant handles serial production, quality control and logistics.",
+     "es": "El grupo se creó para llevar una línea probada de aeronaves no tripuladas a clientes europeos y latinoamericanos bajo ingeniería, fabricación y control de calidad europeos. ALICRON es su empresa de ingeniería en España. La planta de los Países Bajos se ocupa de la producción en serie, el control de calidad y la logística."
+    },
+    "eyebrow": {
+     "en": "The group",
+     "es": "El grupo"
+    },
+    "kind": "dark",
+    "lead": {
+     "en": "Two sites, one product line, one quality system.",
+     "es": "Dos sedes, una línea de producto, un sistema de calidad."
+    },
+    "media": {
+     "alt": {
+      "en": "Carbon fibre drone arm and motor",
+      "es": "Brazo de fibra de carbono y motor de un dron"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-2d800a777e487a4fd12409d69fb43c2e0bab15a5-1536x864-jpg",
+       "_type": "reference"
+      }
+     }
+    },
+    "stats": [
+     {
+      "_key": "k6oqq9",
+      "label": {
+       "en": "sites",
+       "es": "sedes"
+      },
+      "value": "2"
+     },
+     {
+      "_key": "k6pqq9",
+      "label": {
+       "en": "airframe classes",
+       "es": "clases de aeronave"
+      },
+      "value": "7"
+     },
+     {
+      "_key": "k6qqq9",
+      "label": {
+       "en": "working languages",
+       "es": "idiomas de trabajo"
+      },
+      "value": "3"
+     },
+     {
+      "_key": "k6rqq9",
+      "label": {
+       "en": "quality system",
+       "es": "sistema de calidad"
+      },
+      "value": "1"
+     }
+    ],
+    "title": {
+     "en": "Engineering in Spain. Manufacturing in the Netherlands",
+     "es": "Ingeniería en España. Fabricación en los Países Bajos"
+    }
+   },
+   {
+    "_key": "k6jqq9",
+    "ctaHref": "/contact",
+    "ctaLabel": {
+     "en": "Contact",
+     "es": "Contacto"
+    },
+    "kind": "cta",
+    "lead": {
+     "en": "Visits by appointment. Alicante airport is a short drive away.",
+     "es": "Visitas con cita previa. El aeropuerto de Alicante está a poca distancia."
+    },
+    "title": {
+     "en": "Come and see the workshop",
+     "es": "Venga a ver el taller"
+    }
+   }
+  ],
+  "slug": {
+   "current": "company"
+  },
+  "title": {
+   "en": "Company",
+   "es": "Empresa"
+  }
+ },
+ "page-home": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "page-home",
+  "_rev": "ZW7vOW4inmJdm0hOoGtYKS",
+  "_type": "page",
+  "_updatedAt": "2026-10-13T11:00:01Z",
+  "heroCtaHref": "/contact",
+  "heroCtaLabel": {
+   "en": "Talk to us",
+   "es": "Hablemos"
+  },
+  "heroEyebrow": {
+   "en": "Alicante, Spain",
+   "es": "Alicante, España"
+  },
+  "heroLead": {
+   "en": "ALICRON designs, builds and flies unmanned aircraft and the software around them. Pipelines, fields, power lines, coastlines. Engineered and tested in Spain.",
+   "es": "ALICRON diseña, fabrica y opera aeronaves no tripuladas y el software que las rodea. Tuberías, campos, líneas eléctricas, costas. Diseñado y probado en España."
+  },
+  "heroMedia": {
+   "alt": {
+    "en": "A test day on the Costa Blanca: a quadcopter lifts off, first-person flights over a ridge and along a power line, a gate run, a flight-test crew on a clifftop and a white fixed-wing along the cliffs",
+    "es": "Un día de pruebas en la Costa Blanca: un cuadricóptero despega, vuelos en primera persona sobre una cresta y a lo largo de una línea eléctrica, un circuito de puertas, un equipo de ensayos en un acantilado y un ala fija blanca junto a los acantilados"
+   },
+   "caption": {
+    "en": "",
+    "es": ""
+   },
+   "image": {
+    "_type": "image",
+    "asset": {
+     "_ref": "image-b80b94a49949beae851ee15ce66e60f30b88ea46-1920x1080-jpg",
+     "_type": "reference"
+    }
+   },
+   "isVideoPlaceholder": false,
+   "videoUrl": "https://cdn.sanity.io/files/wividiap/production/b54dbe373147a32d14462be237f5b0af3c4cfbba.mp4"
+  },
+  "heroTitle": {
+   "en": "Aircraft that work where people should not have to",
+   "es": "Aeronaves que trabajan donde las personas no deberían tener que hacerlo"
+  },
+  "metaDescription": {
+   "en": "ALICRON designs, builds and flies unmanned aircraft and the software around them from Alicante, Spain. Inspection, agriculture, mapping, training and engineering services.",
+   "es": "ALICRON diseña, fabrica y opera aeronaves no tripuladas y el software que las rodea desde Alicante, España. Inspección, agricultura, cartografía, formación e ingeniería."
+  },
+  "sections": [
+   {
+    "_key": "k5mqq9",
+    "eyebrow": {
+     "en": "What we do",
+     "es": "Qué hacemos"
+    },
+    "features": [
+     {
+      "_key": "k5sqq9",
+      "href": "/platforms",
+      "text": {
+       "en": "Multirotors from ten to seventeen inches and two fixed-wing aircraft. Radio, fibre-optic or satellite links. Built to be flown every day, not shown once.",
+       "es": "Multirrotores de diez a diecisiete pulgadas y dos aeronaves de ala fija. Enlaces por radio, fibra óptica o satélite. Hechas para volar a diario, no para enseñarse una vez."
+      },
+      "title": {
+       "en": "Aerial platforms",
+       "es": "Plataformas aéreas"
+      }
+     },
+     {
+      "_key": "k5tqq9",
+      "href": "/software",
+      "text": {
+       "en": "Our own mission software on the ground station, on-board vision next to the camera, and a control suite for ground robots in development.",
+       "es": "Nuestro propio software de misión en la estación de tierra, visión a bordo junto a la cámara y un sistema de control para robots terrestres en desarrollo."
+      },
+      "title": {
+       "en": "Software and robotics",
+       "es": "Software y robótica"
+      }
+     },
+     {
+      "_key": "k5uqq9",
+      "href": "/training",
+      "text": {
+       "en": "First flights in two days, operators in two weeks, technicians in one, instructors for customers who will train their own people.",
+       "es": "Primeros vuelos en dos días, operadores en dos semanas, técnicos en una, e instructores para clientes que formarán a su propia gente."
+      },
+      "title": {
+       "en": "Training",
+       "es": "Formación"
+      }
+     },
+     {
+      "_key": "k5vqq9",
+      "href": "/engineering",
+      "text": {
+       "en": "Design, prototyping, testing and integration at the centre in Alicante. Bring a sensor or a problem; we will fly something at it.",
+       "es": "Diseño, prototipado, pruebas e integración en el centro de Alicante. Traiga un sensor o un problema; volaremos algo sobre él."
+      },
+      "title": {
+       "en": "Engineering",
+       "es": "Ingeniería"
+      }
+     }
+    ],
+    "kind": "features",
+    "title": {
+     "en": "Four things, done properly",
+     "es": "Cuatro cosas, bien hechas"
+    }
+   },
+   {
+    "_key": "k5nqq9",
+    "body": {
+     "en": "A technician opens a case on the tailgate. A 15-inch multirotor with a satellite terminal lifts off and follows the line at a set height, pausing at valve stations and river crossings. Two provinces away, an engineer watches the thermal feed and the map. By evening the flight log, the video and the flagged frames are in the customer's system.",
+     "es": "Un técnico abre una maleta en el portón. Un multirrotor de 15 pulgadas con terminal satelital despega y sigue la conducción a una altura fija, con paradas en las estaciones de válvulas y los cruces de ríos. A dos provincias, un ingeniero sigue la señal térmica y el mapa. Al anochecer, el registro de vuelo, el vídeo y los fotogramas marcados están en el sistema del cliente."
+    },
+    "ctaHref": "/applications/pipeline-inspection",
+    "ctaLabel": {
+     "en": "Pipeline inspection",
+     "es": "Inspección de tuberías"
+    },
+    "eyebrow": {
+     "en": "Field case",
+     "es": "Caso de campo"
+    },
+    "kind": "split",
+    "media": {
+     "alt": {
+      "en": "A pickup on a pipeline track, a drone lifted from its case and flying the line, and the live feed on an office screen",
+      "es": "Una camioneta en la pista de una tubería, un dron que sale de su maleta y vuela la línea, y la señal en directo en una pantalla de oficina"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-7c42da3ee781bcfe137643deb1022a3e99248ebf-1280x720-jpg",
+       "_type": "reference"
+      }
+     },
+     "isVideoPlaceholder": false,
+     "videoUrl": "https://cdn.sanity.io/files/wividiap/production/ec6dfc71feb24187131f6bf587016126f39e8606.mp4"
+    },
+    "title": {
+     "en": "The pipeline, flown from the office",
+     "es": "La tubería, volada desde la oficina"
+    }
+   },
+   {
+    "_key": "k5oqq9",
+    "ctaHref": "/platforms",
+    "ctaLabel": {
+     "en": "All platform types",
+     "es": "Todas las plataformas"
+    },
+    "eyebrow": {
+     "en": "Platforms",
+     "es": "Plataformas"
+    },
+    "kind": "cards",
+    "lead": {
+     "en": "Each class is a size and a link type. Pick by the job: how far, how long, how heavy, and whether radio is allowed to exist where you fly.",
+     "es": "Cada clase es un tamaño y un tipo de enlace. Se elige por el trabajo: cuánto de lejos, cuánto tiempo, cuánto peso y si la radio puede existir donde se vuela."
+    },
+    "refs": [
+     {
+      "_key": "k5wqq9",
+      "_ref": "platform-multirotor-15-satellite",
+      "_type": "reference"
+     },
+     {
+      "_key": "k5xqq9",
+      "_ref": "platform-multirotor-13",
+      "_type": "reference"
+     },
+     {
+      "_key": "k5yqq9",
+      "_ref": "platform-fixed-wing-endurance",
+      "_type": "reference"
+     }
+    ],
+    "title": {
+     "en": "Named by what they are, not by a brand",
+     "es": "Nombradas por lo que son, no por una marca"
+    }
+   },
+   {
+    "_key": "k5pqq9",
+    "body": {
+     "en": "Encrypted radio is the default: cheap, light, and good for thirty to forty-five kilometres with a clear horizon. Where the horizon is not clear, or where nothing may radiate, the 13-inch flies on a spooled optical fibre. Where the operator is far away, the 15 and 17-inch carry a satellite terminal and the ground station stops being a place.\n\nThe same operator training covers all three. The same cases carry all three.",
+     "es": "La radio cifrada es lo habitual: barata, ligera y válida para treinta a cuarenta y cinco kilómetros con horizonte despejado. Donde el horizonte no está despejado, o donde nada puede emitir, el de 13 pulgadas vuela con una bobina de fibra óptica. Donde el operador está lejos, el de 15 y el de 17 pulgadas llevan un terminal satelital y la estación de tierra deja de ser un lugar.\n\nLa misma formación de operador cubre los tres. Las mismas maletas transportan los tres."
+    },
+    "eyebrow": {
+     "en": "Links",
+     "es": "Enlaces"
+    },
+    "kind": "dark",
+    "lead": {
+     "en": "Most drone problems are link problems. We build three answers into the same airframes.",
+     "es": "La mayoría de problemas con drones son problemas de enlace. Montamos tres respuestas en las mismas aeronaves."
+    },
+    "media": {
+     "alt": {
+      "en": "Satellite terminal on a drone frame",
+      "es": "Terminal satelital sobre el chasis de un dron"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-5fc1017520555d8eb090a5ad8c426c71b3572bb0-1536x864-jpg",
+       "_type": "reference"
+      }
+     }
+    },
+    "stats": [
+     {
+      "_key": "k5zqq9",
+      "label": {
+       "en": "radio, clear horizon",
+       "es": "radio, horizonte despejado"
+      },
+      "value": "45 km"
+     },
+     {
+      "_key": "k60qq9",
+      "label": {
+       "en": "on optical fibre",
+       "es": "por fibra óptica"
+      },
+      "value": "30 km"
+     },
+     {
+      "_key": "k61qq9",
+      "label": {
+       "en": "over satellite",
+       "es": "por satélite"
+      },
+      "value": "∞"
+     },
+     {
+      "_key": "k62qq9",
+      "label": {
+       "en": "longest rotary endurance",
+       "es": "mayor autonomía en rotor"
+      },
+      "value": "55 min"
+     }
+    ],
+    "title": {
+     "en": "Radio when it works. Fibre or satellite when it must",
+     "es": "Radio cuando funciona. Fibra o satélite cuando hace falta"
+    }
+   },
+   {
+    "_key": "k5qqq9",
+    "body": {
+     "en": "ALICRON is the engineering company of a European unmanned-systems group. Designs are drawn, prototyped, flown and taught here, on the coast of Alicante. Serial production runs at the group's plant in the Netherlands. Customers get an engineering team they can visit and a factory that ships on schedule.\n\nThe workshop has printers, a small machine shop, an electronics bench and a flight field ten minutes away. Most of what is on this site started as something a customer asked for.",
+     "es": "ALICRON es la empresa de ingeniería de un grupo europeo de sistemas no tripulados. Los diseños se dibujan, se prototipan, se vuelan y se enseñan aquí, en la costa de Alicante. La producción en serie se hace en la planta del grupo en los Países Bajos. Los clientes tienen un equipo de ingeniería al que pueden visitar y una fábrica que entrega a tiempo.\n\nEl taller tiene impresoras, un pequeño taller mecánico, un banco de electrónica y un campo de vuelo a diez minutos. Casi todo lo que hay en esta web empezó como algo que pidió un cliente."
+    },
+    "ctaHref": "/company",
+    "ctaLabel": {
+     "en": "About the company",
+     "es": "Sobre la empresa"
+    },
+    "eyebrow": {
+     "en": "Engineering",
+     "es": "Ingeniería"
+    },
+    "kind": "split",
+    "large": true,
+    "media": {
+     "alt": {
+      "en": "Technical drawing of the fixed-wing survey aircraft, top and side views",
+      "es": "Plano técnico del avión de levantamiento de ala fija, vistas en planta y lateral"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-70309764430f9060c0b15788d21204f04e966e94-2400x1792-jpg",
+       "_type": "reference"
+      }
+     }
+    },
+    "reverse": false,
+    "title": {
+     "en": "From the drawing to the flight test",
+     "es": "Del plano a la prueba de vuelo"
+    }
+   },
+   {
+    "_key": "k5rqq9",
+    "ctaHref": "/contact",
+    "ctaLabel": {
+     "en": "Contact",
+     "es": "Contacto"
+    },
+    "kind": "cta",
+    "lead": {
+     "en": "We reply within a working day, in Spanish or English, with the questions we need answered before proposing anything.",
+     "es": "Respondemos en un día laborable, en español o en inglés, con las preguntas que necesitamos aclarar antes de proponer nada."
+    },
+    "title": {
+     "en": "Tell us what you need to see, and from where",
+     "es": "Cuéntenos qué necesita ver, y desde dónde"
+    }
+   }
+  ],
+  "slug": {
+   "current": "home"
+  },
+  "title": {
+   "en": "Home",
+   "es": "Inicio"
+  }
+ },
+ "page-software": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "page-software",
+  "_rev": "iN7lwzwocrluGtakg1KBnP",
+  "_type": "page",
+  "_updatedAt": "2026-10-01T17:40:04Z",
+  "heroEyebrow": {
+   "en": "Software and robotics",
+   "es": "Software y robótica"
+  },
+  "heroLead": {
+   "en": "We write the software that plans the route, keeps the link alive, reads the video and, increasingly, drives things that do not fly.",
+   "es": "Escribimos el software que planifica la ruta, mantiene vivo el enlace, lee el vídeo y, cada vez más, conduce cosas que no vuelan."
+  },
+  "heroTitle": {
+   "en": "The aircraft is half the product. The other half runs on the ground station",
+   "es": "La aeronave es la mitad del producto. La otra mitad se ejecuta en la estación de tierra"
+  },
+  "metaDescription": {
+   "en": "Mission software for the ground station, on-board vision and a control suite for ground robots.",
+   "es": "Software de misión para la estación de tierra, visión a bordo y un sistema de control para robots terrestres."
+  },
+  "sections": [
+   {
+    "_key": "k6aqq9",
+    "body": {
+     "en": "An operator who can plan and fly a route on the ground station can drive a wheeled robot along one with the same tools. Teleoperation, waypoints, payload control. The suite is in development at the R&D centre with a partner platform and will be released after a season of real work.",
+     "es": "Un operador que sabe planificar y volar una ruta en la estación de tierra puede conducir un robot con ruedas por una con las mismas herramientas. Teleoperación, puntos de ruta, control de carga útil. El sistema está en desarrollo en el centro de I+D con la plataforma de un socio y se publicará tras una temporada de trabajo real."
+    },
+    "eyebrow": {
+     "en": "Robotics",
+     "es": "Robótica"
+    },
+    "kind": "dark",
+    "lead": {
+     "en": "The ground robot control suite reuses the mission software, so the skill transfers.",
+     "es": "El sistema de control de robots terrestres reutiliza el software de misión, así que la habilidad se transfiere."
+    },
+    "media": {
+     "alt": {
+      "en": "Field robot between rows of orange trees",
+      "es": "Robot de campo entre hileras de naranjos"
+     },
+     "image": {
+      "_type": "image",
+      "asset": {
+       "_ref": "image-933d20fd4abcb32dc3666ded33b868712011b683-1536x864-jpg",
+       "_type": "reference"
+      }
+     }
+    },
+    "title": {
+     "en": "One operator, one map, air and ground",
+     "es": "Un operador, un mapa, aire y tierra"
+    }
+   }
+  ],
+  "slug": {
+   "current": "software"
+  },
+  "title": {
+   "en": "Software and robotics",
+   "es": "Software y robótica"
+  }
+ },
+ "platform-multirotor-10": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "platform-multirotor-10",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "platform",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "applications": [
+   {
+    "_key": "kjqq8",
+    "_ref": "application-power-lines",
+    "_type": "reference"
+   },
+   {
+    "_key": "kkqq8",
+    "_ref": "application-mapping",
+    "_type": "reference"
+   }
+  ],
+  "body": {
+   "en": "Ten-inch propellers, an eight-cell battery and a frame that has been through more field days than we can count. The 10-inch class flies for about forty minutes and carries up to three kilograms, which covers most camera and gimbal combinations our customers ask for.\n\nThe control link is encrypted and the video link is analogue by default, which sounds old-fashioned until you have flown behind a hill and watched a digital link freeze. Digital 4K video is available as an option.\n\nIt takes off vertically from a patch of ground the size of a table. Two people can run a full day of flights out of one vehicle.",
+   "es": "Hélices de diez pulgadas, batería de ocho celdas y un chasis que ha pasado por más jornadas de campo de las que podemos contar. La clase de 10 pulgadas vuela unos cuarenta minutos y carga hasta tres kilos, que cubren la mayoría de combinaciones de cámara y estabilizador que nos piden los clientes.\n\nEl enlace de control va cifrado y el vídeo es analógico por defecto, algo que suena anticuado hasta que vuelas detrás de una loma y ves cómo un enlace digital se congela. El vídeo digital 4K está disponible como opción.\n\nDespega en vertical desde un trozo de suelo del tamaño de una mesa. Dos personas sacan una jornada entera de vuelos con un solo vehículo."
+  },
+  "family": "Multirotor",
+  "gallery": [
+   {
+    "_key": "khqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-7faf54164ae06afabb30772fa41c8ee0e507a1ee-2000x1327-jpg",
+     "_type": "reference"
+    }
+   },
+   {
+    "_key": "kiqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-2d800a777e487a4fd12409d69fb43c2e0bab15a5-1536x864-jpg",
+     "_type": "reference"
+    }
+   }
+  ],
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-a6c5e097ba06c09af804772fe78f71a8f2897dea-2000x1331-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "10-inch multirotor",
+   "es": "Multirrotor de 10 pulgadas"
+  },
+  "order": 1,
+  "role": {
+   "en": "The everyday workhorse: forty minutes in the air with three kilos on board.",
+   "es": "La plataforma de diario: cuarenta minutos en el aire con tres kilos a bordo."
+  },
+  "slug": {
+   "current": "multirotor-10"
+  },
+  "specs": [
+   {
+    "_key": "kbqq8",
+    "label": {
+     "en": "Frame",
+     "es": "Chasis"
+    },
+    "value": {
+     "en": "10-inch, carbon fibre",
+     "es": "10 pulgadas, fibra de carbono"
+    }
+   },
+   {
+    "_key": "kcqq8",
+    "label": {
+     "en": "Battery",
+     "es": "Batería"
+    },
+    "value": {
+     "en": "8S lithium",
+     "es": "8S litio"
+    }
+   },
+   {
+    "_key": "kdqq8",
+    "label": {
+     "en": "Max speed",
+     "es": "Velocidad máx."
+    },
+    "value": {
+     "en": "140 km/h",
+     "es": "140 km/h"
+    }
+   },
+   {
+    "_key": "keqq8",
+    "label": {
+     "en": "Control link",
+     "es": "Enlace de control"
+    },
+    "value": {
+     "en": "Encrypted radio",
+     "es": "Radio cifrada"
+    }
+   },
+   {
+    "_key": "kfqq8",
+    "label": {
+     "en": "Video",
+     "es": "Vídeo"
+    },
+    "value": {
+     "en": "Analogue, encrypted; digital 4K optional",
+     "es": "Analógico cifrado; 4K digital opcional"
+    }
+   },
+   {
+    "_key": "kgqq8",
+    "label": {
+     "en": "Take-off",
+     "es": "Despegue"
+    },
+    "value": {
+     "en": "Vertical",
+     "es": "Vertical"
+    }
+   }
+  ],
+  "stats": [
+   {
+    "_key": "k7qq8",
+    "label": {
+     "en": "flight time",
+     "es": "autonomía"
+    },
+    "value": "40 min"
+   },
+   {
+    "_key": "k8qq8",
+    "label": {
+     "en": "operating range",
+     "es": "alcance"
+    },
+    "value": "30 km"
+   },
+   {
+    "_key": "k9qq8",
+    "label": {
+     "en": "payload",
+     "es": "carga útil"
+    },
+    "value": "3 kg"
+   },
+   {
+    "_key": "kaqq8",
+    "label": {
+     "en": "ceiling",
+     "es": "techo"
+    },
+    "value": "3 000 m"
+   }
+  ],
+  "status": {
+   "en": "In service",
+   "es": "En servicio"
+  },
+  "summary": {
+   "en": "A compact quadcopter that carries a serious sensor and still fits in the back of a car. It is the airframe we reach for when a job needs a camera up quickly and back down again.",
+   "es": "Un cuadricóptero compacto que lleva un sensor serio y aun así cabe en el maletero. Es la aeronave que sacamos cuando hay que subir una cámara rápido y bajarla igual de rápido."
+  }
+ },
+ "platform-multirotor-13": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "platform-multirotor-13",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "platform",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "applications": [
+   {
+    "_key": "kxqq8",
+    "_ref": "application-pipeline-inspection",
+    "_type": "reference"
+   },
+   {
+    "_key": "kyqq8",
+    "_ref": "application-power-lines",
+    "_type": "reference"
+   },
+   {
+    "_key": "kzqq8",
+    "_ref": "application-emergency",
+    "_type": "reference"
+   }
+  ],
+  "body": {
+   "en": "Thirteen-inch propellers buy endurance. This class stays up for around fifty minutes and works out to forty kilometres with a digital 4K link, which is what you want when the target is a positive identification and not just a glimpse.\n\nThe fibre-optic version replaces radio altogether. Control and video travel down a hair-thin optical fibre that unwinds from a spool on the aircraft. Nothing radiates, so nothing can be jammed or located, and the picture stays clean inside tunnels, under bridges and in industrial plants full of interference. Range in that configuration is around thirty kilometres, with a lower ceiling because the fibre has to reach the ground.\n\nBoth versions share batteries, spares and training with the rest of the multirotor line.",
+   "es": "Las hélices de trece pulgadas compran autonomía. Esta clase se mantiene unos cincuenta minutos en el aire y trabaja hasta cuarenta kilómetros con un enlace digital 4K, que es lo que hace falta cuando el objetivo es una identificación positiva y no un vistazo.\n\nLa versión de fibra óptica prescinde de la radio por completo. El control y el vídeo viajan por una fibra fina como un cabello que se desenrolla de una bobina en la aeronave. Nada emite, así que nada se puede interferir ni localizar, y la imagen sigue limpia dentro de túneles, bajo puentes y en plantas industriales llenas de ruido electromagnético. El alcance en esa configuración ronda los treinta kilómetros, con un techo más bajo porque la fibra tiene que llegar al suelo.\n\nLas dos versiones comparten baterías, repuestos y formación con el resto de la línea multirrotor."
+  },
+  "family": "Multirotor",
+  "gallery": [
+   {
+    "_key": "kvqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-f5a0f94a4c9adcdbafd2ba1cf6c6a9bc14f0d081-2000x1331-jpg",
+     "_type": "reference"
+    }
+   },
+   {
+    "_key": "kwqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-2d800a777e487a4fd12409d69fb43c2e0bab15a5-1536x864-jpg",
+     "_type": "reference"
+    }
+   }
+  ],
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-5a2dbaebbd76198f0babe59fb75633e8fed57d4f-2000x1331-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "13-inch multirotor",
+   "es": "Multirrotor de 13 pulgadas"
+  },
+  "order": 2,
+  "role": {
+   "en": "Reach over speed: forty kilometres out, fifty minutes on station, with a fibre-optic option that cannot be jammed.",
+   "es": "Alcance por encima de velocidad: cuarenta kilómetros, cincuenta minutos en estación y una opción de fibra óptica que no se puede interferir."
+  },
+  "slug": {
+   "current": "multirotor-13"
+  },
+  "specs": [
+   {
+    "_key": "kpqq8",
+    "label": {
+     "en": "Frame",
+     "es": "Chasis"
+    },
+    "value": {
+     "en": "13-inch, carbon fibre",
+     "es": "13 pulgadas, fibra de carbono"
+    }
+   },
+   {
+    "_key": "kqqq8",
+    "label": {
+     "en": "Battery",
+     "es": "Batería"
+    },
+    "value": {
+     "en": "8S lithium",
+     "es": "8S litio"
+    }
+   },
+   {
+    "_key": "krqq8",
+    "label": {
+     "en": "Max speed",
+     "es": "Velocidad máx."
+    },
+    "value": {
+     "en": "110 km/h",
+     "es": "110 km/h"
+    }
+   },
+   {
+    "_key": "ksqq8",
+    "label": {
+     "en": "Ceiling",
+     "es": "Techo"
+    },
+    "value": {
+     "en": "1 500 m (800 m on fibre)",
+     "es": "1 500 m (800 m con fibra)"
+    }
+   },
+   {
+    "_key": "ktqq8",
+    "label": {
+     "en": "Control link",
+     "es": "Enlace de control"
+    },
+    "value": {
+     "en": "Encrypted radio or optical fibre",
+     "es": "Radio cifrada o fibra óptica"
+    }
+   },
+   {
+    "_key": "kuqq8",
+    "label": {
+     "en": "Video",
+     "es": "Vídeo"
+    },
+    "value": {
+     "en": "Digital 4K, encrypted; 20 Mbit over fibre",
+     "es": "Digital 4K cifrado; 20 Mbit por fibra"
+    }
+   }
+  ],
+  "stats": [
+   {
+    "_key": "klqq8",
+    "label": {
+     "en": "flight time",
+     "es": "autonomía"
+    },
+    "value": "50 min"
+   },
+   {
+    "_key": "kmqq8",
+    "label": {
+     "en": "operating range",
+     "es": "alcance"
+    },
+    "value": "40 km"
+   },
+   {
+    "_key": "knqq8",
+    "label": {
+     "en": "payload",
+     "es": "carga útil"
+    },
+    "value": "2 kg"
+   },
+   {
+    "_key": "koqq8",
+    "label": {
+     "en": "digital video",
+     "es": "vídeo digital"
+    },
+    "value": "4K"
+   }
+  ],
+  "status": {
+   "en": "In service",
+   "es": "En servicio"
+  },
+  "summary": {
+   "en": "The long-range multirotor. It flies further and stays longer than the 10-inch, and it is the airframe we fit with a spooled optical fibre when radio is not an option.",
+   "es": "El multirrotor de largo alcance. Vuela más lejos y aguanta más que el de 10 pulgadas, y es la aeronave a la que montamos una bobina de fibra óptica cuando la radio no es una opción."
+  }
+ },
+ "platform-multirotor-15-satellite": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "platform-multirotor-15-satellite",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "platform",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "applications": [
+   {
+    "_key": "k1dqq8",
+    "_ref": "application-pipeline-inspection",
+    "_type": "reference"
+   },
+   {
+    "_key": "k1eqq8",
+    "_ref": "application-emergency",
+    "_type": "reference"
+   },
+   {
+    "_key": "k1fqq8",
+    "_ref": "application-mapping",
+    "_type": "reference"
+   }
+  ],
+  "body": {
+   "en": "This is the aircraft in the pipeline video. A vehicle drives to the start of the section, a case opens, the aircraft lifts off and follows the line while the engineer watches the feed from the office. When the battery runs low it lands next to the vehicle, and the technician swaps the pack.\n\nThe satellite link means the flight does not depend on a radio horizon, a mast or a relay. It also means the same person can supervise flights in different valleys on the same day. Latency is higher than a direct radio link, so the aircraft flies the route itself and the operator steps in for the interesting parts.\n\nIt carries up to two kilograms, enough for a zoom camera and a thermal sensor together, and flies for about forty minutes per pack.",
+   "es": "Es la aeronave del vídeo de la tubería. Un vehículo llega al inicio del tramo, se abre una maleta, la aeronave despega y sigue la conducción mientras el ingeniero mira la señal desde la oficina. Cuando la batería baja, aterriza junto al vehículo y el técnico cambia el pack.\n\nEl enlace satelital hace que el vuelo no dependa de un horizonte de radio, un mástil ni un repetidor. También permite que la misma persona supervise vuelos en valles distintos el mismo día. La latencia es mayor que con radio directa, así que la aeronave vuela la ruta por sí misma y el operador interviene en las partes que importan.\n\nCarga hasta dos kilos, suficiente para una cámara con zoom y un sensor térmico a la vez, y vuela unos cuarenta minutos por pack."
+  },
+  "family": "Multirotor",
+  "gallery": [
+   {
+    "_key": "k1bqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-3655aa65d971bf73f22dd762d3756f658bad1b54-2000x1331-jpg",
+     "_type": "reference"
+    }
+   },
+   {
+    "_key": "k1cqq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-5fc1017520555d8eb090a5ad8c426c71b3572bb0-1536x864-jpg",
+     "_type": "reference"
+    }
+   }
+  ],
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-b0b0c4810ae6a90342119ba1fa3480b50d535e2b-2000x1331-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "15-inch satellite-linked multirotor",
+   "es": "Multirrotor de 15 pulgadas con enlace satelital"
+  },
+  "order": 3,
+  "role": {
+   "en": "No line-of-sight ceiling. Both links run over satellite, so the operator can sit in an office two provinces away.",
+   "es": "Sin límite de línea de visión. Los dos enlaces van por satélite, así que el operador puede estar en una oficina a dos provincias de distancia."
+  },
+  "slug": {
+   "current": "multirotor-15-satellite"
+  },
+  "specs": [
+   {
+    "_key": "k14qq8",
+    "label": {
+     "en": "Frame",
+     "es": "Chasis"
+    },
+    "value": {
+     "en": "15-inch, carbon fibre",
+     "es": "15 pulgadas, fibra de carbono"
+    }
+   },
+   {
+    "_key": "k15qq8",
+    "label": {
+     "en": "Battery",
+     "es": "Batería"
+    },
+    "value": {
+     "en": "8S lithium",
+     "es": "8S litio"
+    }
+   },
+   {
+    "_key": "k16qq8",
+    "label": {
+     "en": "Max speed",
+     "es": "Velocidad máx."
+    },
+    "value": {
+     "en": "90 km/h",
+     "es": "90 km/h"
+    }
+   },
+   {
+    "_key": "k17qq8",
+    "label": {
+     "en": "Ceiling",
+     "es": "Techo"
+    },
+    "value": {
+     "en": "1 500 m",
+     "es": "1 500 m"
+    }
+   },
+   {
+    "_key": "k18qq8",
+    "label": {
+     "en": "Control link",
+     "es": "Enlace de control"
+    },
+    "value": {
+     "en": "Satellite",
+     "es": "Satelital"
+    }
+   },
+   {
+    "_key": "k19qq8",
+    "label": {
+     "en": "Video",
+     "es": "Vídeo"
+    },
+    "value": {
+     "en": "Digital over satellite",
+     "es": "Digital por satélite"
+    }
+   },
+   {
+    "_key": "k1aqq8",
+    "label": {
+     "en": "Relay role",
+     "es": "Función de repetidor"
+    },
+    "value": {
+     "en": "Can carry a radio relay for other aircraft",
+     "es": "Puede llevar un repetidor de radio para otras aeronaves"
+    }
+   }
+  ],
+  "stats": [
+   {
+    "_key": "k10qq8",
+    "label": {
+     "en": "flight time",
+     "es": "autonomía"
+    },
+    "value": "40 min"
+   },
+   {
+    "_key": "k11qq8",
+    "label": {
+     "en": "operating range",
+     "es": "alcance"
+    },
+    "value": "35 km"
+   },
+   {
+    "_key": "k12qq8",
+    "label": {
+     "en": "payload",
+     "es": "carga útil"
+    },
+    "value": "2 kg"
+   },
+   {
+    "_key": "k13qq8",
+    "label": {
+     "en": "control and video",
+     "es": "control y vídeo"
+    },
+    "value": "SAT"
+   }
+  ],
+  "status": {
+   "en": "In service",
+   "es": "En servicio"
+  },
+  "summary": {
+   "en": "Our long-range inspection aircraft. A flat satellite terminal on top of the frame carries control and video, which removes the ground station from the picture entirely.",
+   "es": "Nuestra aeronave de inspección de largo alcance. Un terminal satelital plano sobre el chasis lleva el control y el vídeo, lo que saca a la estación de tierra de la ecuación."
+  }
+ },
+ "platform-multirotor-17": {
+  "_createdAt": "2026-09-14T23:24:20Z",
+  "_id": "platform-multirotor-17",
+  "_rev": "J1Tx0fWCuGNPno99A7TBY5",
+  "_type": "platform",
+  "_updatedAt": "2026-09-16T08:48:55Z",
+  "applications": [
+   {
+    "_key": "k21qq8",
+    "_ref": "application-pipeline-inspection",
+    "_type": "reference"
+   },
+   {
+    "_key": "k22qq8",
+    "_ref": "application-mapping",
+    "_type": "reference"
+   }
+  ],
+  "body": {
+   "en": "Seventeen-inch propellers turn slowly and quietly. The aircraft is not fast, but it stays up for close to an hour and it does so with two kilograms on board. It is our first choice for survey lines, repeated inspections of the same asset and any job where you would rather not land halfway.\n\nSatellite links on both control and video, as on the 15-inch. It folds for transport and travels in the same case family as the rest of the line.",
+   "es": "Las hélices de diecisiete pulgadas giran despacio y en silencio. La aeronave no es rápida, pero se mantiene cerca de una hora en el aire y lo hace con dos kilos a bordo. Es nuestra primera opción para líneas de levantamiento, inspecciones repetidas del mismo activo y cualquier trabajo en el que prefieras no aterrizar a mitad.\n\nEnlaces satelitales de control y vídeo, como en el de 15 pulgadas. Se pliega para el transporte y viaja en la misma familia de maletas que el resto de la línea."
+  },
+  "family": "Multirotor",
+  "gallery": [
+   {
+    "_key": "k20qq8",
+    "_type": "image",
+    "asset": {
+     "_ref": "image-5fc1017520555d8eb090a5ad8c426c71b3572bb0-1536x864-jpg",
+     "_type": "reference"
+    }
+   }
+  ],
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-cc89561817ea03a5cc4f315506606cf48cf71674-2000x1346-jpg",
+    "_type": "reference"
+   }
+  },
+  "name": {
+   "en": "17-inch long-endurance multirotor",
+   "es": "Multirrotor de 17 pulgadas de larga autonomía"
+  },
+  "order": 5,
+  "role": {
+   "en": "The longest rotary reach we build: fifty-five minutes and forty-five kilometres on a full satellite link.",
+   "es": "El mayor alcance en rotor que fabricamos: cincuenta y cinco minutos y cuarenta y cinco kilómetros con enlace satelital completo."
+  },
+  "slug": {
+   "current": "multirotor-17"
+  },
+  "specs": [
+   {
+    "_key": "k1wqq8",
+    "label": {
+     "en": "Frame",
+     "es": "Chasis"
+    },
+    "value": {
+     "en": "17-inch, carbon fibre, folding",
+     "es": "17 pulgadas, fibra de carbono, plegable"
+    }
+   },
+   {
+    "_key": "k1xqq8",
+    "label": {
+     "en": "Battery",
+     "es": "Batería"
+    },
+    "value": {
+     "en": "8S lithium",
+     "es": "8S litio"
+    }
+   },
+   {
+    "_key": "k1yqq8",
+    "label": {
+     "en": "Max speed",
+     "es": "Velocidad máx."
+    },
+    "value": {
+     "en": "90 km/h",
+     "es": "90 km/h"
+    }
+   },
+   {
+    "_key": "k1zqq8",
+    "label": {
+     "en": "Links",
+     "es": "Enlaces"
+    },
+    "value": {
+     "en": "Satellite control and video",
+     "es": "Control y vídeo por satélite"
+    }
+   }
+  ],
+  "stats": [
+   {
+    "_key": "k1sqq8",
+    "label": {
+     "en": "flight time",
+     "es": "autonomía"
+    },
+    "value": "55 min"
+   },
+   {
+    "_key": "k1tqq8",
+    "label": {
+     "en": "operating range",
+     "es": "alcance"
+    },
+    "value": "45 km"
+   },
+   {
+    "_key": "k1uqq8",
+    "label": {
+     "en": "payload",
+     "es": "carga útil"
+    },
+    "value": "2 kg"
+   },
+   {
+    "_key": "k1vqq8",
+    "label": {
+     "en": "ceiling",
+     "es": "techo"
+    },
+    "value": "1 500 m"
+   }
+  ],
+  "status": {
+   "en": "In service",
+   "es": "En servicio"
+  },
+  "summary": {
+   "en": "When a multirotor has to cover a whole valley or a full section of coast in one flight, this is the airframe. Large propellers, slow turning, very efficient.",
+   "es": "Cuando un multirrotor tiene que cubrir un valle entero o un tramo completo de costa en un solo vuelo, esta es la aeronave. Hélices grandes, giro lento, muy eficiente."
+  }
+ }
+}

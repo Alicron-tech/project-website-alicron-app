@@ -12,6 +12,7 @@ export const page = defineType({
     defineField({name: 'heroTitle', type: 'localeString'}),
     defineField({name: 'heroLead', type: 'localeText'}),
     defineField({name: 'heroMedia', type: 'media'}),
+    defineField({name: 'heroWide', title: 'Wide hero image (3:1)', type: 'boolean', initialValue: false}),
     defineField({name: 'heroCtaLabel', type: 'localeString'}),
     defineField({name: 'heroCtaHref', type: 'string'}),
     defineField({name: 'sections', type: 'array', of: [{type: 'section'}]}),

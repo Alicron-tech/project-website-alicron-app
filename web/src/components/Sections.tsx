@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import {t, paras, type Locale} from '@/lib/sanity'
 import {Media, Img} from './Media'
@@ -83,7 +84,10 @@ export function SectionView({s, locale, index}: {s: Section; locale: Locale; ind
     case 'prose':
       return (
         <div className="col"><div className="ruled rule-top" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))'}}>
-          <div className="cell" style={{borderRight: '1px dashed var(--rule-dashed)'}}><Heading s={s} locale={locale} /><div style={{marginTop: 24}}><Cta s={s} locale={locale} /></div></div>
+          <div className="cell prose-cell" style={{borderRight: '1px dashed var(--rule-dashed)'}}>
+            <Heading s={s} locale={locale} /><div style={{marginTop: 24}}><Cta s={s} locale={locale} /></div>
+            {t(s.title, 'en') === 'Engineers who fly' && <div className="prose-sketch" aria-hidden="true"><Image src="/sketches/mesh-3.png" alt="" width={942} height={802} /></div>}
+          </div>
           <div className="cell"><Prose v={s.body} locale={locale} /></div>
         </div></div>
       )
@@ -112,11 +116,21 @@ export function SectionView({s, locale, index}: {s: Section; locale: Locale; ind
       return (
         <section className="al-dark" style={{marginTop: 'clamp(48px, 5.5vw, 80px)', paddingBottom: 'var(--gutter-dark)'}}>
           <div className="col dsection">
-            <Heading s={s} locale={locale} dark action={<Cta s={s} locale={locale} tactical="dark" />} />
-            <div className="dgrid" style={{paddingTop: 'clamp(40px, 3.9vw, 56px)'}}>
-              <Prose v={s.body} locale={locale} />
-              {s.media && <Media media={s.media} locale={locale} radius="none" sizes="(max-width: 960px) 100vw, 50vw" />}
-            </div>
+            {s.media ? (
+              // the image stands beside the whole text block: eyebrow, heading, lead and body on the left, image from the eyebrow down
+              <div className="dgrid dgrid--top">
+                <div>
+                  <Heading s={s} locale={locale} dark action={<Cta s={s} locale={locale} tactical="dark" />} />
+                  <div style={{paddingTop: 'clamp(32px, 3.2vw, 48px)'}}><Prose v={s.body} locale={locale} /></div>
+                </div>
+                <Media media={s.media} locale={locale} radius="none" sizes="(max-width: 960px) 100vw, 50vw" />
+              </div>
+            ) : (
+              <>
+                <Heading s={s} locale={locale} dark action={<Cta s={s} locale={locale} tactical="dark" />} />
+                <div className="dgrid" style={{paddingTop: 'clamp(40px, 3.9vw, 56px)'}}><Prose v={s.body} locale={locale} /></div>
+              </>
+            )}
             {s.stats?.length ? <div style={{marginTop: 'var(--section-dark)'}}><StatStrip stats={s.stats} locale={locale} /></div> : null}
           </div>
         </section>

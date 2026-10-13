@@ -6,18 +6,19 @@ type MediaDoc = {image?: unknown; alt?: {en?: string; es?: string}; videoUrl?: s
 
 /** MediaFrame: photo on a black ground, optional 10px radius, mono uppercase caption. Renders a looping video when videoUrl is set,
  *  or a poster with a play mark when the media is flagged as a video placeholder. */
-export function Media({media, locale, radius = 'md', ratio = '169', sizes = '100vw', priority = false, videoLabel, caption}: {media: MediaDoc; locale: Locale; radius?: 'none' | 'md'; ratio?: '169' | '43'; sizes?: string; priority?: boolean; videoLabel?: string; caption?: string}) {
+export function Media({media, locale, radius = 'md', ratio = '169', sizes = '100vw', priority = false, videoLabel, caption}: {media: MediaDoc; locale: Locale; radius?: 'none' | 'md'; ratio?: '169' | '43' | '31'; sizes?: string; priority?: boolean; videoLabel?: string; caption?: string}) {
   if (!media?.image && !media?.videoUrl) return null
   const alt = t(media.alt, locale)
   // a local film can replace a Sanity video (keyed by its URL) or a still (keyed by 'image:' + its asset id)
   const local = localVideo(media.videoUrl) ?? localVideo(`image:${(media.image as {asset?: {_ref?: string}} | undefined)?.asset?._ref ?? ''}`)
   const videoUrl = local?.src ?? media.videoUrl
-  const poster = local?.poster ?? (media.image ? localImage(media.image) ?? urlFor(media.image).width(2000).url() : undefined)
+  const imgRef = (media.image as {asset?: {_ref?: string}} | undefined)?.asset?._ref
+  const poster = local?.poster ?? (media.image ? localImage(media.image, `media:${imgRef}`) ?? urlFor(media.image).width(2000).url() : undefined)
   const isVideo = Boolean(videoUrl) || Boolean(media.isVideoPlaceholder)
   const cap = caption ?? (local?.caption ? t(local.caption, locale) : t(media.caption, locale))
   return (
     <figure className="frame">
-      <div className={`frame__box ${radius === 'md' ? 'frame__box--md' : ''} ${ratio === '43' ? 'frame__box--43' : ''}`}>
+      <div className={`frame__box ${radius === 'md' ? 'frame__box--md' : ''} ${ratio === '43' ? 'frame__box--43' : ratio === '31' ? 'frame__box--31' : ''}`}>
         {videoUrl ? (
           <InViewVideo src={videoUrl} poster={poster} label={alt} />
         ) : media.image ? (
@@ -35,11 +36,11 @@ export function Media({media, locale, radius = 'md', ratio = '169', sizes = '100
   )
 }
 
-export function Img({image, alt = '', className = 'case__img', sizes = '(max-width: 900px) 100vw, 33vw', width = 1200, priority = false}: {image: unknown; alt?: string; className?: string; sizes?: string; width?: number; priority?: boolean}) {
+export function Img({image, alt = '', className = 'case__img', sizes = '(max-width: 900px) 100vw, 33vw', width = 1200, priority = false, localKey}: {image: unknown; alt?: string; className?: string; sizes?: string; width?: number; priority?: boolean; localKey?: string}) {
   if (!image) return <div className={className} />
   return (
     <div className={className} style={{position: 'relative'}}>
-      <Image src={localImage(image) ?? urlFor(image).width(width).url()} alt={alt} fill sizes={sizes} priority={priority} style={{objectFit: 'cover'}} />
+      <Image src={localImage(image, localKey) ?? urlFor(image).width(width).url()} alt={alt} fill sizes={sizes} priority={priority} style={{objectFit: 'cover'}} />
     </div>
   )
 }

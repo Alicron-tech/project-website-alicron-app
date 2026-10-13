@@ -510,7 +510,7 @@ Cada plataforma se entrega con número de serie, ficha de pruebas y registro de 
       heroEyebrow: L('Engineering', 'Ingeniería'),
       heroTitle: L('Bring a sensor or a problem. We will fly something at it', 'Traiga un sensor o un problema. Volaremos algo sobre él'),
       heroLead: L('The centre in Alicante designs, builds, tests and integrates. Serial production is at the group plant in the Netherlands. Here is where things get worked out first.', 'El centro de Alicante diseña, construye, prueba e integra. La producción en serie está en la planta del grupo en los Países Bajos. Aquí es donde las cosas se resuelven primero.'),
-      heroMedia: media('engineering-test', {alt: L('Fixed-wing aircraft on a launch rail at sunrise', 'Aeronave de ala fija en un raíl de lanzamiento al amanecer')}),
+      // heroMedia removed 2026-10-13 (text-only hero, like Software)
       sections: []},
 
     {_id: 'page-company', _type: 'page', slug: {current: 'company'},

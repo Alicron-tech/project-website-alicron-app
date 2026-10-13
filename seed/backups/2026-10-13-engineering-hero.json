@@ -1,0 +1,16 @@
+{
+ "_id": "page-engineering",
+ "heroMedia": {
+  "alt": {
+   "en": "Fixed-wing aircraft on a launch rail at sunrise",
+   "es": "Aeronave de ala fija en un raíl de lanzamiento al amanecer"
+  },
+  "image": {
+   "_type": "image",
+   "asset": {
+    "_ref": "image-449c440057a23a1fc9ddc6c95b87a3f043c0d289-1536x864-jpg",
+    "_type": "reference"
+   }
+  }
+ }
+}

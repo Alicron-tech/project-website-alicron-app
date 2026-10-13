@@ -58,7 +58,7 @@ export function PageHero({page, locale, full = false}: {page: Record<string, nev
         </section>
         {p.heroMedia && (
           <div style={{padding: '0 var(--cell-pad) var(--cell-pad)'}}>
-            <Media media={p.heroMedia} locale={locale} priority sizes="(max-width: 1444px) 100vw, 1320px" videoLabel={es ? 'Vídeo · en producción' : 'Video · in production'} />
+            <Media media={p.heroMedia} locale={locale} ratio={p.heroWide ? '31' : '169'} priority sizes="(max-width: 1444px) 100vw, 1320px" videoLabel={es ? 'Vídeo · en producción' : 'Video · in production'} />
           </div>
         )}
       </div>

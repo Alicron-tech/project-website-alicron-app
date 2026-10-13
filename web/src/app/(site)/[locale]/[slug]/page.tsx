@@ -17,6 +17,14 @@ export async function generateMetadata({params}: {params: Promise<{locale: Local
   return {title: t(page?.title, locale), description: t(page?.metaDescription, locale)}
 }
 
+// training offerings show a line drawing of the object the course is about instead of a photo
+const OFFER_SKETCH: Record<string, string> = {
+  'offering-first-flights': 'training-controller',
+  'offering-pilot-course': 'training-ground-station',
+  'offering-technical-course': 'training-motor',
+  'offering-instructor-course': 'training-drill-kit',
+}
+
 function Offerings({items, locale}: {items: Record<string, never>[]; locale: Locale}) {
   return (
     <div className="col"><div className="ruled rule-top">
@@ -27,11 +35,14 @@ function Offerings({items, locale}: {items: Record<string, never>[]; locale: Loc
             <h2 className="display-3">{t(o.name, locale)}</h2>
             {t(o.role, locale) && <p className="mono-md muted">{t(o.role, locale)}</p>}
             <Prose v={o.body} locale={locale} />
-            {Array.isArray(o.points) && (o.points as never[]).length > 0 && (
-              <ul className="points">{(o.points as never[]).map((p, j) => <li key={j}>{t(p, locale)}</li>)}</ul>
-            )}
           </div>
-          <div className="offer__media"><Img image={o.image} alt={t(o.name, locale)} className="frame__box frame__box--md frame__box--43" sizes="(max-width: 900px) 100vw, 50vw" width={1600} /></div>
+          {OFFER_SKETCH[o._id as string]
+            ? <div className="offer__media offer__media--sketch"><img src={`/sketches/${OFFER_SKETCH[o._id as string]}-v3.png`} alt="" aria-hidden="true" /></div>
+            : <div className="offer__media"><Img image={o.image} localKey={o._id} alt={t(o.name, locale)} className="frame__box frame__box--md frame__box--43" sizes="(max-width: 900px) 100vw, 50vw" width={1600} /></div>}
+          {/* the points run across the full width under copy and image, in two columns */}
+          {Array.isArray(o.points) && (o.points as never[]).length > 0 && (
+            <div className="offer__points"><ul className="points points--cols">{(o.points as never[]).map((p, j) => <li key={j}>{t(p, locale)}</li>)}</ul></div>
+          )}
         </div>
       ))}
     </div></div>

@@ -162,6 +162,7 @@ button, input { font: inherit; }
 .frame__box { position: relative; overflow: hidden; background: var(--void-pure); aspect-ratio: 16 / 9; }
 .frame__box--md { border-radius: 0; }   /* Alec, 2026-09-16: images and films keep square corners */
 .frame__box--43 { aspect-ratio: 4 / 3; }
+.frame__box--31 { aspect-ratio: 3 / 1; }   /* wide hero, e.g. the company map */
 .frame__box img, .frame__box video { width: 100%; height: 100%; object-fit: cover; }
 .frame__cap { font-family: var(--font-mono); font-size: 12px; line-height: 16px; letter-spacing: 0.3px; text-transform: uppercase; color: var(--text-label); }
 .play { position: absolute; inset: 0; display: grid; place-items: center; }
@@ -192,7 +193,7 @@ button, input { font: inherit; }
 /* larger text variant: wider text column, headline and body about 25 % bigger */
 .split--lg { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .split--lg > .fb h2 { max-width: 620px; font-size: clamp(35px, 3.1vw, 45px); }
-.split--lg > .fb .body-lg { max-width: 600px; font-size: 1.25em; line-height: 1.55; }
+.split--lg > .fb .body-lg { max-width: 600px; }
 @media (max-width: 900px) { .split { grid-template-columns: 1fr; } .split > .fb, .split--reverse > .fb { border: none; border-bottom: 1px dashed var(--rule-dashed); order: 0; } }
 
 /* blockquote */
@@ -305,3 +306,28 @@ button, input { font: inherit; }
 .case__play svg { width: 26px; height: 26px; fill: #fff; margin-left: 3px; }
 .case:hover .case__play { opacity: 1; transform: scale(1); }
 @media (prefers-reduced-motion: reduce) { .case__play, .case, .case__media .case__img { transition: none; } }
+
+/* Wide map hero: the image is 112 % of the frame and drifts slowly out and back (ease-in-out, alternate),
+   so it never jumps and the marked spot never leaves the frame. Varda slides a seamless tile endlessly; a real map
+   with a marked place cannot tile, so it drifts back instead. Stops for reduced motion. */
+/* fixed layout grid over the drifting map (6 x 2 dashed cells, like the site's ruled columns); it does not move */
+.frame__box--31::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' preserveAspectRatio='none'%3E%3Cpath d='M100 0V100M0 100H100' stroke='rgba(255,255,255,0.22)' stroke-width='1' stroke-dasharray='4 5' vector-effect='non-scaling-stroke' fill='none'/%3E%3C/svg%3E");
+  background-size: calc(100% / 6) 50%; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.22); }
+
+/* a faint wireframe drawing of one of our multirotors under the heading of two-column prose blocks (same family as the page sketches) */
+.prose-cell { position: relative; overflow: hidden; }
+.prose-sketch { position: absolute; left: 6%; right: 6%; bottom: -8%; pointer-events: none; opacity: 0.13; }
+.prose-sketch img { width: 100%; height: auto; display: block; }
+@media (max-width: 900px) { .prose-sketch { display: none; } }
+.dgrid--top { padding-top: 0; align-items: start; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.dgrid--top .sh { flex-direction: column; align-items: flex-start; }
+.offer__media--sketch { display: flex; align-items: center; justify-content: center; }
+.offer__media--sketch img { width: 100%; height: 100%; max-height: 560px; object-fit: contain; opacity: 0.85; }
+/* offerings: the image fills the right column beside the copy; points span the block below */
+.offer__media { display: flex; }
+.offer__media > .frame__box { flex: 1; aspect-ratio: auto; min-height: 320px; }
+.offer__points { grid-column: 1 / -1; order: 3; padding: 0 var(--cell-pad) var(--cell-pad); }
+.points--cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--cell-pad); border-top: 1px dashed var(--rule-dashed); }
+@media (max-width: 900px) { .points--cols { grid-template-columns: 1fr; } .offer__media > .frame__box { aspect-ratio: 4 / 3; min-height: 0; } }
+.dgrid--top { align-items: center; }

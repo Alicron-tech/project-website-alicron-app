@@ -6,7 +6,7 @@ const refCard = `{_type, "slug": slug.current, name, role, summary, image, categ
 
 export const settingsQuery = `*[_type=="siteSettings"][0]{name, tagline, description, nav[]{label, href}, email, phone, address, footerNote, ctaLabel}`
 export const pageQuery = `*[_type=="page" && slug.current==$slug][0]{
-  title, metaDescription, heroEyebrow, heroTitle, heroLead, heroMedia${media}, heroCtaLabel, heroCtaHref,
+  title, metaDescription, heroEyebrow, heroTitle, heroLead, heroMedia${media}, heroWide, heroCtaLabel, heroCtaHref,
   sections[]{kind, eyebrow, title, lead, body, reverse, large, ctaLabel, ctaHref, media${media}, stats[]${stat},
     features[]{title, text, href, image}, refs[]->${refCard}}
 }`

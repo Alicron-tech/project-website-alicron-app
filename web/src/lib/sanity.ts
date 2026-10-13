@@ -33,8 +33,8 @@ export function localVideo(url?: string): LocalVideo | undefined {
 }
 
 /** Local previews only: LOCAL_IMAGE_MAP (JSON in .env.local) swaps a Sanity image asset id for a file in public/. Unset in production. */
-export function localImage(image: unknown): string | undefined {
+export function localImage(image: unknown, key?: string): string | undefined {
   const ref = (image as {asset?: {_ref?: string}} | undefined)?.asset?._ref
   if (!ref || !process.env.LOCAL_IMAGE_MAP) return undefined
-  try { return (JSON.parse(process.env.LOCAL_IMAGE_MAP) as Record<string, string>)[ref] } catch { return undefined }
+  try { const m = JSON.parse(process.env.LOCAL_IMAGE_MAP) as Record<string, string>; return (key && m[key]) || m[ref] } catch { return undefined }
 }
